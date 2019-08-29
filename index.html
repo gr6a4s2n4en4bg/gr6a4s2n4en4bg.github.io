@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>GR6A4S2N4EN4BG — s/n disruption al/together</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-
+<link rel="alternate" type="application/atom+xml" title="last published - feed" href="./atom.xml" />
 
 </head>
 <body class="tc-body">
@@ -141,6 +141,10 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
+<li>$:/config/Plugins/Disabled/$:/plugins/sycom/g-analytics</li>
+
+<li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics</li>
+
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
@@ -158,6 +162,16 @@ Error message and password prompt
 <li>$:/macros/danielo/footNote</li>
 
 <li>$:/palette</li>
+
+<li>$:/plugins/sycom/atom-feed</li>
+
+<li>$:/plugins/sycom/atom-feed/publicationWebsite</li>
+
+<li>$:/plugins/sycom/g-analytics</li>
+
+<li>$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification</li>
+
+<li>$:/plugins/sycom/g-analytics/settings/track_all</li>
 
 <li>$:/plugins/tiddlywiki/googleanalytics</li>
 
@@ -183,11 +197,23 @@ Error message and password prompt
 
 <li>$:/state/folded/Добредошли</li>
 
+<li>$:/state/plugin-info--1456866696-$:/plugins/sycom/atom-feed---958248217</li>
+
 <li>$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463</li>
+
+<li>$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics---1020831059</li>
 
 <li>$:/state/plugin-info--896887961-$:/core</li>
 
 <li>$:/state/plugin-info--896887961-$:/core---553713294</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed--1836497366</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics---23073584</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics</li>
 
@@ -218,6 +244,12 @@ Error message and password prompt
 <li>$:/StoryList</li>
 
 <li>$:/temp/advancedsearch</li>
+
+<li>$:/temp/ext/modules/macros/i18n-style</li>
+
+<li>$:/temp/GoogleAnalyticsGDPRoption</li>
+
+<li>$:/temp/HideAnalyticsWarning</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -455,6 +487,8 @@ Error message and password prompt
 
 <li>s2nVennSVG</li>
 
+<li>This wiki uses Google Analytics</li>
+
 <li>Welcome</li>
 
 <li>бгМетаОрганизации</li>
@@ -478,6 +512,12 @@ Error message and password prompt
 </div>
 <div created="20190820090249113" creator="GR6A" modified="20190820090249113" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
+</div>
+<div created="20190829102706466" creator="GR6A" modified="20190829102725874" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/sycom/g-analytics">
+<pre>no</pre>
+</div>
+<div created="20190829103452943" creator="GR6A" modified="20190829103452943" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics">
+<pre>yes</pre>
 </div>
 <div created="20190729065654666" creator="GR6A" modified="20190729065654666" modifier="GR6A" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
@@ -9365,15 +9405,10 @@ Error message and password prompt
 <div created="20190824141643655" creator="GR6A" modified="20190824141649188" modifier="GR6A" title="$:/GoogleAnalyticsDomain">
 <pre>gr6a4s2n4en4bg.github.io</pre>
 </div>
-<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
-<pre>{
-    &quot;tiddlers&quot;: {
-        &quot;Untitled&quot;: {
-            &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;s2nVennSVG&quot;
-        }
-    }
-}</pre>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/plugins/sycom/atom-feed]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9407,6 +9442,276 @@ Error message and password prompt
 </div>
 <div created="20190527084632159" modified="20190527084632159" title="$:/palette">
 <pre>$:/palettes/Rocker</pre>
+</div>
+<div author="Sylvain Comte" bag="default" core-version="&gt;=5.0.0" dependents="" description="Atom feed" list="readme usage" plugin-type="plugin" revision="0" source="https://framagit.org/sycom/TiddlyWiki-Plugins" title="$:/plugins/sycom/atom-feed" type="application/json" version="0.0.2">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Working on atom feed&quot;: {
+            &quot;title&quot;: &quot;Working on atom feed&quot;,
+            &quot;created&quot;: &quot;20190406203049600&quot;,
+            &quot;modified&quot;: &quot;20190407152226190&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;Since i'm not getting all the purpose of the pretty complex Dullroar's https://github.com/dullroar/TW5-atomfeed/ let's try de deploy a very lightweight version.\n\nWhat we need :\n\n* a [[global template|$:/plugins/sycom/atom-feed/atom.xml]] for the atom.xml output file\n* a template [[for each item|$:/plugins/sycom/atom-feed/templates/itemfeed]] of the feed\n* a [[list of lattest tiddlers|$:/plugins/sycom/atom-feed/entrylist]] based upon this template (and maybe latest updated tiddlers?).\n* a $:/plugins/sycom/atom-feed/publicationWebsite parameter\n* an information for bots and browser through a //rawMarkup// tagged [[tiddler|$:/plugins/sycom/atom-feed/rel-alternate]]\n\nStarting example from [[RFC 4287|https://tools.ietf.org/html/rfc4287]]\n\n```\n&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&gt;\n   &lt;feed xmlns=\&quot;http://www.w3.org/2005/Atom\&quot;&gt;\n     &lt;title type=\&quot;text\&quot;&gt;dive into mark&lt;/title&gt;\n     &lt;subtitle type=\&quot;html\&quot;&gt;\n       A &amp;lt;em&amp;gt;lot&amp;lt;/em&amp;gt; of effort\n       went into making this effortless\n     &lt;/subtitle&gt;\n     &lt;updated&gt;2005-07-31T12:29:29Z&lt;/updated&gt;\n     &lt;id&gt;tag:example.org,2003:3&lt;/id&gt;\n     &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n      hreflang=\&quot;en\&quot; href=\&quot;http://example.org/\&quot;/&gt;\n     &lt;link rel=\&quot;self\&quot; type=\&quot;application/atom+xml\&quot;\n      href=\&quot;http://example.org/feed.atom\&quot;/&gt;\n     &lt;rights&gt;Copyright (c) 2003, Mark Pilgrim&lt;/rights&gt;\n     &lt;generator uri=\&quot;http://www.example.com/\&quot; version=\&quot;1.0\&quot;&gt;\n       Example Toolkit\n     &lt;/generator&gt;\n     &lt;entry&gt;\n       &lt;title&gt;Atom draft-07 snapshot&lt;/title&gt;\n       &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n        href=\&quot;http://example.org/2005/04/02/atom\&quot;/&gt;\n       &lt;link rel=\&quot;enclosure\&quot; type=\&quot;audio/mpeg\&quot; length=\&quot;1337\&quot;\n        href=\&quot;http://example.org/audio/ph34r_my_podcast.mp3\&quot;/&gt;\n       &lt;id&gt;tag:example.org,2003:3.2397&lt;/id&gt;\n       &lt;updated&gt;2005-07-31T12:29:29Z&lt;/updated&gt;\n       &lt;published&gt;2003-12-13T08:29:29-04:00&lt;/published&gt;\n       &lt;author&gt;\n         &lt;name&gt;Mark Pilgrim&lt;/name&gt;\n         &lt;uri&gt;http://example.org/&lt;/uri&gt;\n         &lt;email&gt;f8dy@example.com&lt;/email&gt;\n       &lt;/author&gt;\n       &lt;contributor&gt;\n         &lt;name&gt;Sam Ruby&lt;/name&gt;\n       &lt;/contributor&gt;\n       &lt;contributor&gt;\n         &lt;name&gt;Joe Gregorio&lt;/name&gt;\n       &lt;/contributor&gt;\n       &lt;content type=\&quot;xhtml\&quot; xml:lang=\&quot;en\&quot;\n        xml:base=\&quot;http://diveintomark.org/\&quot;&gt;\n         &lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n           &lt;p&gt;&lt;i&gt;[Update: The Atom draft is finished.]&lt;/i&gt;&lt;/p&gt;\n         &lt;/div&gt;\n       &lt;/content&gt;\n     &lt;/entry&gt;\n   &lt;/feed&gt;\n```&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/usage&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;caption&quot;: &quot;Usage&quot;,
+            &quot;text&quot;: &quot;Once plugin is installed, set your website address and numbers of latest tiddlers to list here\n\n* website url &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/publicationWebsite\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\n* tiddlers number &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/entrylist\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\nThen add this line to your build command (in tiddlywiki.info file)\n\n```\n\&quot;feed\&quot;: [\n  \&quot;--rendertiddler\&quot;,\&quot;$:/plugins/sycom/atom-feed/atom.xml\&quot;,\&quot;atom.xml\&quot;,\&quot;text/plain\&quot;]\n```\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/readme&quot;,
+            &quot;text&quot;: &quot;Le [plugin atom feed](#$:/plugins/sycom/atom-feed) permet d'ajouter un flux atom ([RFC 4287][RFC]) à votre TiddlyWiki au moment de sa construction (commande `build`). Il crée un fichier `atom.xml` contenant la liste des xx derniers articles de votre wiki.\n\n## Sources / licenses\n* le **plugin atom feed** est sous une [licence BSD 3-Clause][license] similaire à celle de TiddlyWiki\n\n[RFC]: https://tools.ietf.org/html/rfc4287\n[license]: https://framagit.org/sycom/TiddlyWiki-Plugins/LICENSE.md\n&quot;,
+            &quot;type&quot;: &quot;text/x-markdown&quot;,
+            &quot;caption&quot;: &quot;Readme&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/usage&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;caption&quot;: &quot;Usage&quot;,
+            &quot;text&quot;: &quot;Une fois le plugin installé, indiquez l'adresse de publication de votre site et le nombre des derniers tiddlers à faire apparaitre dans le flux ici\n\n* url du site web &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/publicationWebsite\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\n* nombre de tiddlers &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/entrylist\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\nEnsuite ajoutez cette ligne à votre commande `build` (dans le fichier tiddlywiki.info)\n\n```\n\&quot;feed\&quot;: [\n  \&quot;--rendertiddler\&quot;,\&quot;$:/plugins/sycom/atom-feed/atom.xml\&quot;,\&quot;atom.xml\&quot;,\&quot;text/plain\&quot;]\n```\n&quot;
+        },
+        &quot;$:/ext/modules/macros/i18n-macro.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/ext/modules/macros/i18n-macro.js\ntype: application/javascript\nmodule-type: macro\nversion: 0.3.0\n\ni18n macro for easiest translation of any string outside lingo\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\n/*\ni18n macro enables automatic translation of a tiddler in wiki language (if exists)\ncould, maybe, in the future, take care of browser language\n*/\n\nexports.name = \&quot;i18n\&quot;;\n\nexports.params = [\n  {name: \&quot;title\&quot;}, // short title of the tiddler (without translation path)\n  {name: \&quot;domain\&quot;}, // translation path (default $:)\n  {name: \&quot;dico\&quot;}, // tells if mode is dictionnary or tiddler (default false)\n  {name: \&quot;orig_lang\&quot;}, // original tiddler language (default en-GB)\n  {name: \&quot;inline\&quot;} // boolean for inline transclusion (default false)\n];\n\n/*\nRun the macro\n*/\nexports.run = function(title,domain,dico,orig_lang,inline) {\n  // if first run, will create a styling tiddler for edit button\n  if($tw.wiki.getTiddler(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;) === undefined) {\n    $tw.wiki.setText(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;,\&quot;text\&quot;,null,\&quot;.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} div:hover &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}\&quot;);\n    $tw.wiki.setText(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;,\&quot;tags\&quot;,null,\&quot;$:/tags/Stylesheet\&quot;);\n  }\n  // whatever, let's go for translation\n\tvar parent = this.parentDomNode,\n    title = title || this.getVariable(\&quot;currentTiddler\&quot;),\n    dom = domain || \&quot;$:\&quot;,\n    dico = dico || \&quot;no\&quot;,\n    base = orig_lang || \&quot;en-GB\&quot;,\n    inline = inline || false,\n    language = this.wiki.getTiddler(\&quot;$:/language\&quot;).fields.text || \&quot;$:/languages/en-GB\&quot;,\n    lang = (this.wiki.getTiddler(language) !== undefined ?\n      this.wiki.getTiddler(language).fields.name :\n      \&quot;en-GB\&quot;),\n    // getting base and translation tiddler depending on \&quot;dico\&quot; mode active\n    tid = (dico === \&quot;dico\&quot; ?\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+base) :\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title)),\n    translation = (dico === \&quot;dico\&quot; ?\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+lang) :\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title)),\n    option = {};\n    if(inline === true) option.parseAsInline = true;\n  // checks if there is a translation for the tiddlers\n  if(!translation) {\n  // if not checks if there is an original\n    if(!tid) {\n      // if not displays a text telling the original is not defined\n      return (dico === \&quot;dico\&quot; ?\n        \&quot;&lt;div class='tc-tiddler-info'&gt;sorry but there is not any [[\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;]] dictionnary tiddler&lt;/div&gt;\&quot; :\n        \&quot;&lt;div class='tc-tiddler-info'&gt;sorry but there is not any [[\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;]] tiddler&lt;/div&gt;\&quot;)\n    }\n  // if yes, displays original\n    else {\n      var html;\n      if(dico === \&quot;dico\&quot;) { // dictionnary reference\n        html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+base+ \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n        html += \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang + \&quot;' class='i18n-edit alert'&gt; + \&quot; + lang + \&quot;&lt;/$link&gt;\&quot;;\n        html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;##\&quot;+title + \&quot;}}\&quot;;\n      }\n      else { // full tiddler reference\n        html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n        html += \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;' class='i18n-edit alert'&gt; + \&quot; + lang + \&quot;&lt;/$link&gt;\&quot;;\n        html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;}}\&quot;;\n      }\n      return html;\n    }\n\t}\n\telse {\n    var html;\n    if(dico === \&quot;dico\&quot;) { // dictionnary reference\n      html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n      html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;##\&quot;+title + \&quot;}}\&quot;;\n    }\n    else  { // full tiddler reference\n      html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n      html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;}}\&quot;;\n    }\n    return html;\n  }\n};\n\n})();\n&quot;,
+            &quot;title&quot;: &quot;$:/ext/modules/macros/i18n-macro.js&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;macro&quot;,
+            &quot;version&quot;: &quot;0.3.0&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/readme&quot;,
+            &quot;text&quot;: &quot;The [atom feed plugin](#$:/plugins/sycom/atom-feed) will help adding an atom ([RFC 4287][RFC]) feed to your TiddlyWiki when you //build// it. It will create an `atom.xml` file with the list of latest xx tiddlers of your wiki.\n\n## Sources / licenses\n* **atom feed plugin** is released under similar [BSD 3-Clause license][license] as TiddlyWiki\n\n[RFC]: https://tools.ietf.org/html/rfc4287\n[license]: https://framagit.org/sycom/TiddlyWiki-Plugins/LICENSE.md\n&quot;,
+            &quot;type&quot;: &quot;text/x-markdown&quot;,
+            &quot;created&quot;: &quot;20190321120000000&quot;,
+            &quot;modified&quot;: &quot;20190328144500000&quot;,
+            &quot;caption&quot;: &quot;Readme&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/readme&quot;,
+            &quot;caption&quot;: &quot;Readme&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;i18n readme $:/plugins/sycom/atom-feed&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/atom.xml&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/atom.xml&quot;,
+            &quot;created&quot;: &quot;20190406214444000&quot;,
+            &quot;modified&quot;: &quot;20190407150839004&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline\n&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&gt;\n   &lt;feed xmlns=\&quot;http://www.w3.org/2005/Atom\&quot;&gt;\n     &lt;title type=\&quot;html\&quot;&gt;{{$:/SiteTitle}}&lt;/title&gt;\n     &lt;subtitle type=\&quot;html\&quot;&gt;{{$:/SiteSubtitle}}&lt;/subtitle&gt;\n     &lt;updated&gt;{{$:/plugins/sycom/atom-feed/publicationDate}}&lt;/updated&gt;\n     &lt;id&gt;{{$:/plugins/sycom/atom-feed/publicationWebsite}}&lt;/id&gt;\n     &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n      hreflang=\&quot;{{$:/plugins/sycom/atom-feed/wikiLang}}\&quot; href=\&quot;{{$:/plugins/sycom/atom-feed/publicationWebsite}}\&quot;/&gt;\n     &lt;link rel=\&quot;self\&quot; type=\&quot;application/atom+xml\&quot;\n      href=\&quot;{{$:/plugins/sycom/atom-feed/publicationWebsite}}/atom.xml\&quot;/&gt;\n     &lt;rights&gt;&lt;/rights&gt;\n     &lt;generator uri=\&quot;https://sycom.gitlab.io/TiddlyWiki-Plugins/#AtomFeed%20Plugin\&quot; version=\&quot;{{$:/plugins/sycom/atom-feed!!version}}\&quot;&gt;\n       Sycom's AtomFeed TiddlyWiki plugin\n     &lt;/generator&gt;\n\n{{$:/plugins/sycom/atom-feed/entrylist}}\n\n&lt;/feed&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/entrylist&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/entrylist&quot;,
+            &quot;created&quot;: &quot;20190407141826200&quot;,
+            &quot;modified&quot;: &quot;20190407145916341&quot;,
+            &quot;caption&quot;: &quot;25&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;\\define feedFilter() [all[tiddlers]![This wiki uses Google analytics]!prefix[Draft of ]!prefix[$:/]!prefix[-$:/]!sort[created]limit[$(numFeed)$]]\n\n&lt;$set name=numFeed value={{!!caption}}&gt;\n\n&lt;$list filter=&lt;&lt;feedFilter&gt;&gt; template=\&quot;$:/plugins/sycom/atom-feed/templates/itemfeed\&quot;&gt;\n\n&lt;/$list&gt;\n&lt;/$set&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/templates/itemfeed&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/templates/itemfeed&quot;,
+            &quot;created&quot;: &quot;20190406210152700&quot;,
+            &quot;modified&quot;: &quot;20190407150714665&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;`&lt;entry&gt;\n   &lt;title&gt;`&lt;$view field=\&quot;caption\&quot;&gt;{{!!title}}&lt;/$view&gt;`&lt;/title&gt;\n       &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n        href=\&quot;`&lt;$text text={{$:/plugins/sycom/atom-feed/publicationWebsite!!caption}}/&gt;/#{{!!title}}`\&quot;/&gt;\n       &lt;id&gt;`{{!!title}}`&lt;/id&gt;\n       &lt;updated&gt;`&lt;$view field=modified format=date template=\&quot;YYYY-0MM-0DDT0hh:0mm:0ss\&quot;/&gt;`&lt;/updated&gt;\n       &lt;published&gt;`&lt;$view field=created format=date template=\&quot;YYYY-0MM-0DDT0hh:0mm:0ss\&quot;/&gt;`&lt;/published&gt;\n       &lt;author&gt;\n         &lt;name&gt;`{{!!modifier}}`&lt;/name&gt;\n       &lt;/author&gt;\n       &lt;content type=\&quot;html\&quot;&gt;\n\n`\n          &lt;$view field=\&quot;text\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n       `&lt;/content&gt;\n&lt;/entry&gt;`\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/usage&quot;,
+            &quot;caption&quot;: &quot;Usage&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;i18n usage $:/plugins/sycom/atom-feed&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/publicationDate&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/publicationDate&quot;,
+            &quot;created&quot;: &quot;20190407150203600&quot;,
+            &quot;modified&quot;: &quot;20190407150231675&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;now YYYY-0MM-0DDT0hh:0mm:0ss&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/publicationWebsite&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/publicationWebsite&quot;,
+            &quot;created&quot;: &quot;20190407150203600&quot;,
+            &quot;modified&quot;: &quot;20190407150231675&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;caption&quot;: &quot;https://sycom.gitlab.io/TiddlyWiki-Plugins&quot;,
+            &quot;text&quot;: &quot;Please set url in caption field\n&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/rel-alternate&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/rel-alternate&quot;,
+            &quot;created&quot;: &quot;20190407151615100&quot;,
+            &quot;modified&quot;: &quot;20190407152216117&quot;,
+            &quot;tags&quot;: &quot;$:/tags/RawMarkup&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;&lt;link rel=\&quot;alternate\&quot; type=\&quot;application/atom+xml\&quot; title=\&quot;last published - feed\&quot; href=\&quot;./atom.xml\&quot; /&gt;&quot;
+        },
+        &quot;$:/plugins/sycom/atom-feed/wikiLang&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/wikiLang&quot;,
+            &quot;created&quot;: &quot;20190407151615100&quot;,
+            &quot;modified&quot;: &quot;20190407152216117&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;&lt;$view field=name tiddler={{$:/language}}&gt;en-GB&lt;/$view&gt;\n&quot;
+        }
+    }
+}</pre>
+</div>
+<div caption="https://gr6a4s2n4en4bg.github.io" created="20190407150203600" creator="GR6A" modified="20190829100344040" modifier="GR6A" title="$:/plugins/sycom/atom-feed/publicationWebsite" type="text/vnd.tiddlywiki">
+<pre>Please set url in caption field
+</pre>
+</div>
+<div author="JeremyRuston" bag="default" contributor="Sylvain Comte" core-version="&gt;=5.0.0" dependents="" description="G-Analytics: website statistics" list="readme settings usage" plugin-type="plugin" revision="0" title="$:/plugins/sycom/g-analytics" type="application/json" version="1.3.1">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/sycom/g-analytics/settings/disclaimer_title&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/settings/disclaimer_title&quot;,
+            &quot;caption&quot;: &quot;This wiki uses Google Analytics&quot;,
+            &quot;text&quot;: &quot;This tiddler caption field contains the title for your disclaimer tiddler\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/googleanalytics.js&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/googleanalytics.js&quot;,
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/sycom/g-analytics/googleanalytics.js\ntype: application/javascript\nmodule-type: startup\n\nRuns Google Analytics with the account number in the tiddler `$:/GoogleAnalyticsAccount` and the domain name in `$:/GoogleAnalyticsDomain`. You may also track internal navigation. DNT and GDPR compliant.\n\n\\*/\n(function() {\n\n  /*jslint node: true, browser: true */\n  /*global $tw: false */\n  \&quot;use strict\&quot;;\n\n  // Export name and synchronous status\n  exports.name = \&quot;google-analytics\&quot;;\n  exports.platforms = [\&quot;browser\&quot;];\n  exports.after = [\&quot;startup\&quot;];\n  exports.synchronous = true;\n\n  exports.startup = function() {\n    var GA_Launched = 0; // GA active detector\n    // initializing disclaimer\n    var GA_DISCLAIMER_TITLE = $tw.wiki.getTiddler(\&quot;$:/plugins/sycom/g-analytics/settings/disclaimer_title\&quot;).fields.caption || \&quot;This wiki uses Google analytics\&quot;;\n    GA_DISCLAIMER_TITLE = GA_DISCLAIMER_TITLE.replace(/\\n/g, \&quot;\&quot;);\n    // load informations about tracking\n    $tw.wiki.setText(GA_DISCLAIMER_TITLE, \&quot;text\&quot;, null, $tw.wiki.getTiddlerText(\&quot;$:/plugins/sycom/g-analytics/disclaimer\&quot;));\n    // testing do not track before launching\n    var dnt = navigator.doNotTrack || 0;\n    if (dnt === \&quot;1\&quot;) {\n      // tells the wiki that DNT is on for disclaimer adaptation\n      $tw.wiki.setText(\&quot;$:/temp/GoogleAnalyticsDNT\&quot;, \&quot;text\&quot;, null, \&quot;yes\&quot;);\n    } else {\n      // getting parameters - account, domain, tracking tiddlers and gdpr - opt-in\n      var GA_ACCOUNT = $tw.wiki.getTiddlerText(\&quot;$:/GoogleAnalyticsAccount\&quot;) || \&quot;\&quot;,\n        GA_DOMAIN = $tw.wiki.getTiddlerText(\&quot;$:/GoogleAnalyticsDomain\&quot;) || \&quot;\&quot;,\n        GA_TRACKALL = $tw.wiki.getTiddlerText(\&quot;$:/plugins/sycom/g-analytics/settings/track_all\&quot;) || \&quot;no\&quot;,\n        GA_GDPR = \&quot;yes\&quot;;\n      GA_ACCOUNT = GA_ACCOUNT.replace(/\\n/g, \&quot;\&quot;);\n      GA_DOMAIN = GA_DOMAIN.replace(/\\n/g, \&quot;\&quot;);\n      // handling domain parameter : user defined &gt; from window location &gt; \&quot;auto\&quot; fallback\n      if (GA_DOMAIN == \&quot;\&quot;) GA_DOMAIN = window.location.hostname;\n      if (GA_DOMAIN == undefined) GA_DOMAIN = \&quot;auto\&quot;;\n      GA_TRACKALL = GA_TRACKALL.replace(/\\n/g, \&quot;\&quot;);\n      // create a \&quot;hook\&quot; on navigation to send data via tracker\n      $tw.wiki.addEventListener(\&quot;change\&quot;, function(changes) {\n        // if first launch, initiates GA\n        if (GA_Launched === 0) {\n          // using ga \&quot;isogram\&quot; function\n          (function(i, s, o, g, r, a, m) {i['GoogleAnalyticsObject'] = r;i[r] = i[r] || function() {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date();a = s.createElement(o),  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');\n          GA_Launched = 1;\n        }\n        // get informations about GDPR opt-in (or not)\n        GA_GDPR = $tw.wiki.getTiddlerText(\&quot;$:/temp/GoogleAnalyticsGDPRoption\&quot;) || \&quot;yes\&quot;;\n        GA_GDPR = GA_GDPR.replace(/\\n/g, \&quot;\&quot;);\n        if (GA_GDPR !== \&quot;yes\&quot;) {\n          // GDPR has been cleared by opt-in\n          if (GA_TRACKALL === \&quot;yes\&quot;) {\n            ga('create', GA_ACCOUNT, GA_DOMAIN);\n            // dealing with user settings !todo check if options is associated with wiki or $tw\n            var options = $tw.wiki.options || {},\n              storyTitle = options.storyTitle || \&quot;$:/StoryList\&quot;,\n              historyTitle = options.historyTitle || \&quot;$:/HistoryList\&quot;;\n            // getting storyList (displayed) historyList (last displayed) and last item\n            var storyList = $tw.wiki.getTiddler(storyTitle).fields.list;\n            var history = $tw.wiki.getTiddlerText(historyTitle) || \&quot;[{\\\&quot;title\\\&quot;: \\\&quot;\&quot; + storyList[0] + \&quot;\\\&quot;}]\&quot;;\n            var historyList = JSON.parse(history);\n            var GA_CURRENT = historyList[historyList.length - 1].title;\n            // if last item has not been closed, prepare data and send to tracker\n            if (storyList.includes(GA_CURRENT)) {\n              // if history modified is true send tracker (else user may just closed another tiddler)\n              // note that clicking on a tiddlerlink from already opened tiddler will count\n              if ((historyList.length ===1 || changes[historyTitle]) &amp;&amp; GA_GDPR !== \&quot;yes\&quot;) {\n                ga('set', 'page', window.location.pathname + '/' + GA_CURRENT);\n                ga('set', 'title', GA_CURRENT);\n                ga('send', 'pageview');\n              }\n            }\n          } else {\n            // get informations about GDPR opt-out\n            GA_GDPR = $tw.wiki.getTiddlerText(\&quot;$:/temp/GoogleAnalyticsGDPRoption\&quot;) || \&quot;yes\&quot;;\n            GA_GDPR = GA_GDPR.replace(/\\n/g, \&quot;\&quot;);\n            // send data for whole page once only\n            ga('create', GA_ACCOUNT, GA_DOMAIN);\n            ga('send', 'pageview');\n          }\n        }\n      });\n    }\n  }\n})();\n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;startup&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/disclaimer&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/disclaimer&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;i18n disclaimer_common $:/plugins/sycom/g-analytics&gt;&gt;\n\n&lt;$reveal type=\&quot;match\&quot; stateTitle=\&quot;$:/temp/GoogleAnalyticsDNT\&quot; text=\&quot;yes\&quot;&gt;\n\n&lt;&lt;i18n disclaimer_dnt $:/plugins/sycom/g-analytics&gt;&gt;\n&lt;/$reveal&gt;\n\n&lt;$reveal type=\&quot;nomatch\&quot; stateTitle=\&quot;$:/temp/GoogleAnalyticsDNT\&quot; text=\&quot;yes\&quot;&gt;\n   &lt;$reveal type=\&quot;nomatch\&quot; stateTitle=\&quot;$:/temp/GoogleAnalyticsGDPRoption\&quot; text=\&quot;no\&quot;&gt;\n\n&lt;&lt;i18n disclaimer_gdpr $:/plugins/sycom/g-analytics&gt;&gt;\n   &lt;/$reveal&gt;\n   &lt;$reveal type=\&quot;match\&quot; stateTitle=\&quot;$:/temp/GoogleAnalyticsGDPRoption\&quot; text=\&quot;no\&quot;&gt;\n\n&lt;&lt;i18n disclaimer_nogdpr $:/plugins/sycom/g-analytics&gt;&gt;\n      &lt;$reveal type=\&quot;match\&quot; stateTitle=\&quot;$:/plugins/sycom/g-analytics/settings/track_all\&quot; text=\&quot;yes\&quot;&gt;\n&lt;&lt;i18n disclaimer_internal $:/plugins/sycom/g-analytics&gt;&gt;\n      &lt;/$reveal&gt;\n\n&lt;&lt;i18n disclaimer_settings $:/plugins/sycom/g-analytics&gt;&gt;\n   &lt;/$reveal&gt;\n&lt;/$reveal&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/disclaimer_notification&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/disclaimer_notification&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;i18n disclaimer_notification $:/plugins/sycom/g-analytics&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_common&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_common&quot;,
+            &quot;text&quot;: &quot;As many website do, this wiki can use [[Google Analytics|https://analytics.google.com]] (via the [[G-Analytics plugin|$:/plugins/sycom/g-analytics]]) to help analyse how much visitors use this site and where they come from. Google uses “[[cookies|https://en.wikipedia.org/wiki/HTTP_cookie]]”, which are small text files placed on your computer, to collect standard internet log information and visitor behaviour information in an anonymous form.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_dnt&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_dnt&quot;,
+            &quot;text&quot;: &quot;However, as you are visiting, with your browser in private mode or have activated [[Do Not Track|http://donottrack.us/]], the plugin is fully deactivated. So no information can be collected nor sent anywhere.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_gdpr&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_gdpr&quot;,
+            &quot;text&quot;: &quot;However, as you did not \&quot;opt-in\&quot; to be part of our survey panel, the plugin is deactivated for now and no information will be collected nor sent anywhere. You may change your mind whenever you want by just checking this &amp;nbsp;&lt;&lt;slideCheck $:/temp/GoogleAnalyticsGDPRoption '' 'no' 'yes' 'yes' 'tracking?'&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_internal&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_internal&quot;,
+            &quot;text&quot;: &quot;Note also that as ''internal link tracker option is activated'' on this wiki, so the tracker will send the title of each tiddler you're visiting (still anonymously though).\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_nogdpr&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_nogdpr&quot;,
+            &quot;text&quot;: &quot;As you did accept to be part of our panel, the plugin is now collecting data about your navigation.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification&quot;,
+            &quot;text&quot;: &quot;This website would like to know more about your visit by enabling an analytics tracker (and //cookies//). If you allow it, please check here &amp;nbsp;&lt;&lt;slideCheck $:/temp/GoogleAnalyticsGDPRoption '' 'no' 'yes' 'yes' 'tracking?'&gt;&gt;. &lt;$link to={{$:/plugins/sycom/g-analytics/settings/disclaimer_title!!caption}} &gt;read more&lt;/$link&gt;.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_settings&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_settings&quot;,
+            &quot;text&quot;: &quot;Your anonymity is safe here but you may wish to disable all tracking since data are sent to Google who may use them for marketing purpose. The plugin is compliant with [[Do Not Track|http://donottrack.us/]]. So,\n\n* if you enable ''do not track'' option ''in your browser'' and reload the page the wiki will not collect nor send data any more. You may also use privacy extensions to control which site can track you. [[All About Do Not Track|https://allaboutdnt.com/]] website provide usefull informations about all this.\n* some browsers enable do not track when using \&quot;private mode\&quot; ([[Firefox|http://firefox.com]] does). If you visit the wiki from those browsers in \&quot;private mode\&quot; no data will be sent either.\n* you may also want to \&quot;opt-out\&quot;. If so, uncheck this &lt;&lt;slideCheck $:/temp/GoogleAnalyticsGDPRoption '' 'no' 'yes' 'yes' 'tracking?'&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/settings&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/settings&quot;,
+            &quot;text&quot;: &quot;You have two value and one option parameters to set, ''only first is mandatory''. You may (should?) also customize privacy disclaimers to fit your wiki language or local laws. Save and reload after changing.\n\n!!Parameters\n\n''[[Google Analytics Account|$:/GoogleAnalyticsAccount]]'' (mandatory) : your^^1^^ code of the form `UA-XXXXXX-XX` where X are digits&lt;br/&gt;&lt;$edit-text tiddler=\&quot;$:/GoogleAnalyticsAccount\&quot; default=\&quot;\&quot; tag=\&quot;input\&quot;/&gt;\n\n''[[Google Analytics Domain|$:/GoogleAnalyticsDomain]]'' (optional) : the website URL where the TiddlyWiki file is published. Defaults to `auto` if not set.&lt;br/&gt;&lt;$edit-text tiddler=\&quot;$:/GoogleAnalyticsDomain\&quot; default=\&quot;\&quot; tag=\&quot;input\&quot;/&gt;\n\n&lt;&lt;slideCheck $:/plugins/sycom/g-analytics/settings/track_all '' 'yes' 'no' 'no' 'track all tiddlers'&gt;&gt; If you want the tracker to track also internal links, check this (will set [[Google Analytics Track All|$:/plugins/sycom/g-analytics/settings/track_all]] to \&quot;yes\&quot;)\n\n^^1^^ //if not, you may send data to other Google Analytics user.//\n\n!! Privacy information customizing\nYou may personalize or translate messages displayed by the plugin by editing those tiddlers (see different cases below). Please note that future updates of plugin may revert your edits.\n\n* [[Notification message|$:/plugins/sycom/g-analytics/disclaimer_notification]]\n\n* ''Privacy disclaimer''\n*# Title : &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/g-analytics/settings/disclaimer_title\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/usage&quot;,
+            &quot;text&quot;: &quot;!! Create a Google Analytics account\n\nIf you don't already have an account:\n\n# Go to the Google Analytics website: http://www.google.com/analytics/\n# Click the ''Access Google Analytics'' button and follow instructions to set up your account\n# Enter the URL where the wiki is hosted\n# Note the Tracking ID for this domain of the form `UA-XXXXXX-XX`\n\n!! Install the plugin on your local copy of the TiddlyWiki\n\n# ''Backup your TiddlyWiki''. Just in case\n# Install the plugin via the plugin manager in control panel\n# Save the TiddlyWiki and refresh the page to load the plugin\n# Go to [[$:/ControlPanel]] &gt; Plugins tab and unfold the Google Analytics Plugin\n# Go to the //settings// tab and edit the parameters\n# Save the TiddlyWiki\n\n!! Upload the new version of your TiddlyWiki\n\n# Upload the saved TiddlyWiki to TiddlySpot, GitHub, GitLab or other web host\n# Return to your Google Analytics page to check that your site is being tracked\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_common&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_common&quot;,
+            &quot;text&quot;: &quot;Comme le font beaucoup de sites internet, ce wiki utilise [[Google Analytics|https://analytics.google.com]] (via le plugin [[G-Analytics plugin|$:/plugins/sycom/g-analytics]]) pour aider à analyser combien de visiteurs utilisent le site et d'où ils viennent. Google utilise des “[[cookies|https://fr.wikipedia.org/wiki/Cookie_(informatique)]]”, qui sont de petit fichiers texte placés sur votre ordinateur pour collecter des informations de connexion classique sous une forme anonyme.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_dnt&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_dnt&quot;,
+            &quot;text&quot;: &quot;Toutefois, comme vous visitez ce wiki avec votre navigateur en mode \&quot;navigation privée\&quot; ou que vous avez activé [[Do Not Track|http://donottrack.us/]], le plugin est complètement désactivé. Aucune information ne pourra être collectée ni envoyée nulle part.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_gdpr&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_gdpr&quot;,
+            &quot;text&quot;: &quot;Toutefois, comme vous n'avez pas fait le choix d'intégrer notre panel de suivi, le plugin est désactivé pour le moment et aucune information ne sera collectée ni envoyée nulle part. Vous pouvez changer d'avis à tout moment juste en validant ici &amp;nbsp;&lt;&lt;slideCheck $:/temp/GoogleAnalyticsGDPRoption '' 'no' 'yes' 'yes' 'suivi?'&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_internal&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_internal&quot;,
+            &quot;text&quot;: &quot;Notez également que ''le suivi de navigation interne est activé'' sur ce wiki. Le plugin collectera donc des données sur le titre de chaque tiddler visité (toujours anonymement).\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_nogdpr&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_nogdpr&quot;,
+            &quot;text&quot;: &quot;Comme vous avez accepté d'intégrer notre panel de suivi, le plugin collecte désormais des informations sur votre navigation.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_notification&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_notification&quot;,
+            &quot;text&quot;: &quot;Ce wiki aimerait en savoir plus sur votre visite par l'activation du suivi Google Analytics (et des //cookies//). Si vous l'autorisez, merci de le valider ici &amp;nbsp;&lt;&lt;slideCheck $:/temp/GoogleAnalyticsGDPRoption '' 'no' 'yes' 'yes' 'suivi?'&gt;&gt;. &lt;$link to={{$:/plugins/sycom/g-analytics/settings/disclaimer_title!!caption}} &gt;en savoir plus&lt;/$link&gt;.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_settings&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/disclaimer_settings&quot;,
+            &quot;text&quot;: &quot;Votre anonymat est préservé ici, mais vous voudrez peut-être désactiver toute collecte de statistique, dans la mesure où les données sont envoyées à Google qui peut les utiliser à des fins commerciales. Le plugin est compatible avec [[Do Not Track|http://donottrack.us/]]. Donc,\n\n* si vous activez l'option ''ne pas pister'' (//do not track//) ''dans votre navigateur'' le wiki ne collectera et n'enverra plus aucune donnée. Il est également possible d'utiliser des extensions pour votre navigateur qui contrôlent qui vous piste. Le site [[All About Do Not Track|https://allaboutdnt.com/]] (en anglais) fourni des informations utiles sur ce sujet.\n* certains navigateurs activent //do not track// lorsque l'on passe en mode \&quot;navigation privée\&quot; ([[Firefox|http://firefox.com]] le fait). Si vous visitez le wiki dans ce mode aucune donnée ne sera alors envoyée.\n* dans tous les cas vous pouvez aussi faire le choix de sortir du panel &lt;&lt;slideCheck $:/temp/GoogleAnalyticsGDPRoption '' 'no' 'yes' 'yes' 'tracking?'&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/readme&quot;,
+            &quot;text&quot;: &quot;Ce [plugin G-Analytics](#$:/plugins/sycom/g-analytics) constitue une alternative à celui que vous trouverez dans la librairie officielle de TiddlyWiki.\n\nIl est compatible avec [Do Not Track][dnt] et avec le [RGPD][rgpd]. Il permet aussi un suivi de la navigation d'un tiddler à l'autre.\n\nVoyez la [page de demonstration][plugindemo] ou la documentation intégrée pour voir comment il fonctionne.\n\n## Sources / licenses\n* basé sur [le plugin officiel][official] de TiddlyWiki qui intègre [le code officiel de Google][googlecode]\n* [ce plugin][source] est sous une licence [BSD 3-Clause license][license] très similaire à celle de TiddlyWiki.\n\n[plugindemo]: https://sycom.gitlab.io/TiddlyWiki-Plugins\n[official]: https://github.com/Jermolene/TiddlyWiki5/tree/master/plugins/tiddlywiki/googleanalytics\n[googlecode]: https://developers.google.com/analytics/devguides/collection/analyticsjs\n[dnt]: http://donottrack.us/\n[source]: https://framagit.org/sycom/TiddlyWiki-Plugins/plugins/sycom/g-analytics\n[rgpd]: https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es\n[license]: https://framagit.org/sycom/TiddlyWiki-Plugins/LICENSE.md\n&quot;,
+            &quot;type&quot;: &quot;text/x-markdown&quot;,
+            &quot;caption&quot;: &quot;Lisez-moi&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/settings&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/settings&quot;,
+            &quot;text&quot;: &quot;Il y a deux paramètres et une option à régler, ''seul le premier est obligatoire''. Vous pouvez (devriez?) également personnaliser les messages d'information sur la vie privée pour les adapter à votre langue ou aux règlements en vigueur localement. Sauvegardez et rechargez le wiki après changement.\n\n!!Paramètres\n\n''[[Compte Google Analytics|$:/GoogleAnalyticsAccount]]'' (obligatoire) : votre^^1^^ code sous la forme `UA-XXXXXX-XX` où X sont des nombres&lt;br/&gt;&lt;$edit-text tiddler=\&quot;$:/GoogleAnalyticsAccount\&quot; default=\&quot;\&quot; tag=\&quot;input\&quot;/&gt;\n\n''[[Domaine Google Analytics|$:/GoogleAnalyticsDomain]]'' (optionnel) : l'adresse du site où le wiki est publié. Par défaut, `auto` if not set.&lt;br/&gt;&lt;$edit-text tiddler=\&quot;$:/GoogleAnalyticsDomain\&quot; default=\&quot;\&quot; tag=\&quot;input\&quot;/&gt;\n\n&lt;&lt;slideCheck $:/plugins/sycom/g-analytics/settings/track_all '' 'yes' 'no' 'no' 'suivre tous les tiddlers'&gt;&gt; Si vous souhaitez suivre la navigation interne au wiki, activez cette option (mettra [[Google Analytics Track All|$:/plugins/sycom/g-analytics/settings/track_all]] à la valeur \&quot;yes\&quot;)\n\n^^1^^ //sinon, vous risquez d'envoyer vos données de suivi sur un autre compte Analytics (ou nulle part)//\n\n!! Personnalisation des informations sur la vie privée\nVous pouvez personnaliser ou traduire les messages affichés par le plugin en éditant ces différents tiddlers. Notez que des mises à jours du plugin nécessiteront peut-être des mises à jour de votre part.\n\n* [[Message de notification|$:/plugins/sycom/g-analytics/disclaimer_notification]]\n\n* ''Informations sur la vie privée''\n** Titre du message : &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/g-analytics/settings/disclaimer_title\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/fr-FR/usage&quot;,
+            &quot;text&quot;: &quot;!! Créez-vous un compte Google Analytics\n\nSi vous n'avez pas déjà un compte :\n\n# Rendez vous sur le site de Google Analytics : http://www.google.com/analytics/\n# Cliquez sur le bouton ''Accéder à Google Analytics'' et suivez les instructions pour créer votre compte\n# Donnez l'adresse URL à laquelle votre wiki est hébergé\n# Récupérez l'identifiant de suivi pour ce domaine sous la forme `UA-XXXXXX-XX`\n\n!! Installez le plugin sur votre TiddlyWiki\n\n# ''Faites une sauvegarde de votre TiddlyWiki''. Juste au cas où\n# Installez le plugin en le glissant déposant depuis ici sur votre wiki\n# Enregistrez votre TiddlyWiki et rafraichissez la page pour mettre en route le plugin\n# Allez dans [[$:/ControlPanel]] &gt; onglet Plugins et dépliez le plugin Google Analytics\n# Allez dans l'onglet //settings// et mettez à jour les paramètres\n# Sauvegardez votre TiddlyWiki\n\n!! Chargez la nouvelle version de votre TiddlyWiki\n\n# Envoyez la nouvelle version de votre TiddlyWiki sur TiddlySpot, GitHub, GitLab ou tout autre hébergeur\n# Retournez à votre page Google Analytics page pour vérifier que votre site est bien suivi.\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/icon&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/icon&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Image&quot;,
+            &quot;text&quot;: &quot;&lt;svg class=\&quot;feather tc-image-feather-icons tc-image-button\&quot; viewBox=\&quot;0 0 128 128\&quot; width=\&quot;22pt\&quot; height=\&quot;22pt\&quot;&gt;\n&lt;g&gt;\n&lt;path d=\&quot;M65 5L13 35v61l52 30 53-30V35L65 5zm-.8 27c28.2 0 44.3 32.2 44.3 32.2S92.4 96.4 64.2 96.4c-28.2 0-44.3-32.2-44.3-32.2S36 32 64.2 32z\&quot;/&gt;\n&lt;path d=\&quot;M64.2 46.5a17.6 17.6 0 0 0-17.7 17.7 17.6 17.6 0 0 0 17.7 17.6 17.6 17.6 0 0 0 17.6-17.6 17.6 17.6 0 0 0-17.6-17.7zm.7 5.2a24.6 24.6 0 0 1 9.2 1.8v5a19.7 19.7 0 0 0-4.2-1.7 16 16 0 0 0-4.2-.5c-2.6 0-4.6.7-6 2-1.5 1.4-2.2 3.4-2.2 6s.7 4.5 2 6c1.4 1.3 3.4 2 5.9 2h1.9a7.8 7.8 0 0 0 1.5-.5v-4.7h-4V63h10.3v11.7a24.2 24.2 0 0 1-5.1 1.7c-1.8.4-3.6.6-5.5.6-4.2 0-7.6-1.2-10-3.4a11.8 11.8 0 0 1-3.8-9.2c0-3.9 1.3-7 3.8-9.2A15 15 0 0 1 65 51.7z\&quot;/&gt;\n&lt;/g&gt;\n&lt;/svg&gt;\n&quot;
+        },
+        &quot;$:/ext/modules/macros/i18n-macro.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/ext/modules/macros/i18n-macro.js\ntype: application/javascript\nmodule-type: macro\nversion: 0.3.0\n\ni18n macro for easiest translation of any string outside lingo\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\n/*\ni18n macro enables automatic translation of a tiddler in wiki language (if exists)\ncould, maybe, in the future, take care of browser language\n*/\n\nexports.name = \&quot;i18n\&quot;;\n\nexports.params = [\n  {name: \&quot;title\&quot;}, // short title of the tiddler (without translation path)\n  {name: \&quot;domain\&quot;}, // translation path (default $:)\n  {name: \&quot;dico\&quot;}, // tells if mode is dictionnary or tiddler (default false)\n  {name: \&quot;orig_lang\&quot;}, // original tiddler language (default en-GB)\n  {name: \&quot;inline\&quot;} // boolean for inline transclusion (default false)\n];\n\n/*\nRun the macro\n*/\nexports.run = function(title,domain,dico,orig_lang,inline) {\n  // if first run, will create a styling tiddler for edit button\n  if($tw.wiki.getTiddler(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;) === undefined) {\n    $tw.wiki.setText(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;,\&quot;text\&quot;,null,\&quot;.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} div:hover &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}\&quot;);\n    $tw.wiki.setText(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;,\&quot;tags\&quot;,null,\&quot;$:/tags/Stylesheet\&quot;);\n  }\n  // whatever, let's go for translation\n\tvar parent = this.parentDomNode,\n    title = title || this.getVariable(\&quot;currentTiddler\&quot;),\n    dom = domain || \&quot;$:\&quot;,\n    dico = dico || \&quot;no\&quot;,\n    base = orig_lang || \&quot;en-GB\&quot;,\n    inline = inline || false,\n    language = this.wiki.getTiddler(\&quot;$:/language\&quot;).fields.text || \&quot;$:/languages/en-GB\&quot;,\n    lang = (this.wiki.getTiddler(language) !== undefined ?\n      this.wiki.getTiddler(language).fields.name :\n      \&quot;en-GB\&quot;),\n    // getting base and translation tiddler depending on \&quot;dico\&quot; mode active\n    tid = (dico === \&quot;dico\&quot; ?\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+base) :\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title)),\n    translation = (dico === \&quot;dico\&quot; ?\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+lang) :\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title)),\n    option = {};\n    if(inline === true) option.parseAsInline = true;\n  // checks if there is a translation for the tiddlers\n  if(!translation) {\n  // if not checks if there is an original\n    if(!tid) {\n      // if not displays a text telling the original is not defined\n      return (dico === \&quot;dico\&quot; ?\n        \&quot;&lt;div class='tc-tiddler-info'&gt;sorry but there is not any [[\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;]] dictionnary tiddler&lt;/div&gt;\&quot; :\n        \&quot;&lt;div class='tc-tiddler-info'&gt;sorry but there is not any [[\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;]] tiddler&lt;/div&gt;\&quot;)\n    }\n  // if yes, displays original\n    else {\n      var html;\n      if(dico === \&quot;dico\&quot;) { // dictionnary reference\n        html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+base+ \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n        html += \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang + \&quot;' class='i18n-edit alert'&gt; + \&quot; + lang + \&quot;&lt;/$link&gt;\&quot;;\n        html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;##\&quot;+title + \&quot;}}\&quot;;\n      }\n      else { // full tiddler reference\n        html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n        html += \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;' class='i18n-edit alert'&gt; + \&quot; + lang + \&quot;&lt;/$link&gt;\&quot;;\n        html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;}}\&quot;;\n      }\n      return html;\n    }\n\t}\n\telse {\n    var html;\n    if(dico === \&quot;dico\&quot;) { // dictionnary reference\n      html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n      html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;##\&quot;+title + \&quot;}}\&quot;;\n    }\n    else  { // full tiddler reference\n      html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n      html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;}}\&quot;;\n    }\n    return html;\n  }\n};\n\n})();\n&quot;,
+            &quot;title&quot;: &quot;$:/ext/modules/macros/i18n-macro.js&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;macro&quot;,
+            &quot;version&quot;: &quot;0.3.0&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/notification&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/notification&quot;,
+            &quot;tags&quot;: &quot;$:/tags/PageTemplate&quot;,
+            &quot;text&quot;: &quot;&lt;$reveal type=\&quot;nomatch\&quot; state=\&quot;$:/temp/HideAnalyticsWarning\&quot; text=\&quot;yes\&quot;&gt;\n    &lt;div class=\&quot;tc-plugin-reload-warning\&quot;&gt;\n        &lt;$set name=\&quot;tv-config-toolbar-class\&quot; value=\&quot;\&quot;&gt;\n\n{{$:/plugins/sycom/g-analytics/disclaimer_notification}}&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;$button set=\&quot;$:/temp/HideAnalyticsWarning\&quot; setTo=\&quot;yes\&quot; class=\&quot;tc-btn-invisible\&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;\n        &lt;/$set&gt;\n    &lt;/div&gt;\n&lt;/$reveal&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/i18n/en-GB/readme&quot;,
+            &quot;text&quot;: &quot;This [G-Analytics plugin](#$:/plugins/sycom/g-analytics) is an alternative version for the official plugin you can find in TiddlyWiki library.\n\nIt's compliant with [Do Not Track][dnt] and also with [GDPR][rgpd]. It enables also individual tiddlers tracking.\n\nHave a look at [demo page on the web][plugindemo] or at integrated documentation to see how it works.\n\n## Sources / licenses\n* based upon [official google analytics plugin][official] of TiddlyWiki which implements [official Google code][googlecode]\n* [this plugin][source] is released under similar [BSD 3-Clause license][license] as TiddlyWiki.\n\n[plugindemo]: https://sycom.gitlab.io/TiddlyWiki-Plugins\n[official]: https://github.com/Jermolene/TiddlyWiki5/tree/master/plugins/tiddlywiki/googleanalytics\n[googlecode]: https://developers.google.com/analytics/devguides/collection/analyticsjs\n[dnt]: http://donottrack.us/\n[source]: https://framagit.org/sycom/TiddlyWiki-Plugins/plugins/sycom/g-analytics\n[rgpd]: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation\n[license]: https://framagit.org/sycom/TiddlyWiki-Plugins/LICENSE.md\n&quot;,
+            &quot;type&quot;: &quot;text/x-markdown&quot;,
+            &quot;created&quot;: &quot;20151119173416000&quot;,
+            &quot;modified&quot;: &quot;20190332172200000&quot;,
+            &quot;caption&quot;: &quot;Readme&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/readme&quot;,
+            &quot;caption&quot;: &quot;Readme&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;i18n readme $:/plugins/sycom/g-analytics&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/settings&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/settings&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Macro&quot;,
+            &quot;text&quot;: &quot;\\define slideCheck(tid field:'text' checked unchecked default tooltip)\n&lt;$checkbox class=\&quot;switch\&quot;\n  tiddler=\&quot;$tid$\&quot;\n  field=\&quot;$field$\&quot;\n  checked=\&quot;$checked$\&quot;\n  unchecked=\&quot;$unchecked$\&quot;\n  default=\&quot;$default$\&quot;&gt;\n  &lt;div title=\&quot;$tooltip$\&quot; class=\&quot;slider round\&quot;&gt;&lt;/div&gt;\n  &lt;span class=\&quot;switchtext\&quot;&gt;&lt;/span&gt;\n&lt;/$checkbox&gt;\n\\end\n\n&lt;&lt;i18n settings $:/plugins/sycom/g-analytics&gt;&gt;\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/Stylesheet&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/Stylesheet&quot;,
+            &quot;created&quot;: &quot;20190419133629300&quot;,
+            &quot;modified&quot;: &quot;20190423183600000&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;/* inspired from https://codepen.io/AllThingsSmitty/pen/MmxxOz */\n.switch {\n  margin:0;\n  display: inline-block;\n  height: 1.5em;\n  position: relative;\n  width:2.6em;\n  vertical-align:bottom;\n}.switch input[type=checkbox] {\n  display:none;\n}.slider {\n  background-color: #888888;\n  bottom: 0;\n  cursor: pointer;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  transition: .4s;\n}.slider:before {\n  background-color: #fff;\n  bottom: 4px;\n  content: \&quot;\&quot;;\n  height: 1em;\n  left: 4px;\n  position: absolute;\n  transition: .4s;\n  width: 1em;\n}input:checked + span .slider {\n  background-color: #5778d8;\n}input:checked + span .slider:before {\n  transform: translateX(1em);\n}span .slider.round {\n  border-radius: 1em;\n}span .slider.round:before {\n  border-radius: 50%;\n}input + span .switchtext:before {\n  display: inline-block;\n  color: white;\n  content: 'no';\n  font-size: .85em;\n  transform: translateX(1.6em) translatey(-.15em);\n}input:checked + span .switchtext:before {\n  content: 'on';\n  transform: translateX(.2em) translatey(-.15em);\n}.tc-plugin-reload-warning input + span .switchtext:before {\n  transform: translateX(.75em) translatey(-.15em);\n}.tc-plugin-reload-warning input:checked + span .switchtext:before {\n  transform: translateX(-.8em) translatey(-.15em);\n}\n&quot;
+        },
+        &quot;$:/plugins/sycom/g-analytics/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/sycom/g-analytics/usage&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;i18n usage $:/plugins/sycom/g-analytics&gt;&gt;\n&quot;
+        }
+    }
+}</pre>
+</div>
+<div created="20190829101447372" creator="GR6A" modified="20190829102259189" modifier="GR6A" title="$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification">
+<pre>[[GR6A4S2N4EN4BG|AXES]] tracks anonymous usage data. You can &lt;$link to={{$:/plugins/sycom/g-analytics/settings/disclaimer_title!!caption}} &gt;learn more and disable this&lt;/$link&gt;.
+</pre>
+</div>
+<div created="20190829100446381" creator="GR6A" modified="20190829100446381" modifier="GR6A" title="$:/plugins/sycom/g-analytics/settings/track_all">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" contributor="Sylvain Comte" core-version="&gt;=5.0.0" dependents="" description="Google Analytics: website statistics" list="readme settings usage" plugin-type="plugin" title="$:/plugins/tiddlywiki/googleanalytics" type="application/json" version="5.1.19">
 <pre>{
@@ -9465,17 +9770,35 @@ Error message and password prompt
 <div created="20190820081852181" creator="GR6A" modified="20190823141416564" modifier="GR6A" title="$:/state/folded/Добредошли">
 <pre>hide</pre>
 </div>
+<div created="20190829095957861" creator="GR6A" modified="20190829095957861" modifier="GR6A" title="$:/state/plugin-info--1456866696-$:/plugins/sycom/atom-feed---958248217">
+<pre>contents</pre>
+</div>
 <div created="20190824141530645" creator="GR6A" modified="20190824141726964" modifier="GR6A" title="$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463">
 <pre>settings</pre>
 </div>
-<div created="20190824160736501" creator="GR6A" modified="20190824160736501" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core">
-<pre>yes</pre>
+<div created="20190829095940486" creator="GR6A" modified="20190829095940486" modifier="GR6A" title="$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics---1020831059">
+<pre>contents</pre>
+</div>
+<div created="20190824160736501" creator="GR6A" modified="20190829103457039" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core">
+<pre>no</pre>
 </div>
 <div created="20190824160741109" creator="GR6A" modified="20190824160745189" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core---553713294">
 <pre>readme</pre>
 </div>
-<div created="20190824135922212" creator="GR6A" modified="20190824135922212" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics">
-<pre>yes</pre>
+<div created="20190829100105949" creator="GR6A" modified="20190829102702778" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed">
+<pre>no</pre>
+</div>
+<div created="20190829100108029" creator="GR6A" modified="20190829100323020" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed--1836497366">
+<pre>usage</pre>
+</div>
+<div created="20190829100057045" creator="GR6A" modified="20190829103439528" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics">
+<pre>no</pre>
+</div>
+<div created="20190829100058421" creator="GR6A" modified="20190829102745418" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics---23073584">
+<pre>usage</pre>
+</div>
+<div created="20190824135922212" creator="GR6A" modified="20190829103455231" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics">
+<pre>no</pre>
 </div>
 <div created="20190824135939947" creator="GR6A" modified="20190824135939947" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics--1678223282">
 <pre>settings</pre>
@@ -9498,14 +9821,14 @@ Error message and password prompt
 <div created="20190727122118330" creator="GR6A" modified="20190824141524597" modifier="GR6A" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
 </div>
-<div created="20190527084454472" creator="GR6A" modified="20190824160757149" modifier="GR6A" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20190527084454472" creator="GR6A" modified="20190829100019790" modifier="GR6A" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20190527084749631" creator="GR6A" modified="20190824141803035" modifier="GR6A" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190527084743950" creator="GR6A" modified="20190826145247919" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20190527084743950" creator="GR6A" modified="20190829100206604" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20190527094536831" modified="20190527094542047" title="$:/state/tag-manager/2D0s">
 <pre>closed</pre>
@@ -9513,11 +9836,20 @@ Error message and password prompt
 <div created="20190728053022426" modified="20190728053022426" title="$:/status/UserName">
 <pre>GR6A</pre>
 </div>
-<div created="20190826145222546" creator="GR6A" list="AXES [[Our signal-to-noise problem]] s2nLogicstics s2nOnlineLogistics Welcome Добредошли" modified="20190826145222546" modifier="GR6A" title="$:/StoryList">
+<div created="20190829103436049" creator="GR6A" list="$:/ControlPanel AXES [[Our signal-to-noise problem]] s2nLogicstics s2nOnlineLogistics Welcome Добредошли" modified="20190829103436049" modifier="GR6A" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190728052952703" modified="20190728052952703" title="$:/temp/advancedsearch">
 <pre>[!is[system]sort[title]]</pre>
+</div>
+<div created="20190829100142719" creator="GR6A" modified="20190829100142719" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
+<pre>.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} div:hover &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}</pre>
+</div>
+<div created="20190829100556796" creator="GR6A" modified="20190829100556796" modifier="GR6A" title="$:/temp/GoogleAnalyticsGDPRoption">
+<pre>no</pre>
+</div>
+<div created="20190829102334204" creator="GR6A" modified="20190829102334204" modifier="GR6A" title="$:/temp/HideAnalyticsWarning">
+<pre>yes</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -11558,6 +11890,31 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language#Example
     &lt;/g&gt;
   &lt;/g&gt;
 &lt;/svg&gt;</pre>
+</div>
+<div created="20190829100142723" creator="GR6A" modified="20190829103421589" modifier="GR6A" title="This wiki uses Google Analytics">
+<pre>&lt;&lt;i18n disclaimer_common $:/plugins/sycom/g-analytics&gt;&gt;
+
+&lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsDNT&quot; text=&quot;yes&quot;&gt;
+
+&lt;&lt;i18n disclaimer_dnt $:/plugins/sycom/g-analytics&gt;&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal type=&quot;nomatch&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsDNT&quot; text=&quot;yes&quot;&gt;
+   &lt;$reveal type=&quot;nomatch&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsGDPRoption&quot; text=&quot;no&quot;&gt;
+
+&lt;&lt;i18n disclaimer_gdpr $:/plugins/sycom/g-analytics&gt;&gt;
+   &lt;/$reveal&gt;
+   &lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsGDPRoption&quot; text=&quot;no&quot;&gt;
+
+&lt;&lt;i18n disclaimer_nogdpr $:/plugins/sycom/g-analytics&gt;&gt;
+      &lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/plugins/sycom/g-analytics/settings/track_all&quot; text=&quot;yes&quot;&gt;
+&lt;&lt;i18n disclaimer_internal $:/plugins/sycom/g-analytics&gt;&gt;
+      &lt;/$reveal&gt;
+
+&lt;&lt;i18n disclaimer_settings $:/plugins/sycom/g-analytics&gt;&gt;
+   &lt;/$reveal&gt;
+&lt;/$reveal&gt;
+</pre>
 </div>
 <div created="20190527084325315" creator="GR6A" modified="20190820155829182" modifier="GR6A" tags="en" title="Welcome" type="text/vnd.tiddlywiki">
 <pre>Please, feel welcome to the [[fractals|https://www.chaoticafractals.com/gallery]]&lt;&lt;ref &quot;2d0-3&quot;&gt;&gt; of my thoughts! This is where [https://gr6a4s2n4en4bg.github.io] the source of [...]&lt;&lt;ref &quot;2d0-1&quot;&gt;&gt;
