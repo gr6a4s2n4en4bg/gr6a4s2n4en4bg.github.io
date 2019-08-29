@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>GR6A4S2N4EN4BG — s/n disruption al/together</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-<link rel="alternate" type="application/atom+xml" title="last published - feed" href="./atom.xml" />
+
 
 </head>
 <body class="tc-body">
@@ -141,10 +141,6 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
-<li>$:/config/Plugins/Disabled/$:/plugins/sycom/g-analytics</li>
-
-<li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics</li>
-
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
@@ -163,15 +159,7 @@ Error message and password prompt
 
 <li>$:/palette</li>
 
-<li>$:/plugins/sycom/atom-feed</li>
-
-<li>$:/plugins/sycom/atom-feed/publicationWebsite</li>
-
 <li>$:/plugins/sycom/g-analytics</li>
-
-<li>$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification</li>
-
-<li>$:/plugins/sycom/g-analytics/settings/track_all</li>
 
 <li>$:/plugins/tiddlywiki/googleanalytics</li>
 
@@ -197,23 +185,11 @@ Error message and password prompt
 
 <li>$:/state/folded/Добредошли</li>
 
-<li>$:/state/plugin-info--1456866696-$:/plugins/sycom/atom-feed---958248217</li>
-
 <li>$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463</li>
-
-<li>$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics---1020831059</li>
 
 <li>$:/state/plugin-info--896887961-$:/core</li>
 
 <li>$:/state/plugin-info--896887961-$:/core---553713294</li>
-
-<li>$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed</li>
-
-<li>$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed--1836497366</li>
-
-<li>$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics</li>
-
-<li>$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics---23073584</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics</li>
 
@@ -248,8 +224,6 @@ Error message and password prompt
 <li>$:/temp/ext/modules/macros/i18n-style</li>
 
 <li>$:/temp/GoogleAnalyticsGDPRoption</li>
-
-<li>$:/temp/HideAnalyticsWarning</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -512,12 +486,6 @@ Error message and password prompt
 </div>
 <div created="20190820090249113" creator="GR6A" modified="20190820090249113" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
-</div>
-<div created="20190829102706466" creator="GR6A" modified="20190829102725874" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/sycom/g-analytics">
-<pre>no</pre>
-</div>
-<div created="20190829103452943" creator="GR6A" modified="20190829103452943" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics">
-<pre>yes</pre>
 </div>
 <div created="20190729065654666" creator="GR6A" modified="20190729065654666" modifier="GR6A" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
@@ -9408,7 +9376,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/sycom/atom-feed]]</pre>
+# [[$:/plugins/sycom/g-analytics]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9442,119 +9410,6 @@ Error message and password prompt
 </div>
 <div created="20190527084632159" modified="20190527084632159" title="$:/palette">
 <pre>$:/palettes/Rocker</pre>
-</div>
-<div author="Sylvain Comte" bag="default" core-version="&gt;=5.0.0" dependents="" description="Atom feed" list="readme usage" plugin-type="plugin" revision="0" source="https://framagit.org/sycom/TiddlyWiki-Plugins" title="$:/plugins/sycom/atom-feed" type="application/json" version="0.0.2">
-<pre>{
-    &quot;tiddlers&quot;: {
-        &quot;Working on atom feed&quot;: {
-            &quot;title&quot;: &quot;Working on atom feed&quot;,
-            &quot;created&quot;: &quot;20190406203049600&quot;,
-            &quot;modified&quot;: &quot;20190407152226190&quot;,
-            &quot;tags&quot;: &quot;&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;Since i'm not getting all the purpose of the pretty complex Dullroar's https://github.com/dullroar/TW5-atomfeed/ let's try de deploy a very lightweight version.\n\nWhat we need :\n\n* a [[global template|$:/plugins/sycom/atom-feed/atom.xml]] for the atom.xml output file\n* a template [[for each item|$:/plugins/sycom/atom-feed/templates/itemfeed]] of the feed\n* a [[list of lattest tiddlers|$:/plugins/sycom/atom-feed/entrylist]] based upon this template (and maybe latest updated tiddlers?).\n* a $:/plugins/sycom/atom-feed/publicationWebsite parameter\n* an information for bots and browser through a //rawMarkup// tagged [[tiddler|$:/plugins/sycom/atom-feed/rel-alternate]]\n\nStarting example from [[RFC 4287|https://tools.ietf.org/html/rfc4287]]\n\n```\n&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&gt;\n   &lt;feed xmlns=\&quot;http://www.w3.org/2005/Atom\&quot;&gt;\n     &lt;title type=\&quot;text\&quot;&gt;dive into mark&lt;/title&gt;\n     &lt;subtitle type=\&quot;html\&quot;&gt;\n       A &amp;lt;em&amp;gt;lot&amp;lt;/em&amp;gt; of effort\n       went into making this effortless\n     &lt;/subtitle&gt;\n     &lt;updated&gt;2005-07-31T12:29:29Z&lt;/updated&gt;\n     &lt;id&gt;tag:example.org,2003:3&lt;/id&gt;\n     &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n      hreflang=\&quot;en\&quot; href=\&quot;http://example.org/\&quot;/&gt;\n     &lt;link rel=\&quot;self\&quot; type=\&quot;application/atom+xml\&quot;\n      href=\&quot;http://example.org/feed.atom\&quot;/&gt;\n     &lt;rights&gt;Copyright (c) 2003, Mark Pilgrim&lt;/rights&gt;\n     &lt;generator uri=\&quot;http://www.example.com/\&quot; version=\&quot;1.0\&quot;&gt;\n       Example Toolkit\n     &lt;/generator&gt;\n     &lt;entry&gt;\n       &lt;title&gt;Atom draft-07 snapshot&lt;/title&gt;\n       &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n        href=\&quot;http://example.org/2005/04/02/atom\&quot;/&gt;\n       &lt;link rel=\&quot;enclosure\&quot; type=\&quot;audio/mpeg\&quot; length=\&quot;1337\&quot;\n        href=\&quot;http://example.org/audio/ph34r_my_podcast.mp3\&quot;/&gt;\n       &lt;id&gt;tag:example.org,2003:3.2397&lt;/id&gt;\n       &lt;updated&gt;2005-07-31T12:29:29Z&lt;/updated&gt;\n       &lt;published&gt;2003-12-13T08:29:29-04:00&lt;/published&gt;\n       &lt;author&gt;\n         &lt;name&gt;Mark Pilgrim&lt;/name&gt;\n         &lt;uri&gt;http://example.org/&lt;/uri&gt;\n         &lt;email&gt;f8dy@example.com&lt;/email&gt;\n       &lt;/author&gt;\n       &lt;contributor&gt;\n         &lt;name&gt;Sam Ruby&lt;/name&gt;\n       &lt;/contributor&gt;\n       &lt;contributor&gt;\n         &lt;name&gt;Joe Gregorio&lt;/name&gt;\n       &lt;/contributor&gt;\n       &lt;content type=\&quot;xhtml\&quot; xml:lang=\&quot;en\&quot;\n        xml:base=\&quot;http://diveintomark.org/\&quot;&gt;\n         &lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n           &lt;p&gt;&lt;i&gt;[Update: The Atom draft is finished.]&lt;/i&gt;&lt;/p&gt;\n         &lt;/div&gt;\n       &lt;/content&gt;\n     &lt;/entry&gt;\n   &lt;/feed&gt;\n```&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/usage&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/usage&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;caption&quot;: &quot;Usage&quot;,
-            &quot;text&quot;: &quot;Once plugin is installed, set your website address and numbers of latest tiddlers to list here\n\n* website url &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/publicationWebsite\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\n* tiddlers number &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/entrylist\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\nThen add this line to your build command (in tiddlywiki.info file)\n\n```\n\&quot;feed\&quot;: [\n  \&quot;--rendertiddler\&quot;,\&quot;$:/plugins/sycom/atom-feed/atom.xml\&quot;,\&quot;atom.xml\&quot;,\&quot;text/plain\&quot;]\n```\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/readme&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/readme&quot;,
-            &quot;text&quot;: &quot;Le [plugin atom feed](#$:/plugins/sycom/atom-feed) permet d'ajouter un flux atom ([RFC 4287][RFC]) à votre TiddlyWiki au moment de sa construction (commande `build`). Il crée un fichier `atom.xml` contenant la liste des xx derniers articles de votre wiki.\n\n## Sources / licenses\n* le **plugin atom feed** est sous une [licence BSD 3-Clause][license] similaire à celle de TiddlyWiki\n\n[RFC]: https://tools.ietf.org/html/rfc4287\n[license]: https://framagit.org/sycom/TiddlyWiki-Plugins/LICENSE.md\n&quot;,
-            &quot;type&quot;: &quot;text/x-markdown&quot;,
-            &quot;caption&quot;: &quot;Readme&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/usage&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/fr-FR/usage&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;caption&quot;: &quot;Usage&quot;,
-            &quot;text&quot;: &quot;Une fois le plugin installé, indiquez l'adresse de publication de votre site et le nombre des derniers tiddlers à faire apparaitre dans le flux ici\n\n* url du site web &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/publicationWebsite\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\n* nombre de tiddlers &lt;$edit-text tiddler=\&quot;$:/plugins/sycom/atom-feed/entrylist\&quot; field=\&quot;caption\&quot; tag=\&quot;input\&quot;/&gt;\n\nEnsuite ajoutez cette ligne à votre commande `build` (dans le fichier tiddlywiki.info)\n\n```\n\&quot;feed\&quot;: [\n  \&quot;--rendertiddler\&quot;,\&quot;$:/plugins/sycom/atom-feed/atom.xml\&quot;,\&quot;atom.xml\&quot;,\&quot;text/plain\&quot;]\n```\n&quot;
-        },
-        &quot;$:/ext/modules/macros/i18n-macro.js&quot;: {
-            &quot;text&quot;: &quot;/*\\\ntitle: $:/ext/modules/macros/i18n-macro.js\ntype: application/javascript\nmodule-type: macro\nversion: 0.3.0\n\ni18n macro for easiest translation of any string outside lingo\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\n/*\ni18n macro enables automatic translation of a tiddler in wiki language (if exists)\ncould, maybe, in the future, take care of browser language\n*/\n\nexports.name = \&quot;i18n\&quot;;\n\nexports.params = [\n  {name: \&quot;title\&quot;}, // short title of the tiddler (without translation path)\n  {name: \&quot;domain\&quot;}, // translation path (default $:)\n  {name: \&quot;dico\&quot;}, // tells if mode is dictionnary or tiddler (default false)\n  {name: \&quot;orig_lang\&quot;}, // original tiddler language (default en-GB)\n  {name: \&quot;inline\&quot;} // boolean for inline transclusion (default false)\n];\n\n/*\nRun the macro\n*/\nexports.run = function(title,domain,dico,orig_lang,inline) {\n  // if first run, will create a styling tiddler for edit button\n  if($tw.wiki.getTiddler(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;) === undefined) {\n    $tw.wiki.setText(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;,\&quot;text\&quot;,null,\&quot;.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} div:hover &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}\&quot;);\n    $tw.wiki.setText(\&quot;$:/temp/ext/modules/macros/i18n-style\&quot;,\&quot;tags\&quot;,null,\&quot;$:/tags/Stylesheet\&quot;);\n  }\n  // whatever, let's go for translation\n\tvar parent = this.parentDomNode,\n    title = title || this.getVariable(\&quot;currentTiddler\&quot;),\n    dom = domain || \&quot;$:\&quot;,\n    dico = dico || \&quot;no\&quot;,\n    base = orig_lang || \&quot;en-GB\&quot;,\n    inline = inline || false,\n    language = this.wiki.getTiddler(\&quot;$:/language\&quot;).fields.text || \&quot;$:/languages/en-GB\&quot;,\n    lang = (this.wiki.getTiddler(language) !== undefined ?\n      this.wiki.getTiddler(language).fields.name :\n      \&quot;en-GB\&quot;),\n    // getting base and translation tiddler depending on \&quot;dico\&quot; mode active\n    tid = (dico === \&quot;dico\&quot; ?\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+base) :\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title)),\n    translation = (dico === \&quot;dico\&quot; ?\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+lang) :\n      this.wiki.getTiddler(dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title)),\n    option = {};\n    if(inline === true) option.parseAsInline = true;\n  // checks if there is a translation for the tiddlers\n  if(!translation) {\n  // if not checks if there is an original\n    if(!tid) {\n      // if not displays a text telling the original is not defined\n      return (dico === \&quot;dico\&quot; ?\n        \&quot;&lt;div class='tc-tiddler-info'&gt;sorry but there is not any [[\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;]] dictionnary tiddler&lt;/div&gt;\&quot; :\n        \&quot;&lt;div class='tc-tiddler-info'&gt;sorry but there is not any [[\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;]] tiddler&lt;/div&gt;\&quot;)\n    }\n  // if yes, displays original\n    else {\n      var html;\n      if(dico === \&quot;dico\&quot;) { // dictionnary reference\n        html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+base+ \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n        html += \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang + \&quot;' class='i18n-edit alert'&gt; + \&quot; + lang + \&quot;&lt;/$link&gt;\&quot;;\n        html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;##\&quot;+title + \&quot;}}\&quot;;\n      }\n      else { // full tiddler reference\n        html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n        html += \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;' class='i18n-edit alert'&gt; + \&quot; + lang + \&quot;&lt;/$link&gt;\&quot;;\n        html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+base+\&quot;/\&quot;+title + \&quot;}}\&quot;;\n      }\n      return html;\n    }\n\t}\n\telse {\n    var html;\n    if(dico === \&quot;dico\&quot;) { // dictionnary reference\n      html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n      html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;##\&quot;+title + \&quot;}}\&quot;;\n    }\n    else  { // full tiddler reference\n      html = \&quot;&lt;$link to='\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;' class='i18n-edit'&gt;{{$:/core/images/edit-button}}&lt;/$link&gt;\&quot;;\n      html += \&quot;\\n\\n{{\&quot; + dom+\&quot;/i18n/\&quot;+lang+\&quot;/\&quot;+title + \&quot;}}\&quot;;\n    }\n    return html;\n  }\n};\n\n})();\n&quot;,
-            &quot;title&quot;: &quot;$:/ext/modules/macros/i18n-macro.js&quot;,
-            &quot;type&quot;: &quot;application/javascript&quot;,
-            &quot;module-type&quot;: &quot;macro&quot;,
-            &quot;version&quot;: &quot;0.3.0&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/readme&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/i18n/en-GB/readme&quot;,
-            &quot;text&quot;: &quot;The [atom feed plugin](#$:/plugins/sycom/atom-feed) will help adding an atom ([RFC 4287][RFC]) feed to your TiddlyWiki when you //build// it. It will create an `atom.xml` file with the list of latest xx tiddlers of your wiki.\n\n## Sources / licenses\n* **atom feed plugin** is released under similar [BSD 3-Clause license][license] as TiddlyWiki\n\n[RFC]: https://tools.ietf.org/html/rfc4287\n[license]: https://framagit.org/sycom/TiddlyWiki-Plugins/LICENSE.md\n&quot;,
-            &quot;type&quot;: &quot;text/x-markdown&quot;,
-            &quot;created&quot;: &quot;20190321120000000&quot;,
-            &quot;modified&quot;: &quot;20190328144500000&quot;,
-            &quot;caption&quot;: &quot;Readme&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/readme&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/readme&quot;,
-            &quot;caption&quot;: &quot;Readme&quot;,
-            &quot;text&quot;: &quot;&lt;&lt;i18n readme $:/plugins/sycom/atom-feed&gt;&gt;\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/atom.xml&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/atom.xml&quot;,
-            &quot;created&quot;: &quot;20190406214444000&quot;,
-            &quot;modified&quot;: &quot;20190407150839004&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline\n&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&gt;\n   &lt;feed xmlns=\&quot;http://www.w3.org/2005/Atom\&quot;&gt;\n     &lt;title type=\&quot;html\&quot;&gt;{{$:/SiteTitle}}&lt;/title&gt;\n     &lt;subtitle type=\&quot;html\&quot;&gt;{{$:/SiteSubtitle}}&lt;/subtitle&gt;\n     &lt;updated&gt;{{$:/plugins/sycom/atom-feed/publicationDate}}&lt;/updated&gt;\n     &lt;id&gt;{{$:/plugins/sycom/atom-feed/publicationWebsite}}&lt;/id&gt;\n     &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n      hreflang=\&quot;{{$:/plugins/sycom/atom-feed/wikiLang}}\&quot; href=\&quot;{{$:/plugins/sycom/atom-feed/publicationWebsite}}\&quot;/&gt;\n     &lt;link rel=\&quot;self\&quot; type=\&quot;application/atom+xml\&quot;\n      href=\&quot;{{$:/plugins/sycom/atom-feed/publicationWebsite}}/atom.xml\&quot;/&gt;\n     &lt;rights&gt;&lt;/rights&gt;\n     &lt;generator uri=\&quot;https://sycom.gitlab.io/TiddlyWiki-Plugins/#AtomFeed%20Plugin\&quot; version=\&quot;{{$:/plugins/sycom/atom-feed!!version}}\&quot;&gt;\n       Sycom's AtomFeed TiddlyWiki plugin\n     &lt;/generator&gt;\n\n{{$:/plugins/sycom/atom-feed/entrylist}}\n\n&lt;/feed&gt;\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/entrylist&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/entrylist&quot;,
-            &quot;created&quot;: &quot;20190407141826200&quot;,
-            &quot;modified&quot;: &quot;20190407145916341&quot;,
-            &quot;caption&quot;: &quot;25&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\define feedFilter() [all[tiddlers]![This wiki uses Google analytics]!prefix[Draft of ]!prefix[$:/]!prefix[-$:/]!sort[created]limit[$(numFeed)$]]\n\n&lt;$set name=numFeed value={{!!caption}}&gt;\n\n&lt;$list filter=&lt;&lt;feedFilter&gt;&gt; template=\&quot;$:/plugins/sycom/atom-feed/templates/itemfeed\&quot;&gt;\n\n&lt;/$list&gt;\n&lt;/$set&gt;\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/templates/itemfeed&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/templates/itemfeed&quot;,
-            &quot;created&quot;: &quot;20190406210152700&quot;,
-            &quot;modified&quot;: &quot;20190407150714665&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;`&lt;entry&gt;\n   &lt;title&gt;`&lt;$view field=\&quot;caption\&quot;&gt;{{!!title}}&lt;/$view&gt;`&lt;/title&gt;\n       &lt;link rel=\&quot;alternate\&quot; type=\&quot;text/html\&quot;\n        href=\&quot;`&lt;$text text={{$:/plugins/sycom/atom-feed/publicationWebsite!!caption}}/&gt;/#{{!!title}}`\&quot;/&gt;\n       &lt;id&gt;`{{!!title}}`&lt;/id&gt;\n       &lt;updated&gt;`&lt;$view field=modified format=date template=\&quot;YYYY-0MM-0DDT0hh:0mm:0ss\&quot;/&gt;`&lt;/updated&gt;\n       &lt;published&gt;`&lt;$view field=created format=date template=\&quot;YYYY-0MM-0DDT0hh:0mm:0ss\&quot;/&gt;`&lt;/published&gt;\n       &lt;author&gt;\n         &lt;name&gt;`{{!!modifier}}`&lt;/name&gt;\n       &lt;/author&gt;\n       &lt;content type=\&quot;html\&quot;&gt;\n\n`\n          &lt;$view field=\&quot;text\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n       `&lt;/content&gt;\n&lt;/entry&gt;`\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/usage&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/usage&quot;,
-            &quot;caption&quot;: &quot;Usage&quot;,
-            &quot;text&quot;: &quot;&lt;&lt;i18n usage $:/plugins/sycom/atom-feed&gt;&gt;\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/publicationDate&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/publicationDate&quot;,
-            &quot;created&quot;: &quot;20190407150203600&quot;,
-            &quot;modified&quot;: &quot;20190407150231675&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;&lt;now YYYY-0MM-0DDT0hh:0mm:0ss&gt;&gt;\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/publicationWebsite&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/publicationWebsite&quot;,
-            &quot;created&quot;: &quot;20190407150203600&quot;,
-            &quot;modified&quot;: &quot;20190407150231675&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;caption&quot;: &quot;https://sycom.gitlab.io/TiddlyWiki-Plugins&quot;,
-            &quot;text&quot;: &quot;Please set url in caption field\n&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/rel-alternate&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/rel-alternate&quot;,
-            &quot;created&quot;: &quot;20190407151615100&quot;,
-            &quot;modified&quot;: &quot;20190407152216117&quot;,
-            &quot;tags&quot;: &quot;$:/tags/RawMarkup&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;link rel=\&quot;alternate\&quot; type=\&quot;application/atom+xml\&quot; title=\&quot;last published - feed\&quot; href=\&quot;./atom.xml\&quot; /&gt;&quot;
-        },
-        &quot;$:/plugins/sycom/atom-feed/wikiLang&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/sycom/atom-feed/wikiLang&quot;,
-            &quot;created&quot;: &quot;20190407151615100&quot;,
-            &quot;modified&quot;: &quot;20190407152216117&quot;,
-            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;$view field=name tiddler={{$:/language}}&gt;en-GB&lt;/$view&gt;\n&quot;
-        }
-    }
-}</pre>
-</div>
-<div caption="https://gr6a4s2n4en4bg.github.io" created="20190407150203600" creator="GR6A" modified="20190829100344040" modifier="GR6A" title="$:/plugins/sycom/atom-feed/publicationWebsite" type="text/vnd.tiddlywiki">
-<pre>Please set url in caption field
-</pre>
 </div>
 <div author="JeremyRuston" bag="default" contributor="Sylvain Comte" core-version="&gt;=5.0.0" dependents="" description="G-Analytics: website statistics" list="readme settings usage" plugin-type="plugin" revision="0" title="$:/plugins/sycom/g-analytics" type="application/json" version="1.3.1">
 <pre>{
@@ -9706,13 +9561,6 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190829101447372" creator="GR6A" modified="20190829102259189" modifier="GR6A" title="$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification">
-<pre>[[GR6A4S2N4EN4BG|AXES]] tracks anonymous usage data. You can &lt;$link to={{$:/plugins/sycom/g-analytics/settings/disclaimer_title!!caption}} &gt;learn more and disable this&lt;/$link&gt;.
-</pre>
-</div>
-<div created="20190829100446381" creator="GR6A" modified="20190829100446381" modifier="GR6A" title="$:/plugins/sycom/g-analytics/settings/track_all">
-<pre>yes</pre>
-</div>
 <div author="JeremyRuston" contributor="Sylvain Comte" core-version="&gt;=5.0.0" dependents="" description="Google Analytics: website statistics" list="readme settings usage" plugin-type="plugin" title="$:/plugins/tiddlywiki/googleanalytics" type="application/json" version="5.1.19">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9770,35 +9618,17 @@ Error message and password prompt
 <div created="20190820081852181" creator="GR6A" modified="20190823141416564" modifier="GR6A" title="$:/state/folded/Добредошли">
 <pre>hide</pre>
 </div>
-<div created="20190829095957861" creator="GR6A" modified="20190829095957861" modifier="GR6A" title="$:/state/plugin-info--1456866696-$:/plugins/sycom/atom-feed---958248217">
-<pre>contents</pre>
-</div>
 <div created="20190824141530645" creator="GR6A" modified="20190824141726964" modifier="GR6A" title="$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463">
 <pre>settings</pre>
 </div>
-<div created="20190829095940486" creator="GR6A" modified="20190829095940486" modifier="GR6A" title="$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics---1020831059">
-<pre>contents</pre>
-</div>
-<div created="20190824160736501" creator="GR6A" modified="20190829103457039" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core">
-<pre>no</pre>
+<div created="20190824160736501" creator="GR6A" modified="20190824160736501" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core">
+<pre>yes</pre>
 </div>
 <div created="20190824160741109" creator="GR6A" modified="20190824160745189" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core---553713294">
 <pre>readme</pre>
 </div>
-<div created="20190829100105949" creator="GR6A" modified="20190829102702778" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed">
-<pre>no</pre>
-</div>
-<div created="20190829100108029" creator="GR6A" modified="20190829100323020" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/atom-feed--1836497366">
-<pre>usage</pre>
-</div>
-<div created="20190829100057045" creator="GR6A" modified="20190829103439528" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics">
-<pre>no</pre>
-</div>
-<div created="20190829100058421" creator="GR6A" modified="20190829102745418" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/sycom/g-analytics---23073584">
-<pre>usage</pre>
-</div>
-<div created="20190824135922212" creator="GR6A" modified="20190829103455231" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics">
-<pre>no</pre>
+<div created="20190824135922212" creator="GR6A" modified="20190824135922212" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics">
+<pre>yes</pre>
 </div>
 <div created="20190824135939947" creator="GR6A" modified="20190824135939947" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics--1678223282">
 <pre>settings</pre>
@@ -9821,14 +9651,14 @@ Error message and password prompt
 <div created="20190727122118330" creator="GR6A" modified="20190824141524597" modifier="GR6A" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
 </div>
-<div created="20190527084454472" creator="GR6A" modified="20190829100019790" modifier="GR6A" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20190527084454472" creator="GR6A" modified="20190824160757149" modifier="GR6A" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20190527084749631" creator="GR6A" modified="20190824141803035" modifier="GR6A" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190527084743950" creator="GR6A" modified="20190829100206604" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20190527084743950" creator="GR6A" modified="20190829105806278" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20190527094536831" modified="20190527094542047" title="$:/state/tag-manager/2D0s">
 <pre>closed</pre>
@@ -9836,20 +9666,17 @@ Error message and password prompt
 <div created="20190728053022426" modified="20190728053022426" title="$:/status/UserName">
 <pre>GR6A</pre>
 </div>
-<div created="20190829103436049" creator="GR6A" list="$:/ControlPanel AXES [[Our signal-to-noise problem]] s2nLogicstics s2nOnlineLogistics Welcome Добредошли" modified="20190829103436049" modifier="GR6A" title="$:/StoryList">
+<div created="20190829105750773" creator="GR6A" list="[[This wiki uses Google Analytics]] AXES [[Our signal-to-noise problem]] s2nLogicstics s2nOnlineLogistics Welcome Добредошли" modified="20190829105750773" modifier="GR6A" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190728052952703" modified="20190728052952703" title="$:/temp/advancedsearch">
 <pre>[!is[system]sort[title]]</pre>
 </div>
-<div created="20190829100142719" creator="GR6A" modified="20190829100142719" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
+<div created="20190829105730753" creator="GR6A" modified="20190829105730753" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
 <pre>.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} div:hover &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}</pre>
 </div>
-<div created="20190829100556796" creator="GR6A" modified="20190829100556796" modifier="GR6A" title="$:/temp/GoogleAnalyticsGDPRoption">
+<div created="20190829105758463" creator="GR6A" modified="20190829105758463" modifier="GR6A" title="$:/temp/GoogleAnalyticsGDPRoption">
 <pre>no</pre>
-</div>
-<div created="20190829102334204" creator="GR6A" modified="20190829102334204" modifier="GR6A" title="$:/temp/HideAnalyticsWarning">
-<pre>yes</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -11891,7 +11718,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language#Example
   &lt;/g&gt;
 &lt;/svg&gt;</pre>
 </div>
-<div created="20190829100142723" creator="GR6A" modified="20190829103421589" modifier="GR6A" title="This wiki uses Google Analytics">
+<div created="20190829105730758" creator="GR6A" modified="20190829105730758" modifier="GR6A" title="This wiki uses Google Analytics">
 <pre>&lt;&lt;i18n disclaimer_common $:/plugins/sycom/g-analytics&gt;&gt;
 
 &lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsDNT&quot; text=&quot;yes&quot;&gt;
