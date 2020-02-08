@@ -137,11 +137,27 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/.gr6a/macros/list-search</li>
+
+<li>$:/.gr6a/template/list-search</li>
+
+<li>$:/.gr6a/template/tag-tiddlers_TEMP-FAIL</li>
+
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
+<li>$:/config/Navigation/UpdateHistory</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
 
@@ -154,6 +170,8 @@ Error message and password prompt
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions</li>
 
@@ -175,7 +193,11 @@ Error message and password prompt
 
 <li>$:/plugins/sycom/g-analytics</li>
 
+<li>$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_nogdpr</li>
+
 <li>$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification</li>
+
+<li>$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_settings</li>
 
 <li>$:/plugins/sycom/g-analytics/settings/track_all</li>
 
@@ -187,21 +209,33 @@ Error message and password prompt
 
 <li>$:/state/edit/references--12553295</li>
 
+<li>$:/state/edit/references--1854822767</li>
+
 <li>$:/state/edit/references--551407247</li>
 
 <li>$:/state/edit/references-1837989909</li>
 
 <li>$:/state/editpreviewtype</li>
 
+<li>$:/state/folded/1Search</li>
+
+<li>$:/state/folded/2D0s</li>
+
 <li>$:/state/folded/AXES</li>
 
+<li>$:/state/folded/CURRENTs</li>
+
 <li>$:/state/folded/DUMPs</li>
+
+<li>$:/state/folded/en</li>
 
 <li>$:/state/folded/GR6A</li>
 
 <li>$:/state/folded/Our signal-to-noise problem</li>
 
 <li>$:/state/folded/popupStyle</li>
+
+<li>$:/state/folded/s2n</li>
 
 <li>$:/state/folded/s2nDig4Orthodoxy</li>
 
@@ -218,6 +252,8 @@ Error message and password prompt
 <li>$:/state/folded/s2nOnlineLogistics</li>
 
 <li>$:/state/folded/s2nOnOffLine</li>
+
+<li>$:/state/folded/s2nTiddlyPlayground</li>
 
 <li>$:/state/folded/s2nTools</li>
 
@@ -269,8 +305,6 @@ Error message and password prompt
 
 <li>$:/state/tab/sidebar--595412856</li>
 
-<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
-
 <li>$:/state/tag-manager/2D0s</li>
 
 <li>$:/status/UserName</li>
@@ -284,6 +318,14 @@ Error message and password prompt
 <li>$:/temp/GoogleAnalyticsGDPRoption</li>
 
 <li>$:/temp/info-plugin</li>
+
+<li>$:/temp/list-search-1Search</li>
+
+<li>$:/temp/list-search-1Search-tags</li>
+
+<li>$:/temp/list-search-tag-2D0s</li>
+
+<li>$:/temp/list-search-tag-en</li>
 
 <li>$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.19/index.html/$:/languages/ca-ES</li>
 
@@ -491,15 +533,31 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
 
+<li>1Search</li>
+
+<li>2d0-templated-tags-pages</li>
+
+<li>2D0s</li>
+
 <li>AXES</li>
 
+<li>CURRENTs</li>
+
+<li>Custom data-styles</li>
+
+<li>Draft of '2D0s' by GR6A</li>
+
 <li>DUMPs</li>
+
+<li>en</li>
 
 <li>GR6A</li>
 
 <li>Our signal-to-noise problem</li>
 
 <li>popupStyle</li>
+
+<li>s2n</li>
 
 <li>s2nDig4Orthodoxy</li>
 
@@ -516,6 +574,8 @@ Error message and password prompt
 <li>s2nOnlineLogistics</li>
 
 <li>s2nOnOffLine</li>
+
+<li>s2nTiddlyPlayground</li>
 
 <li>s2nTools</li>
 
@@ -541,16 +601,113 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200128163809425" creator="GR6A" modified="20200128164555483" modifier="GR6A" tags="$:/tags/Macro" title="$:/.gr6a/macros/list-search" type="text/vnd.tiddlywiki">
+<pre>\define list-search(
+filter:&quot;[tags[]]&quot;,
+search:&quot;search:title&quot;,
+state:&quot;$:/temp/list-search&quot;,
+template:&quot;$:/core/ui/ListItemTemplate&quot;,
+placeholder:&quot;Filter&quot;,
+limit:100000
+)
+&lt;div&gt;
+&lt;$edit-text
+tiddler=&quot;$state$&quot;
+type=&quot;search&quot;
+tag=&quot;input&quot;
+default=&quot;&quot;
+placeholder=&quot;$placeholder$&quot;/&gt;
+&lt;/div&gt;
+
+&lt;$reveal state=&quot;$state$&quot; type=&quot;match&quot; text=&quot;&quot;&gt;
+&lt;$list filter=&quot;$filter$+[limit[$limit$]]&quot; template=&quot;$template$&quot;/&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal state=&quot;$state$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
+&lt;$list filter=&quot;$filter$+[$search${$state$}]+[limit[$limit$]]&quot; template=&quot;$template$&quot;/&gt;
+&lt;/$reveal&gt;
+\end
+&lt;!-- gr6a:FROM: https://tobibeer.github.io/tb5/#list-search --&gt;</pre>
+</div>
+<div created="20200128164901515" creator="GR6A" modified="20200201163510472" modifier="GR6A" tags="" title="$:/.gr6a/template/list-search" type="text/vnd.tiddlywiki">
+<pre>&lt;!-- 
+gr6a:FROM: https://tobibeer.github.io/tb5/#%24%3A%2F.tb%2Ftemplate%2Ftagged-timeline 
+--&gt;
+&lt;dt&gt;
+&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+
+&amp;raquo; &lt;$list filter=&quot;[all[current]tags[]sort[title]]-[&lt;remove&gt;]&quot; template=&quot;$:/core/ui/TagTemplate&quot;/&gt;
+&lt;br&gt;
+&lt;i&gt;&lt;span class=&quot;&quot;&gt;modified &lt;$view field=&quot;modified&quot; format=&quot;relativedate&quot;/&gt;, created &lt;$view field=&quot;created&quot; format=&quot;relativedate&quot;/&gt;&lt;/span&gt;&lt;/i&gt;
+
+&lt;/dt&gt;
+&lt;dd&gt;
+
+&lt;$list filter=&quot;[all[current]get[text]splitbefore[
+
+]addsuffix[]]&quot;&gt;
+&lt;&lt;currentTiddler&gt;&gt;
+&lt;/$list&gt;
+&lt;/dd&gt;
+
+&lt;br&gt;</pre>
+</div>
+<div created="20200201174150701" creator="GR6A" modified="20200208155513416" modifier="GR6A" tags="" title="$:/.gr6a/template/tag-tiddlers_TEMP-FAIL">
+<pre>&lt;$set name=&quot;varTitle1&quot; value=&quot;{{!!title}}&quot;&gt;
+&lt;$set name=&quot;varTitle2&quot; value=&quot;&lt;$view tiddler=&lt;&lt;storyTiddler&gt;&gt; field=title/&gt;&quot;&gt;
+
+
+&lt;&lt;list-search
+&quot;[tag[{{!!title}}]!is[system]!sort[modified]] get[text]splitbefore[
+
+]addsuffix[... ...]]&quot;
+&quot;search&quot;
+&quot;$:/temp/list-search-example-tag-{{!!title}}-template&quot;
+&quot;$:/.gr6a/template/list-search&quot;
+placeholder:&quot; search this tag&quot;
+limit:3&gt;&gt;
+
+&lt;$list filter=&quot;[title[{{!!title}}]]&quot;&gt;
+&lt;&lt;storyTiddler&gt;&gt;
+{{{ [&lt;storyTiddler&gt;] }}}
+&lt;/$list&gt;
+
+
+@@background-color:yellow;
+This is:
+&lt;br&gt;1. {{!!title}} 
+&lt;br&gt;2. &lt;$view field=title/&gt; 
+&lt;br&gt;3. &lt;$view tiddler=&lt;&lt;currentTiddler&gt;&gt; field=title/&gt;
+&lt;br&gt;4. &lt;&lt;varTitle2&gt;&gt;
+&lt;br&gt;5. &lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;!-- https://groups.google.com/d/msg/tiddlywiki/sjeqVYMwE4s/kjRK18XHCAAJ --&gt;
+@@
+</pre>
+</div>
+<div created="20200202112624827" creator="GR6A" modified="20200203132934272" modifier="GR6A" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permaview</pre>
+</div>
+<div created="20200202112626398" creator="GR6A" modified="20200202112626398" modifier="GR6A" title="$:/config/Navigation/UpdateHistory">
+<pre>yes</pre>
+</div>
 <div created="20190820090245745" creator="GR6A" modified="20190820090245745" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
 </div>
-<div created="20190820090249113" creator="GR6A" modified="20190901174347445" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
+<div created="20190903095053374" creator="GR6A" modified="20200208190022300" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>hide</pre>
 </div>
-<div created="20190901174343845" creator="GR6A" modified="20190901174343845" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
+<div created="20190820090249113" creator="GR6A" modified="20200208190153101" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>hide</pre>
 </div>
-<div created="20190901174346405" creator="GR6A" modified="20190901174346405" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
+<div created="20200208190021168" creator="GR6A" modified="20200208190021168" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
+<pre>hide</pre>
+</div>
+<div created="20190903095941299" creator="GR6A" modified="20200208190021578" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
+<pre>hide</pre>
+</div>
+<div created="20190903095109014" creator="GR6A" modified="20200208190015092" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
+<pre>hide</pre>
+</div>
+<div created="20200208190015632" creator="GR6A" modified="20200208190159090" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
 <pre>hide</pre>
 </div>
 <div created="20190829123903934" creator="GR6A" modified="20190829123903934" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics">
@@ -562,13 +719,16 @@ Error message and password prompt
 <div created="20190901173623904" creator="GR6A" modified="20190901173623904" modifier="GR6A" title="$:/config/Tiddlers/TitleLinks">
 <pre>yes</pre>
 </div>
-<div created="20190901174338877" creator="GR6A" modified="20190901174338877" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close">
+<div created="20200208190008746" creator="GR6A" modified="20200208190008746" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close">
 <pre>hide</pre>
 </div>
-<div created="20190901174337573" creator="GR6A" modified="20190901174337573" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
+<div created="20200208190009349" creator="GR6A" modified="20200208191048522" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
 <pre>hide</pre>
 </div>
-<div created="20190901174335118" creator="GR6A" modified="20190901174335118" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
+<div created="20200208132325353" creator="GR6A" modified="20200208190520750" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold">
+<pre>hide</pre>
+</div>
+<div created="20200208190009829" creator="GR6A" modified="20200208190009829" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
 <pre>hide</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.19">
@@ -9444,9 +9604,9 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190527084221931" creator="GR6A" modified="20190826145230131" modifier="GR6A" title="$:/DefaultTiddlers">
+<div created="20190527084221931" creator="GR6A" modified="20200208132300330" modifier="GR6A" title="$:/DefaultTiddlers">
 <pre>AXES
-[[Our signal-to-noise problem]]</pre>
+</pre>
 </div>
 <div created="20190824141539070" creator="GR6A" modified="20190824141539070" modifier="GR6A" title="$:/GoogleAnalyticsAccount">
 <pre>UA-98655852-3</pre>
@@ -9457,7 +9617,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/sycom/g-analytics]]</pre>
+# [[Custom data-styles]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9642,8 +9802,19 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190829165502091" creator="GR6A" modified="20190829165913624" modifier="GR6A" title="$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification">
-<pre>ANONYMOUS data is collected for each visit to GR6A4S2N4EN4BG</pre>
+<div created="20191211192120266" creator="GR6A" modified="20191211192236501" modifier="GR6A" title="$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_nogdpr">
+<pre>The plugin is now collecting data about your navigation.
+</pre>
+</div>
+<div created="20190829165502091" creator="GR6A" modified="20191211191427864" modifier="GR6A" title="$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_notification">
+<pre>ANONYMOUS data is [[processed|This wiki uses Google Analytics]] for each visit to GR6A4S2N4EN4BG</pre>
+</div>
+<div created="20191211193026233" creator="GR6A" modified="20191211193030202" modifier="GR6A" title="$:/plugins/sycom/g-analytics/i18n/en-GB/disclaimer_settings">
+<pre>Your anonymity is safe here but you may wish to disable all tracking since data are sent to Google who may use them for marketing purpose. The plugin is compliant with [[Do Not Track|http://donottrack.us/]]. So,
+
+* if you enable ''do not track'' option ''in your browser'' and reload the page the wiki will not collect nor send data any more. You may also use privacy extensions to control which site can track you. [[All About Do Not Track|https://allaboutdnt.com/]] website provide usefull informations about all this.
+* some browsers enable do not track when using &quot;private mode&quot; ([[Firefox|http://firefox.com]] does). If you visit the wiki from those browsers in &quot;private mode&quot; no data will be sent either.
+</pre>
 </div>
 <div created="20190829123837870" creator="GR6A" modified="20190829123837870" modifier="GR6A" title="$:/plugins/sycom/g-analytics/settings/track_all">
 <pre>yes</pre>
@@ -9681,6 +9852,9 @@ Error message and password prompt
 <div created="20190824081323829" creator="GR6A" modified="20190824081323830" modifier="GR6A" title="$:/state/edit/references--12553295">
 <pre>show</pre>
 </div>
+<div created="20200201174746313" creator="GR6A" modified="20200201174746313" modifier="GR6A" title="$:/state/edit/references--1854822767">
+<pre>show</pre>
+</div>
 <div created="20190824085105741" creator="GR6A" modified="20190824085105741" modifier="GR6A" title="$:/state/edit/references--551407247">
 <pre>show</pre>
 </div>
@@ -9690,53 +9864,71 @@ Error message and password prompt
 <div created="20190527093305419" modified="20190527093308243" title="$:/state/editpreviewtype">
 <pre>$:/core/ui/EditTemplate/body/preview/output</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/AXES">
+<div created="20200208140402949" creator="GR6A" modified="20200208140610650" modifier="GR6A" title="$:/state/folded/1Search">
 <pre>show</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/DUMPs">
+<div created="20200208140405058" creator="GR6A" modified="20200208140607901" modifier="GR6A" title="$:/state/folded/2D0s">
+<pre>show</pre>
+</div>
+<div created="20190901173821977" creator="GR6A" modified="20200208140830337" modifier="GR6A" title="$:/state/folded/AXES">
+<pre>show</pre>
+</div>
+<div created="20200208140408825" creator="GR6A" modified="20200208140408825" modifier="GR6A" title="$:/state/folded/CURRENTs">
 <pre>hide</pre>
+</div>
+<div created="20190901173821977" creator="GR6A" modified="20200208140410736" modifier="GR6A" title="$:/state/folded/DUMPs">
+<pre>hide</pre>
+</div>
+<div created="20200208140412570" creator="GR6A" modified="20200208140609340" modifier="GR6A" title="$:/state/folded/en">
+<pre>show</pre>
 </div>
 <div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/GR6A">
 <pre>hide</pre>
 </div>
-<div created="20190820091659699" creator="GR6A" modified="20190901173834648" modifier="GR6A" title="$:/state/folded/Our signal-to-noise problem">
-<pre>show</pre>
+<div created="20190820091659699" creator="GR6A" modified="20200208133341790" modifier="GR6A" title="$:/state/folded/Our signal-to-noise problem">
+<pre>hide</pre>
 </div>
 <div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/popupStyle">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nDig4Orthodoxy">
+<div created="20200208140418101" creator="GR6A" modified="20200208140611702" modifier="GR6A" title="$:/state/folded/s2n">
+<pre>show</pre>
+</div>
+<div created="20190901173821977" creator="GR6A" modified="20200208132456427" modifier="GR6A" title="$:/state/folded/s2nDig4Orthodoxy">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nDig4People">
+<div created="20190901173821977" creator="GR6A" modified="20200208140420608" modifier="GR6A" title="$:/state/folded/s2nDig4People">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nDig4Phrases">
+<div created="20190901173821977" creator="GR6A" modified="20200208180016035" modifier="GR6A" title="$:/state/folded/s2nDig4Phrases">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nDig4Visuals">
+<div created="20190901173821977" creator="GR6A" modified="20200208140424439" modifier="GR6A" title="$:/state/folded/s2nDig4Visuals">
 <pre>hide</pre>
 </div>
-<div created="20190820081852181" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nLogicstics">
+<div created="20190820081852181" creator="GR6A" modified="20200208140426131" modifier="GR6A" title="$:/state/folded/s2nLogicstics">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nNeology">
+<div created="20190901173821977" creator="GR6A" modified="20200208140428694" modifier="GR6A" title="$:/state/folded/s2nNeology">
 <pre>hide</pre>
 </div>
-<div created="20190820081852181" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nOnlineLogistics">
+<div created="20190820081852181" creator="GR6A" modified="20200208140430306" modifier="GR6A" title="$:/state/folded/s2nOnlineLogistics">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nOnOffLine">
+<div created="20190901173821977" creator="GR6A" modified="20200208140433486" modifier="GR6A" title="$:/state/folded/s2nOnOffLine">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nTools">
+<div created="20200208132510445" creator="GR6A" modified="20200208140436111" modifier="GR6A" title="$:/state/folded/s2nTiddlyPlayground">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/s2nVennSVG">
+<div created="20190901173821977" creator="GR6A" modified="20200208140437692" modifier="GR6A" title="$:/state/folded/s2nTools">
 <pre>hide</pre>
 </div>
-<div created="20190901173821977" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/This wiki uses Google Analytics">
+<div created="20190901173821977" creator="GR6A" modified="20200208140439858" modifier="GR6A" title="$:/state/folded/s2nVennSVG">
 <pre>hide</pre>
+</div>
+<div created="20190901173821977" creator="GR6A" modified="20200208190513162" modifier="GR6A" title="$:/state/folded/This wiki uses Google Analytics">
+<pre>show</pre>
 </div>
 <div created="20190820081852181" creator="GR6A" modified="20190901173821977" modifier="GR6A" title="$:/state/folded/Welcome">
 <pre>hide</pre>
@@ -9753,11 +9945,11 @@ Error message and password prompt
 <div created="20190824141530645" creator="GR6A" modified="20190824141726964" modifier="GR6A" title="$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463">
 <pre>settings</pre>
 </div>
-<div created="20190829123850693" creator="GR6A" modified="20190829123850693" modifier="GR6A" title="$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics">
-<pre>no</pre>
+<div created="20190829123850693" creator="GR6A" modified="20191211191325744" modifier="GR6A" title="$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics">
+<pre>yes</pre>
 </div>
-<div created="20190829123826806" creator="GR6A" modified="20190829123828102" modifier="GR6A" title="$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics---1020831059">
-<pre>settings</pre>
+<div created="20190829123826806" creator="GR6A" modified="20191211191330472" modifier="GR6A" title="$:/state/plugin-info--338135100-$:/plugins/sycom/g-analytics---1020831059">
+<pre>contents</pre>
 </div>
 <div created="20190824160736501" creator="GR6A" modified="20190824160736501" modifier="GR6A" title="$:/state/plugin-info--896887961-$:/core">
 <pre>yes</pre>
@@ -9780,13 +9972,13 @@ Error message and password prompt
 <div created="20190527093309051" creator="GR6A" modified="20190824110621820" modifier="GR6A" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190527094920061" creator="GR6A" modified="20190822151531971" modifier="GR6A" title="$:/state/sidebar">
+<div created="20190527094920061" creator="GR6A" modified="20200128182212729" modifier="GR6A" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20190728052952703" creator="GR6A" modified="20190901173544984" modifier="GR6A" title="$:/state/tab--1498284803">
+<div created="20190728052952703" creator="GR6A" modified="20200201172811294" modifier="GR6A" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20190527084631111" creator="GR6A" modified="20190901174328925" modifier="GR6A" title="$:/state/tab--1963855381">
+<div created="20190527084631111" creator="GR6A" modified="20200208132311035" modifier="GR6A" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20190820090054266" creator="GR6A" modified="20190820090101867" modifier="GR6A" title="$:/state/tab--2112689675">
@@ -9795,17 +9987,14 @@ Error message and password prompt
 <div created="20190727122118330" creator="GR6A" modified="20190824141524597" modifier="GR6A" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
 </div>
-<div created="20190527084454472" creator="GR6A" modified="20190901174323669" modifier="GR6A" title="$:/state/tab-1749438307">
+<div created="20190527084454472" creator="GR6A" modified="20200208132304671" modifier="GR6A" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
-<div created="20190527084749631" creator="GR6A" modified="20190824141803035" modifier="GR6A" title="$:/state/tab/moresidebar-1850697562">
+<div created="20190527084749631" creator="GR6A" modified="20200202102826967" modifier="GR6A" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190527084743950" creator="GR6A" modified="20190901174357229" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
+<div created="20190527084743950" creator="GR6A" modified="20200208191055249" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
-</div>
-<div created="20190901174341837" creator="GR6A" modified="20190901174411973" modifier="GR6A" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
 <div created="20190527094536831" modified="20190527094542047" title="$:/state/tag-manager/2D0s">
 <pre>closed</pre>
@@ -9813,14 +10002,14 @@ Error message and password prompt
 <div created="20190728053022426" modified="20190728053022426" title="$:/status/UserName">
 <pre>GR6A</pre>
 </div>
-<div created="20190901174302743" creator="GR6A" list="$:/core/ui/Buttons/save-wiki AXES [[Our signal-to-noise problem]]" modified="20190901174318902" modifier="GR6A" title="$:/StoryList">
+<div created="20200208190959178" creator="GR6A" list="$:/AdvancedSearch $:/core/ui/Buttons/save-wiki $:/ControlPanel [[Custom data-styles]] AXES" modified="20200208191104723" modifier="GR6A" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20190728052952703" creator="GR6A" modified="20190901173531254" modifier="GR6A" title="$:/temp/advancedsearch">
+<div created="20190728052952703" creator="GR6A" modified="20200201172816619" modifier="GR6A" title="$:/temp/advancedsearch">
 <pre>save-wiki</pre>
 </div>
-<div created="20190829105730753" creator="GR6A" modified="20190829105730753" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
-<pre>.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} div:hover &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}</pre>
+<div created="20190829105730753" creator="GR6A" modified="20191211191106642" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
+<pre>.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} /*****GM:: div:hover ::GM*****/ &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}</pre>
 </div>
 <div created="20190829105758463" creator="GR6A" modified="20190829105758463" modifier="GR6A" title="$:/temp/GoogleAnalyticsGDPRoption">
 <pre>no</pre>
@@ -9870,14 +10059,26 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1600&quot;
+            &quot;text&quot;: &quot;1280&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;900&quot;
+            &quot;text&quot;: &quot;720&quot;
         }
     }
 }</pre>
+</div>
+<div created="20200129084912941" creator="GR6A" modified="20200208180008580" modifier="GR6A" title="$:/temp/list-search-1Search">
+<pre></pre>
+</div>
+<div created="20200128183502999" creator="GR6A" modified="20200128183603427" modifier="GR6A" title="$:/temp/list-search-1Search-tags">
+<pre>template solution</pre>
+</div>
+<div created="20200208130807057" creator="GR6A" modified="20200208130808726" modifier="GR6A" title="$:/temp/list-search-tag-2D0s">
+<pre></pre>
+</div>
+<div created="20200128170741717" creator="GR6A" modified="20200128170810677" modifier="GR6A" title="$:/temp/list-search-tag-en">
+<pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20190824135856753" creator="GR6A" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20190824135856753" modifier="GR6A" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" server-url="https://tiddlywiki.com/library/v5.1.19/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.19/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.19">
 <pre></pre>
@@ -10557,7 +10758,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190824135859870" creator="GR6A" modified="20190824135900119" modifier="GR6A" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>anal</pre>
 </div>
-<div created="20190527084716437" creator="GR6A" modified="20190826114106218" modifier="GR6A" title="$:/temp/search">
+<div created="20190527084716437" creator="GR6A" modified="20200202102650698" modifier="GR6A" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20190824135856709" creator="GR6A" modified="20190824135856709" modifier="GR6A" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.19/index.html" url="https://tiddlywiki.com/library/v5.1.19/index.html">
@@ -13280,12 +13481,86 @@ select {
 <div created="20190822145358524" creator="GR6A" modified="20190822145358524" modifier="GR6A" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
 <pre>yes</pre>
 </div>
-<div created="20190826065148598" creator="GR6A" modified="20190826145842349" modifier="GR6A" tags="2D0s бг en s2nLogicstics s2n" title="AXES">
-<pre>!!! The [[best practice|s2nBestPractices]] to start participating in a language axis of the [[S2N framework|Our signal-to-noise problem]] is to subscribe to the relevant RSS feeds. For that, I like [[inoreader.com|https://www.inoreader.com]].
+<div created="20200128182621452" creator="GR6A" modified="20200129084855284" modifier="GR6A" tags="" title="1Search">
+<pre>This is a one stop search of both tags and tiddlers/nodlers ... ... ... ((used to be the playground for: https://tobibeer.github.io/tb5/#list-search))
 
-`EN` :: [[RSS|https://groups.google.com/forum/#!aboutgroup/s2n4en]] of [[Google group|https://groups.google.com/forum/#!forum/s2n4en]] :: RSS of [[Facebook group|https://www.facebook.com/s2n4en]] :: RSS of [[subReddit|https://www.reddit.com/r/S2N4EN/]] :: RSS of [[Twitter list|https://twitter.com/_GR6A/lists/s2n4en]] :: [[t.me/s2n4en|https://t.me/s2n4en]]
+&lt;span style=&quot;line-height:1.7em&quot;&gt;
 
-`BG` :: [[RSS|https://groups.google.com/forum/#!aboutgroup/s2n4bg]] of [[Google group|https://groups.google.com/forum/#!forum/s2n4bg]] :: RSS of [[Facebook group|https://www.facebook.com/s2n4bg]] :: RSS of [[subReddit|https://www.reddit.com/r/S2N4BG/]] :: RSS of [[Twitter list|https://twitter.com/_GR6A/lists/s2n4bg]] :: [[t.me/s2n4bg|https://t.me/s2n4bg]]
+&lt;&lt;list-search
+&quot;[tags[]!is[system]sort[title]limit[111]] -[[macros]]&quot;
+&quot;search&quot;
+&quot;$:/temp/list-search-1Search&quot;
+&quot;$:/core/ui/TagTemplate&quot;
+placeholder:&quot; » search for keywords&quot; &gt;&gt;
+
+&lt;/span&gt;
+
+Below is a list of ... ... ...
+&lt;div class=&quot;hideMe&quot;&gt;
+
+&lt;&lt;list-search
+&quot;[!is[system]!sort[modified]] get[text]splitbefore[
+
+]addsuffix[... ...]] -[[This wiki uses Google Analytics]]&quot;
+&quot;search&quot;
+&quot;$:/temp/list-search-1Search&quot;
+&quot;$:/.gr6a/template/list-search&quot;
+limit:3&gt;&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+.hideMe input {
+display:none;
+}
+&lt;/style&gt;</pre>
+</div>
+<div created="20200208152154595" creator="GR6A" modified="20200208181505089" modifier="GR6A" tags="2D0s" title="2d0-templated-tags-pages">
+<pre>Can't make a single template for all tag tiddlers, getting ``Recursive transclusion error in transclude widget`` since the tags pages use https://tobibeer.github.io/tb5/#list-search:
+
+```
+&lt;&lt;list-search
+&quot;[tag[{{!!title}}]!is[system]!sort[modified]]&quot;
+&quot;search&quot;
+&quot;$:/temp/list-search-example-tag-{{!!title}}-template&quot;
+&quot;$:/.gr6a/template/list-search&quot;
+placeholder:&quot;search this tag&quot;&gt;&gt;
+```
+And they go into the recursive loop when trying to (self-)reference their own titles via the template: [[$:/.gr6a/template/tag-tiddlers_TEMP-FAIL]] @@background-color:yellow;(in yellow are my script-kiddie attempts that came to nothing)@@. 
+
+This is way over my head, maybe these would point me to a solution: 
+[[ ???|http://tobibeer.github.io/tb5/#Passing%20Parameters%20To%20A%20Transclusion:Templates%20%5B%5BPassing%20Parameters%20To%20A%20Transclusion%5D%5D%20%5B%5BTemplate%20Within%20Or%20Without%20Tabs%5D%5D ]]
+[[ ???|https://tiddlywiki.com/#currentTiddler%20Variable%20(Examples):%5B%5BcurrentTiddler%20Variable%20(Examples)%5D%5D%20%5B%5BcurrentTiddler%20Variable%5D%5D%20TemplateTiddlers%20%5B%5BTransclusion%20with%20Templates%5D%5D%20%5B%5BCurrent%20Tiddler%5D%5D%20%5B%5BstoryTiddler%20Variable%5D%5D%20%5B%5BstoryTiddler%20Variable%20(Examples)%5D%5D ]]
+[[ ???|https://groups.google.com/forum/#!searchin/tiddlywiki/template$20transclusion|sort:date/tiddlywiki/sjeqVYMwE4s/emxTihUACQAJ ]]
+[[ ???|https://groups.google.com/forum/#!tags/tiddlywiki/transclusion ]]
+[[ ???|https://groups.google.com/forum/#!tags/tiddlywiki/template ]]
+[[ ???|https://groups.google.com/forum/#!searchin/tiddlywiki/template$20transclusion|sort:date/tiddlywiki/9qP3gH12V5A/NB5CmuMJBQAJ ]]
+[[ ???|https://tiddlywiki.com/#Transclusion%20in%20WikiText:%5B%5BTransclusion%20in%20WikiText%5D%5D%20%5B%5BTransclusion%20with%20Templates%5D%5D ]]
+[[ ???|https://groups.google.com/forum/#!searchin/tiddlywiki/template$20transclusion$20recursive$20%22Recursive$20transclusion$20error$20in$20transclude$20widget%22%7Csort:date ]]. 
+
+Would ask in the [[TW Google Group|https://groups.google.com/forum/#!forum/tiddlywiki]]. Hopefully these examples would provide some clarity: 
+
+# the [[s2n]] tag page is trying to use the template, and miserably failing; 
+# the [[2D0s]] tag page is what I want all my tag pages to be like, but if I cannot template them, I'd have to do any subsequent changes to all tag pages by hand and one by one; 
+# the [[1Search]] page poses maybe another recursive problem (with current vs story tiddlers) but not sure about that either :(</pre>
+</div>
+<div created="20200128180707453" creator="GR6A" modified="20200208152302611" modifier="GR6A" title="2D0s">
+<pre>&lt;&lt;list-search
+&quot;[tag[2D0s]!is[system]!sort[modified]] get[text]splitbefore[
+
+]addsuffix[... ...]]&quot;
+&quot;search&quot;
+&quot;$:/temp/list-search-tag-2D0s&quot;
+&quot;$:/.gr6a/template/list-search&quot;
+placeholder:&quot; » search this tag&quot;
+limit:3&gt;&gt;</pre>
+</div>
+<div created="20190826065148598" creator="GR6A" modified="20190903094419258" modifier="GR6A" tags="2D0s бг en s2nLogicstics s2n" title="AXES">
+<pre>!!! The [[best practice|s2nBestPractices]] to start participating in a language axis of the [[S2N framework|Our signal-to-noise problem]] is to subscribe to the relevant RSS feeds. For that, [[I like|https://blog.inoreader.com/2015/06/inoreader-how-to.html]] [[inoreader.com|https://www.inoreader.com]].
+
+`EN` :: [[RSS|https://groups.google.com/forum/#!aboutgroup/s2n4en]] of [[Google group|https://groups.google.com/forum/#!forum/s2n4en]] :: RSS of [[Facebook group|https://www.facebook.com/s2n4en]] :: [[RSS|https://www.reddit.com/r/S2N4EN/.rss]] of [[subReddit|https://www.reddit.com/r/S2N4EN/]] :: RSS of [[Twitter list|https://twitter.com/_GR6A/lists/s2n4en]] :: [[t.me/s2n4en|https://t.me/s2n4en]]
+
+`BG` :: [[RSS|https://groups.google.com/forum/#!aboutgroup/s2n4bg]] of [[Google group|https://groups.google.com/forum/#!forum/s2n4bg]] :: RSS of [[Facebook group|https://www.facebook.com/s2n4bg]] :: [[RSS|https://www.reddit.com/r/S2N4BG/.rss]] of [[subReddit|https://www.reddit.com/r/S2N4BG/]] :: RSS of [[Twitter list|https://twitter.com/_GR6A/lists/s2n4bg]] :: [[t.me/s2n4bg|https://t.me/s2n4bg]]
 
 `RU` :: RSS of [[ВКонтакте community|https://vk.com/s2n4ru]] :: 
 
@@ -13303,6 +13578,27 @@ select {
 &lt;br /&gt;
 //(2d0-2: show this to inoreader.com, once it gets explained a bit better)//
 </pre>
+</div>
+<div created="20190903105639524" creator="GR6A" modified="20190903111003275" modifier="GR6A" tags="бг 2D0s" title="CURRENTs">
+<pre>!!! S2N4BG-359-2553-Фотографии-по-Майстора
+
+2d0: http://www.vladimirdimitrov-maistora.com/contact/
+
+https://www.facebook.com/saved/?cref=74&amp;list_id=123295012361344 ::
+https://www.facebook.com/ArtGalleryVladimirDimitrovTheMaster/posts/2273108576105480
+
+https://www.facebook.com/groups/166286270677969/
+
+https://www.google.com/search?q=photo+forum ::
+https://www.google.com/search?q=photo+forum</pre>
+</div>
+<div created="20200208183220256" creator="GR6A" modified="20200208191042124" modifier="GR6A" tags="$:/tags/Stylesheet" title="Custom data-styles">
+<pre>h2 { f!!!ont-weight: bold; }
+
+div.tc-titlebar { border-bottom: 1px dotted #c0c0c0; b!!!ackground:grey; }</pre>
+</div>
+<div modified="20200208152302909" modifier="GR6A" title="Draft of '2D0s' by GR6A">
+<pre></pre>
 </div>
 <div created="20190527092921775" creator="GR6A" modified="20190822155005225" modifier="GR6A" tags="2D0s" title="DUMPs">
 <pre>Mark Knopfler's wife said to him: &quot;Well, did you play your [[twiddly|https://www.youtube.com/watch?v=leZ4T8kt-1o&amp;feature=youtu.be&amp;t=78]] bits at the end?&quot;
@@ -13336,6 +13632,17 @@ https://en.wikipedia.org/wiki/Federal_Council_(Switzerland)#/media/File:Bundesra
 
 &quot;&quot;&quot;
 </pre>
+</div>
+<div created="20200128170546170" creator="GR6A" modified="20200128170645146" modifier="GR6A" title="en">
+<pre>&lt;&lt;list-search
+&quot;[tag[en]!is[system]!sort[modified]] get[text]splitbefore[
+
+]addsuffix[... ...]]&quot;
+&quot;search&quot;
+&quot;$:/temp/list-search-tag-en&quot;
+&quot;$:/.gr6a/template/list-search&quot;
+placeholder:&quot; » search this tag&quot;
+limit:5&gt;&gt;</pre>
 </div>
 <div created="20190728053200367" creator="GR6A" modified="20190824105408325" modifier="GR6A" tags="2D0s" title="GR6A">
 <pre>I was wondering where to introduce myself... Until it became self-evident... But, all in due time...!!!
@@ -13475,28 +13782,65 @@ padding: 5px;
 
 tc-drop-down a {display: inline; padding: 0}</pre>
 </div>
-<div created="20190630093902917" modified="20190630094637276" tags="бг en s2n" title="s2nDig4Orthodoxy">
-<pre>&quot;&quot;&quot;
-https://asceticexperience.com
+<div created="20200201174542540" creator="GR6A" modified="20200208175315224" modifier="GR6A" tags="" title="s2n">
+<pre>{{||$:/.gr6a/template/tag-tiddlers_TEMP-FAIL}}</pre>
+</div>
+<div created="20190630093902917" creator="GR6A" modified="20200208132439226" modifier="GR6A" tags="бг en s2n" title="s2nDig4Orthodoxy">
+<pre>https://asceticexperience.com
+:
 [[How to recognize the stages of spiritual life|https://asceticexperience.com/portfolio/recognize-stages-spiritual-life/]]
+
 A characteristic of those who are still progressing in blessed mourning is temperance and silence of the lips; and of those who have made progress, freedom from anger and patient endurance of injuries; and of the perfect, humility, thirst for dishonors, voluntary craving for involuntary afflictions, non-condemnation of sinners, compassion even beyond one’s strength. The first are acceptable, and the second laudable; but blessed are those who hunger for hardship and thirst for dishonor, for they shall have their fill of the food that does not cloy.
 If you possess the gift of mourning, hold on to it with all your might. For it is easily lost when it is not firmly established. And just as wax melts in the presence of fire, so it is easily dissolved by ''noise'' and bodily cares, and by luxury, and especially by talkativeness and levity.
 Based on St John of the Ladder
-&quot;&quot;&quot;
 
 [[The Gurus, the Young Man, and Elder Paisios, by Dionysios Farasiotis|https://www.amazon.com/product-reviews/1887904166/ref=acr_dpproductdetail_text/144-2726772-4330228?ie=UTF8&amp;showViewpoints=1]] ::
-[[On Kissing the Priest’s Hand|http://www.stgabrielashland.org/on-kissing-the-priests-hand/]]</pre>
+[[On Kissing the Priest’s Hand|http://www.stgabrielashland.org/on-kissing-the-priests-hand/]]
+
+http://www.gatchev.info/stories/Orthodox/Orthodox.html
+
+[[Rome goes fishing in Anglican pond|http://news.bbc.co.uk/2/hi/uk_news/8318663.stm]]</pre>
 </div>
-<div created="20190630095742683" creator="GR6A" modified="20190901171159981" modifier="GR6A" tags="en бг s2nLogicstics s2n s2nDig4People" title="s2nDig4People">
+<div created="20190630095742683" creator="GR6A" modified="20191106194355664" modifier="GR6A" tags="en бг s2nLogicstics s2n s2nDig4People" title="s2nDig4People">
 <pre>''h0p3'' :: decentralizing power structures :: https://github.com/redecentralize/alternative-internet :: https://philosopher.life/#Readme:Readme%20Outopos%20Socialism%20TDL (I don't have this problem::: s : It may [[help|https://www.ncbi.nlm.nih.gov/pubmed/29058942]] you sleep. :: h0p3 is definitely fractaling through some poetic thinking, it's weird how I relate to his 'style'... and if it's a lady, I'd be surprised, sorry...)
 
+Tiddly Tweeter
+@TiddlyTweeter
+ Jan 2
+More
+A thought. I think it would be very interesting to see a joint brainstorm of @WardCunningham, @Jermolene &amp; @joeerl.
+I miss the early discussions on the net about the net. The territory you know seems ripe for a more public re-vision.
+#TiddlyWiki #Erlang #Fedwiki
+''Ward Cunningham''
+@WardCunningham
+Follow Follow @WardCunningham
+More
+Replying to @TiddlyTweeter @Jermolene @joeerl
+I'm in. I know I would need to study a bit first. I'm starting that by following the right people here on twitter.
+https://twitter.com/WardCunningham/status/1080934958020026368
+
+''Ward Cunningham'' 
+:: http://fed.wiki.org &gt;&gt; [[Collaborative Link|http://fed.wiki.org/view/welcome-visitors/view/about-federated-wiki/about.fed.wiki/profligate-copying/about.fed.wiki/collaborative-link]] 
+:: http://wardcunningham.github.io/ 
+:: https://en.wikipedia.org/wiki/Ward_Cunningham#Cunningham's_Law 
+:: https://en.wikipedia.org/wiki/Smallest_Federated_Wiki &gt;&gt; Federation supports what Cunningham has described as &quot;a chorus of voices&quot; where users ''share content but maintain'' their individual perspectives.[3] This approach //contrasts with// the tendency of centralized wikis such as Wikipedia to function as ''consensus engines''.[4]
+:: http://c2.com/ 
+:: http://fed.wiki.org/view/how-to-wiki/view/search-sites/view/neighborhood 
+:: http://video.fed.wiki.org/view/welcome-visitors/view/ward-cunningham/view/federated-wiki 
+:: http://video.fed.wiki.org/view/hacking-social-impact 
+:: http://sites.fed.wiki.org/view/fedwikirodwellme/fedwiki.rodwell.me/thoughts-on-federated-wiki 
+:: SFW is a place to have and share ''materials of influence'' //(data, visualizations, research methods and results, ''point and counterpoint'')//. &gt;&gt; http://ward.fed.wiki.org/view/smallest-federated-wiki-design-challenges 
+:: 
+
+... just to point out that the fact that it hasn't happened yet is ''not a technical problem''. This, of course, means it's //''more of a social problem''// which are often much harder to deal with. Sadly. ... ::: ... In my mind, how a server-side choose to _store_ a tiddler is a matter of taste and need have no bearing on how a tiddler is represented upon the interface at the boundary of the server-side. TiddlyWeb, for example, can store tiddlers in text files on disk (in a few different formats), in pretty much an RDBMS, in other tiddlyweb servers, in redis, in RAM and there's even been some effort to do things like store tiddlers on IMAP servers. That's quite a lot of formats; however, every TiddlyWeb server makes all those tiddlers available as JSON (amongst other formats) and can accept tiddlers from elsewhere in that format.  That JSON interface for getting and putting tiddlers ''is effectively the core value proposition'' of TiddlyWeb. I'm biased, but I happen to think that's why it is more powerful than the other server side offerings.  [[Federated wiki and tw|https://groups.google.com/forum/#!topic/tiddlywiki/1PRWJCD2zg8]] ''C2::'' https://groups.google.com/forum/#!forum/tiddlyweb 
+:: https://aboutus.com/TiddlyWikiGoogleTagCombinations
 
 https://tiddlywiki.com/#JeremyRuston:JeremyRuston%20TiddlyWiki ::
 https://xememex.com ::
 Template for the Manifest :) ? https://federatial.com/ ::
-[[Now we see the rise of methodologies involving small, loosely federated groups that use the web to establish agreement and organise action. Organizations employing such methodologies increasingly define themselves by the software, tools and conventions that embody their operating principles.|https://federatial.com/#vision]]
+//[[Now we see the rise of methodologies involving small, loosely federated groups that use the web to establish agreement and organise action. Organizations employing such methodologies increasingly define themselves by the software, tools and conventions that embody their operating principles.|https://federatial.com/#vision]]//
 
-[[Joe Armstrong &amp; Jeremy Ruston - Intertwingling the Tiddlywiki with Erlang / Code Mesh LDN 18|https://www.youtube.com/watch?v=Uv1UfLPK7_Q&amp;t=56]]
+''Joe Armstrong &amp; Jeremy Ruston'' - [[Intertwingling the Tiddlywiki with Erlang / Code Mesh LDN 18|https://www.youtube.com/watch?v=Uv1UfLPK7_Q&amp;t=56]]
 &quot;... take three niche subjects and you take the ''venn diagram'', where they intersect...&quot;
 https://www.google.com/search?q=venn+diagram&amp;safe=active&amp;tbm=isch#imgrc=a3gy2fkHWO35SM:
 https://www.google.com/search?q=Docuverse
@@ -13510,10 +13854,15 @@ https://groups.google.com/forum/#!msg/tiddlywiki/OCntQ79DuwM/_Obde1jCj-gJ :: htt
 
 https://puttylike.com/start-here/ :: https://puttylike.com/what-to-do-with-all-this-stuff-11-tips-for-multipotentialites/ :: “Stuff is great; so having more stuff is even more greater!” - a genius //:0//
 
-http://www.dimiter.eu/Visualizations.html
-
+''http://www.dimiter.eu/Visualizations.html
+https://pinboard.in/u:demetriodor/t:dataviz/t:tutorial/''
+. . .
 https://followthesisters.com/bulgaria-map/
 https://followthesisters.com/thoughts-on-the-festival-with-bulgaria-in-heart/
+. . .
+http://ivytechnoweb.net/rss-feed-izvestia-ot-facebook/
+. . .
+https://www.bbc.com/worklife/article/20190913-how-to-slow-down-the-worlds-fastest-shrinking-country
 
 [[Cliff L. Biffle, a member of X’s Rapid Eval team, which seeks to kill, as quickly as possible, ideas that will ultimately fail (Justin Kaneps)|https://www.theatlantic.com/magazine/archive/2017/11/x-google-moonshot-factory/540648/]]
 
@@ -13539,9 +13888,14 @@ http://www.thehighbar.tv/2012/07/24/eric-weiner-on-finding-god/
 http://www.thehighbar.tv/2012/08/07/dorothy-parvaz-on-global-news-coverage-2/
 https://www.economy.bg/business/view/35752/Gyvkavo-AD-i-startyp-viza-shte-razdvizhat-predpriemacheskata-sreda-u-nas</pre>
 </div>
-<div created="20190630085947789" creator="GR6A" modified="20190826095602604" modifier="GR6A" tags="s2nNeology s2n" title="s2nDig4Phrases">
-<pre>And just as wax melts in the presence of fire, so it is easily dissolved by ''[[noise|https://asceticexperience.com/portfolio/recognize-stages-spiritual-life/]]'' and bodily cares, and by luxury, and especially by talkativeness and levity. +Based on St John of the Ladder
-:: as well as its [[contrapositive|https://en.wikipedia.org/wiki/Contraposition]], &quot;[[Whoever is not against us is for us|https://en.wikipedia.org/wiki/You%27re_either_with_us,_or_against_us#Historical_quotations]]&quot; (Luke 9:50; Mark 9:40) 
+<div created="20190630085947789" creator="GR6A" modified="20200208174319846" modifier="GR6A" tags="s2nNeology s2n" title="s2nDig4Phrases">
+<pre>And just as wax melts in the presence of fire, so it is easily dissolved by ''[[noise|https://asceticexperience.com/portfolio/recognize-stages-spiritual-life/]]'' and bodily cares, and by luxury, and especially by talkativeness and levity. 
+
++Based on St John of the Ladder
+
+... ... ... 
+
+as well as its [[contrapositive|https://en.wikipedia.org/wiki/Contraposition]], &quot;[[Whoever is not against us is for us|https://en.wikipedia.org/wiki/You%27re_either_with_us,_or_against_us#Historical_quotations]]&quot; (Luke 9:50; Mark 9:40) 
 :: [[Аванти, дилетанти!|https://www.google.com/search?q=&quot;аванти+дилетанти&quot;]] 
 :: [[evidence-based information infographics|https://www.google.com/search?q=evidence-based+information+infographics]]
 :: [[Is that cellphone kosher?|http://news.bbc.co.uk/2/hi/middle_east/7636021.stm]]
@@ -13554,6 +13908,16 @@ https://www.economy.bg/business/view/35752/Gyvkavo-AD-i-startyp-viza-shte-razdvi
 :: never received Belgian nationality and [[remained stateless|https://www.bbc.com/news/world-europe-47817530]]
 :: the smells and light of a poor but clean village home on an Indian summer later afternoon...
 :: [[Today, many cans have dispensed with the tin altogether, relying instead on a plastic coating, or switching over to an entirely new metal in aluminium.|https://www.bbc.com/news/magazine-25977432]]
+:: [[EU+Hybrid+Fusion+Cell|https://www.google.com/search?q=&quot;EU+Hybrid+Fusion+Cell&quot;]]
+:: https://www.google.com/search?q=keynes+vs+hayek 2C: [[Nov 7, 20118:51 pm UTC|http://blogs.reuters.com/great-debate/2011/11/07/the-keynes-hayek-showdown/]] This arguement is a part of a bigger conflict… Popper vs. Wittgenstein; Left wing Hegelists vs Right wing Hegelists; Hume vs Rousseau
+:: https://www.theschooloflife.com/therapy/
+:: https://quoteinvestigator.com 
+:: https://www.google.com/search?q=price+law [[Price Law Vs. Pareto Principle|https://medium.com/@fangya.123/price-law-vs-pareto-principle-7a0a8b2adc36]] 
+:: https://www.google.com/search?q=(Prosperity+without+growth)(Tim+Jackson)&amp;tbm=vid 
+:: [[Мъжът е мъж, а жената - жена. Това не е грешка, която трябва да се поправи|http://glasove.com/categories/na-fokus/news/shmeman]]
+:: https://en.wikipedia.org/wiki/Operant_conditioning#Nudge_theory 
+:: [[Чували ли сте за правилото &quot;3.5&quot;? То е измислено от проф. Ерика Чиновет (Erica Chenoweth) от Харвард и гласи нещо просто: &quot;Всяка протестна кампания, която в пика си е подкрепена от 3.5% от населението, е успешна&quot;. ... 2C:Андрей Кънчев на 23.09.2019 в 17:13
+Пенсионна реформа може да се случи толкова лесно и справедливо... |http://glasove.com/categories/na-fokus/news/kak-da-napravim-uspeshen-prevrat-i-da-preorientirame-stranata]] 
 :: 
 </pre>
 </div>
@@ -13573,7 +13937,7 @@ https://www.google.com/search?q=Alan+Kitching%2C+Waldemar+Swierzy%2C+Joao+Machad
 
 https://www.chaoticafractals.com/node/17</pre>
 </div>
-<div created="20190629090208347" creator="GR6A" modified="20190823141320426" modifier="GR6A" tags="s2nOnOffLine s2nLogicstics" title="s2nLogicstics">
+<div created="20190629090208347" creator="GR6A" modified="20191016175431373" modifier="GR6A" tags="s2nOnOffLine s2nLogicstics" title="s2nLogicstics">
 <pre>!! The off-online and on-offline logic and logistics of what could/should happen...
 
 These share similar ideas, but focused on 'techies' and (maybe) proprietary (?) tools, etc...
@@ -13587,6 +13951,11 @@ http://www.leanstartupcircle.com/
 
 https://metamorph.io/
 We believe that humankind's biggest challenges will be solved through the //action// and //collaboration// of courageous //individuals// and //communities//. :: We believe a new generation wants to take responsibility for a better future. :: We believe in //bottom-up// momentum and //decentralization// and we’re building the //tools// to ignite this change together.
+
+active citizenship ... by way of civic monitoring ...
+http://www.ascuoladiopencoesione.it/en/content/about-asoc
+
+https://www.google.com/search?q=Knowledge+and+Innovation+Communities+(KICs)
 
 &quot;&quot;&quot;</pre>
 </div>
@@ -13624,11 +13993,12 @@ tags &gt; s-tags? s2n-tags? stags? snags?
 
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20190816132923821" creator="GR6A" modified="20190823123116228" modifier="GR6A" tags="s2nOnOffLine s2nLogicstics s2n" title="s2nOnlineLogistics">
+<div created="20190816132923821" creator="GR6A" modified="20190903094718394" modifier="GR6A" tags="s2nOnOffLine s2nLogicstics s2n" title="s2nOnlineLogistics">
 <pre>&quot;&quot;&quot;
 https://gr6a4s2n4en4bg.github.io
 
-&gt; &gt; &gt; 2d0
+&gt; &gt; &gt; 2d0 
+&gt; &gt; https://www.google.com/search?q=thinkspot
 
 https://www.instagram.com/s2n4en/
 
@@ -13710,11 +14080,104 @@ sites.google.com :: weblium.com
 <div created="20190629085947251" modified="20190629090033222" title="s2nOnOffLine">
 <pre>The logi(c)stics of how it could/should happen on-offline and off-online...</pre>
 </div>
-<div created="20190606154011826" creator="GR6A" modified="20190901164602480" modifier="GR6A" tags="" title="s2nTools">
+<div created="20191216103022938" creator="GR6A" modified="20200208130829886" modifier="GR6A" tags="s2n 2D0s" title="s2nTiddlyPlayground">
+<pre>2d0-1: categorise and put together all TW related &quot;stuff&quot;, like these:
+
+&quot;&quot;&quot;
+&lt;!&gt; http://thelostadmin.tiddlyspot.com/
+http://twederation.tiddlyspot.com/
+https://karlarao.github.io/karlaraowiki/index.html
+&gt;&gt;&gt;
+[[Update: FilterGenerator now supports both AND and OR searches|https://groups.google.com/forum/#!msg/tiddlywiki/s3Zf7V-FIKQ/-AEFPzZtBwAJ]]
+https://groups.google.com/forum/#!msg/TiddlyWiki/OBuPNbhrSGY/v1zo0VUGBwAJ 
+https://groups.google.com/forum/m/#!topic/tiddlywiki/0jz3WPt__-s
+https://tiddlywiki.com/#Introduction%20to%20filter%20notation:%5B%5BIntroduction%20to%20Lists%5D%5D%20Filters%20%5B%5BIntroduction%20to%20filter%20notation%5D%5D%20%5B%5BFormatting%20List%20Results%20as%20Tables%20with%20CSS%20-%20Variable%20Column%20Method%5D%5D%20TiddlerFields%20ListWidget
+https://ooktech.com/jed/ExampleWikis/GenericTagFields/
+&quot;&quot;&quot;
+
+---
+---
+[[Fetching The First Paragraph|http://tobibeer.github.io/tb5/#Extracting%20Introductions%20From%20Tiddlers]]
+
+```
+&lt;$list filter=&quot;[all[current]get[text]splitbefore[
+
+]addsuffix[...]]&quot;&gt;
+
+//&lt;&lt;currentTiddler&gt;&gt;//
+&lt;/$list&gt;
+```
+
+&lt;$list filter=&quot;[prefix[б]get[text]splitbefore[
+
+]addsuffix[ ...]]&quot;&gt;
+
+//&lt;&lt;currentTiddler&gt;&gt;//
+&lt;/$list&gt;
+
+---
+---
+```
+[prefix[s]]
+```
+
+&lt;$list filter='[prefix[s]]'/&gt;
+
+---
+```
+&lt;$list filter=&quot;[tag[s2n]]&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;br/&gt;&lt;$view field=&quot;tags&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/$list&gt;
+```
+&lt;$list filter=&quot;[tag[s2n]]&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;br/&gt;&lt;$view field=&quot;tags&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/$list&gt;
+
+---
+```
+{{{ [tag[s2n]] || $:/core/ui/TagTemplate }}}
+```
+{{{ [tag[s2n]] || $:/core/ui/TagTemplate }}}
+
+---
+```
+&lt;$list filter='[tags[]]'/&gt;
+```
+&lt;$list filter='[tags[]]'/&gt;
+
+---
+```
+&lt;&lt;list-links &quot;[tag[s2n]]&quot;&gt;&gt;
+```
+&lt;&lt;list-links &quot;[tag[s2n]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20190606154011826" creator="GR6A" modified="20200203135824622" modifier="GR6A" tags="" title="s2nTools">
 <pre>&quot;&quot;&quot;
 YES2RSS!!! - always chose those with rss options
+https://www.reddit.com/wiki/rss
+https://www.reddit.com/r/newreddits/comments/m8sni/introducing_rssreddits_subscribe_to_any_rss_feed/
+https://www.reddit.com/r/pathogendavid/comments/tv8m9/pathogendavids_guide_to_rss_and_reddit/
+
+RSS for FB would be PITA (maybe not worth it...):
+https://blog.inoreader.com/2018/06/how-to-convert-public-facebook-pages-to-rss-feeds.html
+[[How to|https://www.facebook.com/Inoreader/posts/how-to-follow-all-your-facebook-pages-in-rss-filtered-feeds-some-great-thoughts-/1377586735693622/]] follow all your Facebook pages in RSS filtered feeds + some great thoughts on the //''&quot;Walled Garden&quot; argument''// by our friends at [[ResearchBuzz News|https://researchbuzz.me/2017/06/20/going-nuts-trying-to-keep-up-with-facebook-page-updates-try-inoreader/?fbclid=IwAR3cAIeyammqFrcIRi90HDv_UScMjz7s2cBcZxxqSpG-baSrU0GuZfkX16Y]].
+. . .
+&gt; ? &gt; https://www.rssground.com/pricing/
+https://www.integromat.com/en/pricing
+. . .
+https://zapier.com/pricing
+https://zapier.com/apps/facebook-pages/tutorials/facebook-rss-feed
+https://zapier.com/apps/facebook-groups/integrations/rss
+&gt; ?advanced &gt; https://zapier.com/apps/facebook-pages/tutorials/how-real-people-use-webhooks
+
+https://rssrabbit.com/#about
 
 https://itty.bitty.site/edit
+
+https://tryshift.com/pricing/
+https://uxplanet.org/the-ultimate-guide-to-tab-hoarding-55d3a44ea8e6
+
+https://techcrunch.com/2019/11/05/how-arweave-permaweb-works/ 
+https://www.arweave.org 
+https://5vbgactgfkjm.arweave.net/3SMZ1RW2xGTBdTiUznKrkTJTHtYtBs27wm0q2H58Jck#/forum/About%20the%20Forum 
+
+https://justpaste.it
 
 https://www.wemove.eu/
 
@@ -13788,6 +14251,8 @@ https://www.google.com/search?q=tracking+individual+tiddlywiki+tiddlers
 http://christopherlakey.com/articles/tiddlywiki-google-analytics.html 
 https://sycom.github.io/TiddlyWiki-Plugins/ 
 https://github.com/Jermolene/TiddlyWiki5/issues/1785 
+. . .
+[[integrates AI reinforced learning through tiddiwiky ... oxgroth@gmail.com|http://takingnotenow.blogspot.com/2017/01/a-tiddlywiki-limitation.html]]
 . . .
 
 GettingStarted
@@ -14449,7 +14914,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language#Example
   &lt;/g&gt;
 &lt;/svg&gt;</pre>
 </div>
-<div created="20190829105730758" creator="GR6A" modified="20190901174248787" modifier="GR6A" title="This wiki uses Google Analytics">
+<div created="20190829105730758" creator="GR6A" modified="20200208190955804" modifier="GR6A" title="This wiki uses Google Analytics">
 <pre>&lt;&lt;i18n disclaimer_common $:/plugins/sycom/g-analytics&gt;&gt;
 
 &lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsDNT&quot; text=&quot;yes&quot;&gt;
