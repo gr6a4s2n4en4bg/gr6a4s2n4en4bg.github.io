@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>GR6A4S2N4EN4BG — s/n disruption al/together</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 <body class="tc-body">
@@ -866,6 +866,8 @@ Error message and password prompt
 
 <li>$:/.gr6a/2d0-done-templated-tags-pages</li>
 
+<li>$:/.gr6a/custom-font</li>
+
 <li>$:/.gr6a/custom-styles</li>
 
 <li>$:/.gr6a/custom-tweaks</li>
@@ -888,33 +890,17 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
-<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
-
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
-
-<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
 
 <li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics</li>
 
 <li>$:/config/RelinkOnRename</li>
 
-<li>$:/config/SaverFilter</li>
-
 <li>$:/config/Tiddlers/TitleLinks</li>
 
-<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close</li>
-
-<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
-
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold</li>
-
-<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar</li>
-
-<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-others</li>
-
-<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions</li>
 
 <li>$:/ControlPanel</li>
 
@@ -1100,6 +1086,8 @@ Error message and password prompt
 
 <li>$:/state/tab--2112689675</li>
 
+<li>$:/state/tab--841024321</li>
+
 <li>$:/state/tab-1163638994</li>
 
 <li>$:/state/tab-1712840436</li>
@@ -1128,11 +1116,15 @@ Error message and password prompt
 
 <li>$:/state/toc/Catalog-Overview--1877670771</li>
 
+<li>$:/state/toc/Catalog-Overview-1639605777</li>
+
 <li>$:/state/toc/Catalog-Overview-2128044648</li>
 
 <li>$:/state/toc/Catalog-Settings--1461618494</li>
 
 <li>$:/state/toc/Catalog-Settings--1877670771</li>
+
+<li>$:/state/toc/Catalog-Settings-1639605777</li>
 
 <li>$:/state/toc/Catalog/Overview-All titles--1461618494</li>
 
@@ -1364,6 +1356,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
 
+<li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
+
 <li>1Search</li>
 
 <li>2D0s</li>
@@ -1510,32 +1504,41 @@ Would ask in the [[TW Google Group|https://groups.google.com/forum/#!forum/tiddl
 # the [[2D0s]] tag page is what I want all my tag pages to be like, but if I cannot template them, I'd have to do any subsequent changes to all tag pages by hand and one by one; 
 # the [[1Search]] page poses maybe another recursive problem (with current vs story tiddlers) but not sure about that either :(</pre>
 </div>
-<div created="20200208183220256" creator="GR6A" modified="20200307132844831" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/.gr6a/custom-styles">
+<div created="20200310094207762" creator="GR6A" modified="20200310094514048" modifier="GR6A" tags="$:/tags/RawMarkup" title="$:/.gr6a/custom-font">
+<pre>&lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</pre>
+</div>
+<div created="20200208183220256" creator="GR6A" modified="20200310093559017" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/.gr6a/custom-styles">
 <pre>h2 { font-weight: 330; }
 
 .tc-site-title { font-weight: 330; }
 
 .tc-site-subtitle { font-size: 1.3em; }
 
-div.tc-titlebar { border-bottom: 0.5px solid #d8d8d8; padding: 0.3em 0; margin-bottom: 0.2em; }
-
-.tttc-tab-divider { border-top: 0.5px solid #d8d8d8 !important; }
-
-.tc-tab-buttons button { font-weight: normal; BBborder: 0.5px solid #999999 !important; BBborder-bottom: 0.5px solid #ffffff !important;}
-
 .tc-topbar { display: none; vvvisibility: hidden; }
 
-.tc-btn-mini { padding: 0.2em; }
+.tc-titlebar { border-bottom: 0.5px solid #d8d8d8; padding: 0.3em 0; margin-bottom: 0.2em; }
+
+a.tc-tiddlylink-external { text-decoration: none; font-weight: 500;}
+
+a.tc-tiddlylink-external:hover { text-decoration: underline;}
+
+.tc-tab-divider { border-top: 0.5px none #d8d8d8 !important; }
+
+.tc-tab-buttons button { font-weight: normal; BBborder: 0.5px solid #999999 !important; BBborder-bottom: 0.5px solid #ffffff !important;}
 
 .tc-tab-buttons { font-size: 1.1em; }
 
 .tc-tab-content { font-size: 1.3em; }
 
+.tc-tiddler-body .tc-tab-set { font-size: 0.8em; }
+
+.tc-btn-mini { padding: 0.2em; }
+
 .tc-table-of-contents li a { font-weight: 500 !important; }
 
 .tc-advanced-search  { font-size: 0.8em; } 
 .tc-more-sidebar { font-size: 0.6em; } 
-.tc-control-panel { font-size: 0.7em; } 
+.tc-control-panel { font-size: 0.9em; } 
 
 .tc-tag-list-item { fffont-size: 0.9em; margin-right: 2px; }
 
@@ -1569,7 +1572,7 @@ tc-drop-down a {display: inline; padding: 0}
 
 </pre>
 </div>
-<div created="20200304193006577" creator="GR6A" modified="20200307172320876" modifier="GR6A" tags="" title="$:/.gr6a/custom-tweaks">
+<div created="20200304193006577" creator="GR6A" modified="20200310081510155" modifier="GR6A" tags="" title="$:/.gr6a/custom-tweaks">
 <pre># ''AFTER AN UPGRADE:''&lt;br&gt;To &quot;disable&quot; (hide) the 'Edit this tiddler' icon that pops up in the g-analytics plugin related content:
 
 ## ''DO THIS:''&lt;br&gt;.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} ''/*****GR6A:: div:hover ::GR6A*****/'' &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}
@@ -1577,6 +1580,8 @@ tc-drop-down a {display: inline; padding: 0}
 ## ''HERE:''&lt;br&gt;$:/temp/ext/modules/macros/i18n-style&lt;br&gt;&lt;br&gt;
 
 # $:/core/ui/ViewTemplate/subtitle&lt;br&gt;&lt;br&gt;
+
+# $:/.gr6a/custom-styles&lt;br&gt;&lt;br&gt;
 
 # 2d0 : ? all dropdowns/popups centered for small screens :: the total width reduced a bit for the widest of screens</pre>
 </div>
@@ -1654,23 +1659,17 @@ limit:3&gt;&gt;</pre>
 <div created="20190820090245745" creator="GR6A" modified="20190820090245745" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
 </div>
-<div created="20190903095053374" creator="GR6A" modified="20200307180525718" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
-<pre>hide</pre>
+<div created="20190903095053374" creator="GR6A" modified="20190903095053374" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
 </div>
-<div created="20190820090249113" creator="GR6A" modified="20200307180530323" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
-<pre>hide</pre>
+<div created="20190820090249113" creator="GR6A" modified="20190820090249113" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
+<pre>show</pre>
 </div>
-<div created="20200307180526920" creator="GR6A" modified="20200307180526920" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
-<pre>hide</pre>
+<div created="20190903095941299" creator="GR6A" modified="20190903095941299" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
+<pre>show</pre>
 </div>
-<div created="20190903095941299" creator="GR6A" modified="20200307180526559" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
-<pre>hide</pre>
-</div>
-<div created="20190903095109014" creator="GR6A" modified="20200307180529754" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
-<pre>hide</pre>
-</div>
-<div created="20200307180529291" creator="GR6A" modified="20200307180529291" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
-<pre>hide</pre>
+<div created="20190903095109014" creator="GR6A" modified="20190903095109014" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
+<pre>show</pre>
 </div>
 <div created="20190829123903934" creator="GR6A" modified="20190829123903934" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics">
 <pre>yes</pre>
@@ -1678,29 +1677,11 @@ limit:3&gt;&gt;</pre>
 <div created="20190729065654666" creator="GR6A" modified="20190729065654666" modifier="GR6A" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
-<div created="20200307180500244" creator="GR6A" modified="20200307180500737" modifier="GR6A" title="$:/config/SaverFilter">
-<pre>-[all[]] -[[$:/HistoryList]] -[[$:/StoryList]] -[[$:/Import]] -[[$:/isEncrypted]] -[[$:/UploadName]] -[prefix[$:/state/]] -[prefix[$:/temp/]]</pre>
-</div>
 <div created="20190901173623904" creator="GR6A" modified="20190901173623904" modifier="GR6A" title="$:/config/Tiddlers/TitleLinks">
 <pre>yes</pre>
 </div>
-<div created="20200307180523934" creator="GR6A" modified="20200307180523934" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close">
-<pre>hide</pre>
-</div>
-<div created="20200307180519928" creator="GR6A" modified="20200307180519928" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
-<pre>hide</pre>
-</div>
-<div created="20200208132325353" creator="GR6A" modified="20200307180522732" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold">
-<pre>hide</pre>
-</div>
-<div created="20200307180521703" creator="GR6A" modified="20200307180522422" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar">
-<pre>hide</pre>
-</div>
-<div created="20200307180521281" creator="GR6A" modified="20200307180523515" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-others">
-<pre>hide</pre>
-</div>
-<div created="20200307180519254" creator="GR6A" modified="20200307180519254" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
-<pre>hide</pre>
+<div created="20200208132325353" creator="GR6A" modified="20200208132325353" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold">
+<pre>show</pre>
 </div>
 <div caption="Controls" color="#bbb" created="20200301121602114" creator="GR6A" icon="$:/core/images/options-button" modified="20200301121741531" modifier="GR6A" tags="Settings" title="$:/ControlPanel">
 <pre>&lt;div class=&quot;tc-control-panel&quot;&gt;
@@ -11064,8 +11045,8 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190527093305419" modified="20190527093308243" title="$:/state/editpreviewtype">
 <pre>$:/core/ui/EditTemplate/body/preview/output</pre>
 </div>
-<div created="20200301125028183" creator="GR6A" modified="20200307132707720" modifier="GR6A" title="$:/state/folded/$:/.gr6a/custom-styles">
-<pre>show</pre>
+<div created="20200301125028183" creator="GR6A" modified="20200310083417643" modifier="GR6A" title="$:/state/folded/$:/.gr6a/custom-styles">
+<pre>hide</pre>
 </div>
 <div created="20200209072142777" creator="GR6A" modified="20200213180148111" modifier="GR6A" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
@@ -11127,8 +11108,8 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190901173821977" creator="GR6A" modified="20200302120830219" modifier="GR6A" title="$:/state/folded/s2nDig4Visuals">
 <pre>show</pre>
 </div>
-<div created="20190820081852181" creator="GR6A" modified="20200223165632390" modifier="GR6A" title="$:/state/folded/s2nLogicstics">
-<pre>hide</pre>
+<div created="20190820081852181" creator="GR6A" modified="20200308182848217" modifier="GR6A" title="$:/state/folded/s2nLogicstics">
+<pre>show</pre>
 </div>
 <div created="20190901173821977" creator="GR6A" modified="20200229135032856" modifier="GR6A" title="$:/state/folded/s2nNeology">
 <pre>show</pre>
@@ -11205,14 +11186,17 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190527094920061" creator="GR6A" modified="20200210090533197" modifier="GR6A" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20190728052952703" creator="GR6A" modified="20200307173030555" modifier="GR6A" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20190728052952703" creator="GR6A" modified="20200310081429998" modifier="GR6A" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
-<div created="20190527084631111" creator="GR6A" modified="20200213180151134" modifier="GR6A" title="$:/state/tab--1963855381">
+<div created="20190527084631111" creator="GR6A" modified="20200310093505024" modifier="GR6A" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20190820090054266" creator="GR6A" modified="20190820090101867" modifier="GR6A" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
+</div>
+<div created="20200310080619107" creator="GR6A" modified="20200310102629424" modifier="GR6A" title="$:/state/tab--841024321">
+<pre>JATs</pre>
 </div>
 <div created="20190727122118330" creator="GR6A" modified="20190824141524597" modifier="GR6A" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
@@ -11229,10 +11213,10 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190527084749631" creator="GR6A" modified="20200224154439299" modifier="GR6A" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20190527084743950" creator="GR6A" modified="20200307180422574" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
+<div created="20190527084743950" creator="GR6A" modified="20200310102556688" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
 <pre>Catalog</pre>
 </div>
-<div created="20200213180310411" creator="GR6A" modified="20200307180531536" modifier="GR6A" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<div created="20200213180310411" creator="GR6A" modified="20200301122029458" modifier="GR6A" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
 <div created="20190527094536831" modified="20190527094542047" title="$:/state/tag-manager/2D0s">
@@ -11253,8 +11237,11 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20200224174135530" creator="GR6A" modified="20200226182316026" modifier="GR6A" title="$:/state/toc/Catalog-Overview--1461618494">
 <pre>open</pre>
 </div>
-<div created="20200226192539936" creator="GR6A" modified="20200226192539936" modifier="GR6A" title="$:/state/toc/Catalog-Overview--1877670771">
+<div created="20200226192539936" creator="GR6A" modified="20200310102606212" modifier="GR6A" title="$:/state/toc/Catalog-Overview--1877670771">
 <pre>open</pre>
+</div>
+<div created="20200310085156398" creator="GR6A" modified="20200310085157869" modifier="GR6A" title="$:/state/toc/Catalog-Overview-1639605777">
+<pre>close</pre>
 </div>
 <div created="20200226193314760" creator="GR6A" modified="20200226193315477" modifier="GR6A" title="$:/state/toc/Catalog-Overview-2128044648">
 <pre>close</pre>
@@ -11262,7 +11249,10 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20200224174504078" creator="GR6A" modified="20200226184629158" modifier="GR6A" title="$:/state/toc/Catalog-Settings--1461618494">
 <pre>open</pre>
 </div>
-<div created="20200226192542030" creator="GR6A" modified="20200307180547982" modifier="GR6A" title="$:/state/toc/Catalog-Settings--1877670771">
+<div created="20200226192542030" creator="GR6A" modified="20200310073703048" modifier="GR6A" title="$:/state/toc/Catalog-Settings--1877670771">
+<pre>open</pre>
+</div>
+<div created="20200310085154847" creator="GR6A" modified="20200310085155744" modifier="GR6A" title="$:/state/toc/Catalog-Settings-1639605777">
 <pre>close</pre>
 </div>
 <div created="20200226183829881" creator="GR6A" modified="20200226183832391" modifier="GR6A" title="$:/state/toc/Catalog/Overview-All titles--1461618494">
@@ -11274,11 +11264,11 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190728053022426" modified="20190728053022426" title="$:/status/UserName">
 <pre>GR6A</pre>
 </div>
-<div created="20200307180425419" creator="GR6A" list="[[how to: save in a (pseudo) read-only state]] $:/core/ui/Buttons/save-wiki $:/ControlPanel" modified="20200307180623723" modifier="GR6A" title="$:/StoryList">
+<div list="$:/ControlPanel $:/.gr6a/custom-font $:/AdvancedSearch TiddlyWiki? $:/.gr6a/custom-styles [[All titles]] zk Navigation [[z: knowledge accretion]] Welcome! [[All tags]] AXES [[S2N: Best practices]] GR6A" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20190728052952703" creator="GR6A" modified="20200307180442443" modifier="GR6A" title="$:/temp/advancedsearch">
-<pre></pre>
+<div created="20190728052952703" creator="GR6A" modified="20200310094031340" modifier="GR6A" title="$:/temp/advancedsearch">
+<pre>.gr</pre>
 </div>
 <div created="20190829105730753" creator="GR6A" modified="20200304193124380" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
 <pre>.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} /*****GR6A:: div:hover ::GR6A*****/ &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}</pre>
@@ -11299,7 +11289,7 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///G:/My%20Drive/GR6A/index.html&quot;
+            &quot;text&quot;: &quot;file:///G:/My%20Drive/GR6A/GR6A4S2N4EN4BG.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -11319,7 +11309,7 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/G:/My%20Drive/GR6A/index.html&quot;
+            &quot;text&quot;: &quot;/G:/My%20Drive/GR6A/GR6A4S2N4EN4BG.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -12030,7 +12020,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190824135859870" creator="GR6A" modified="20190824135900119" modifier="GR6A" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>anal</pre>
 </div>
-<div created="20190527084716437" creator="GR6A" modified="20200307132649830" modifier="GR6A" title="$:/temp/search">
+<div created="20190527084716437" creator="GR6A" modified="20200310081423240" modifier="GR6A" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20190824135856709" creator="GR6A" modified="20190824135856709" modifier="GR6A" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.19/index.html" url="https://tiddlywiki.com/library/v5.1.19/index.html">
@@ -14753,6 +14743,9 @@ select {
 <div created="20190822145358524" creator="GR6A" modified="20190822145358524" modifier="GR6A" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
 <pre>yes</pre>
 </div>
+<div created="20200310092731093" creator="GR6A" modified="20200310092734109" modifier="GR6A" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily">
+<pre>-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;</pre>
+</div>
 <div created="20200128182621452" creator="GR6A" modified="20200226193339420" modifier="GR6A" tags="Navigation" title="1Search">
 <pre>''This is a one-stop search of both tags and tiddlers.''&lt;br&gt;(with many thanks to: https://tobibeer.github.io/tb5/#list-search)
 
@@ -14807,8 +14800,12 @@ display:none;
 
 https://bimlas.gitlab.io/#%24%3A%2Fcore%2Fui%2FTagTemplate</pre>
 </div>
-<div created="20200226183139833" creator="GR6A" modified="20200307175935804" modifier="GR6A" tags="Navigation" title="All titles">
-<pre>Once it gets too long, the list could be trimmed for the 30-50-90... modified-last (sorted alphabetically) + a search box (similar to [[1Search]]) across all (cluster + z notes)? Or maybe include here only '' 'cluster' '' notes //(defined how? via field?)//, not atomic  (z) notes? Or... ?
+<div created="20200226183139833" creator="GR6A" modified="20200310103001792" modifier="GR6A" tags="Navigation" title="All titles">
+<pre>?SEARCH BOX HERE?
+
+&lt;&lt;tabs &quot;§ Clusters Outlines JATs atomic ALL&quot; &quot;JATs&quot;&gt;&gt;
+
+Once it gets too long, the list could be trimmed for the 30-50-90... modified-last (sorted alphabetically) + a search box (similar to [[1Search]]) across all (cluster + z notes)? Or maybe include here only '' 'cluster' '' notes //(defined how? via field?)//, not atomic  (z) notes? Or... ? [[USE TABS HERE !?|https://tiddlywiki.com/#SampleTabFour:SampleTabFour%20%5B%5Btabs%20Macro%20(Examples)%5D%5D%20%5B%5Btabs%20Macro%5D%5D]] Cluster/Section [[↹|z: knowledge accretion]] (Connection/Outline) notes/cards; Atomic notes/cards; ALL; + Search on each tab... ?? (//not all cards are notes while all notes are cards// + should I use Zettelkasten OR Cartotheque (Картотека/Kartothek) OR Card Index OR Card Archive OR ... ?)
 
 &lt;$list filter=&quot;[!is[system]sort[title]]&quot;&gt;
 &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&amp;nbsp;&amp;middot;&lt;/$list&gt;</pre>
@@ -14914,14 +14911,21 @@ TEMP NOTE: I plan to dedicate //no more// than 30% of my ''free'' time to S2N, j
 # Publish the (index.html) file to the internet (e.g. [[put on github.io|how to: publish on github.io]]);
 # Pass on any and all good knowledge!</pre>
 </div>
-<div created="20200226184426299" creator="GR6A" modified="20200304174315545" modifier="GR6A" tags="2D0s Catalog" title="Navigation" toc-link="no">
+<div created="20200226184426299" creator="GR6A" modified="20200309163254092" modifier="GR6A" tags="2D0s Catalog" title="Navigation" toc-link="no">
 <pre>? What else: http://tiddlytools.com/#NavigationPackage + http://tiddlytools.com/#DiscoveryPackage
 
 # https://bimlas.gitlab.io/tw5-locator/#Locator%20view:%5B%5BLocator%20view%5D%5D%20%24%3A%2Fplugins%2Fbimlas%2Flocator%2FREADME%2FTIPS%20README%20%24%3A%2Fplugins%2Fbimlas%2Flocator%2FREADME%2FCHANGELOG
 
-#https://bimlas.gitlab.io/#%24%3A%2Fbimlas%2Fsidebar%2Flocator%2Flocator-view
+#https://bimlas.gitlab.io/#%24%3A%2Fbimlas%2Fsidebar%2Flocator%2Flocator-view&lt;br&gt;+
 
-</pre>
+# https://www.gwern.net/About#information-organizing &lt;br&gt;(//''like eg:''// topics: personal, psychology, archiving, statistics, predictions, meta, Bayes, Google, design&lt;br&gt;source; created: 01 Oct 2010; modified: 15 Aug 2019; status: finished; confidence: highly likely; importance: 3)&lt;br&gt;+ '''confidence', 'importance', etc, could be //in FIELDS accessible via Locator//? &lt;br&gt;along with s2n-tags? &lt;br&gt;(but how about zettelkasten numbering?)''&lt;br&gt;
+
+```
+([[side note|https://www.gwern.net/Google-shutdowns#dead-products]]: 
+“The summer grasses—
+the sole remnants of many
+brave warriors’ dreams.”
+```</pre>
 </div>
 <div created="20200224173801616" creator="GR6A" list="Welcome! TiddlyWiki?" modified="20200301131311246" modifier="GR6A" tags="Catalog" title="Overview" toc-link="no">
 <pre></pre>
@@ -15203,7 +15207,7 @@ as well as its [[contrapositive|https://en.wikipedia.org/wiki/Contraposition]], 
 :: 
 </pre>
 </div>
-<div created="20190630101436742" creator="GR6A" modified="20200302120911522" modifier="GR6A" tags="s2nDig4People s2nDig4Visuals" title="s2nDig4Visuals">
+<div created="20190630101436742" creator="GR6A" modified="20200308182700635" modifier="GR6A" tags="s2nDig4People s2nDig4Visuals" title="s2nDig4Visuals">
 <pre>Tag for anything related to (the dark arts of) the visual
 
 {{||$:/.gr6a/template/tag-tiddler}}
@@ -15224,7 +15228,9 @@ https://www.google.com/search?q=Alan+Kitching%2C+Waldemar+Swierzy%2C+Joao+Machad
 
 https://uk.phaidon.com/agenda/art/articles/2020/february/19/all-you-need-to-know-about-peter-saul-crime-and-punishment/
 
-https://www.chaoticafractals.com/node/17</pre>
+https://www.chaoticafractals.com/node/17
+
+https://www.visualcapitalist.com/</pre>
 </div>
 <div created="20190629090208347" creator="GR6A" modified="20200218170702376" modifier="GR6A" tags="s2nOnOffLine" title="s2nLogicstics">
 <pre>Tag for the off-online and on-offline logic and logistics of what could/should happen
@@ -15447,7 +15453,7 @@ https://ooktech.com/jed/ExampleWikis/GenericTagFields/
 ```
 &lt;&lt;list-links &quot;[tag[s2n]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20190606154011826" creator="GR6A" modified="20200223173417481" modifier="GR6A" tags="" title="s2nTools">
+<div created="20190606154011826" creator="GR6A" modified="20200308183438194" modifier="GR6A" tags="" title="s2nTools">
 <pre>&quot;&quot;&quot;
 YES2RSS!!! - always chose those with rss options
 https://www.reddit.com/wiki/rss
@@ -15521,8 +15527,10 @@ http://braintest.tiddlyspot.com/#PopupFootnotes&lt;&lt;ref &quot;Note3&quot;&gt;
 . . .
 http://faq.tiddlyspot.com/
 Can I upload an existing TiddlyWiki to a tiddlyspot.com site?
-Can I get an RSS feed for my TiddlyWiki?
-...
+Can I get an RSS feed for my TiddlyWiki? &gt;&gt; https://fraidyc.at/s/
+. . .
+http://tiddlyshow.tiddlyspot.com/ &lt;&gt; https://github.com/shower/shower
+. . .
 това как става?: http://www.strm.us/tw/cigars.xml
 https://groups.google.com/forum/#!searchin/tiddlywiki/cigar$20database/tiddlywiki/vLk1OxaV45Y/axoTeDotLqEJ
 https://groups.google.com/forum/#!searchin/tiddlywiki/cigar$20database/tiddlywiki/RK2RgkC8llY/9QCn5_c-VdEJ
@@ -16219,7 +16227,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language#Example
 <div created="20200224174310943" creator="GR6A" list="$:/ControlPanel [[how to: save in a (pseudo) read-only state]] $:/core/ui/SideBar/More" modified="20200301130649917" modifier="GR6A" tags="Catalog" title="Settings" toc-link="no">
 <pre></pre>
 </div>
-<div created="20190829105730758" creator="GR6A" modified="20200307180420563" modifier="GR6A" title="This wiki uses Google Analytics">
+<div created="20190829105730758" creator="GR6A" modified="20200310101644696" modifier="GR6A" title="This wiki uses Google Analytics">
 <pre>&lt;&lt;i18n disclaimer_common $:/plugins/sycom/g-analytics&gt;&gt;
 
 &lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsDNT&quot; text=&quot;yes&quot;&gt;
@@ -16244,10 +16252,10 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language#Example
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20200229144322374" creator="GR6A" modified="20200307180100475" modifier="GR6A" tags="Overview" title="TiddlyWiki?">
+<div created="20200229144322374" creator="GR6A" modified="20200310073546575" modifier="GR6A" tags="Overview" title="TiddlyWiki?">
 <pre>2d0-01 : explain and point to tiddlywiki.com
 
-2d0-02 : ? Put here all my TW thoughts, [[tweaks|$:/.gr6a/custom-tweaks]], questions, etc:
+2d0-02 : ? Put (link from) here all my TW thoughts, [[tweaks|$:/.gr6a/custom-tweaks]], questions, etc:
 
 [[how to: save in a (pseudo) read-only state]]
 
@@ -16267,7 +16275,18 @@ https://groups.google.com/forum/#!searchin/tiddlywiki/blockchain
 
 [[The Future of Large Tiddlywikis|https://groups.google.com/forum/#!msg/tiddlywiki/Aheyeybfydg/nc3mGX5ADQAJ]] :: [[The Longevity Myth ... [thoughts]|https://groups.google.com/d/msg/tiddlywiki/sYNTSAu2u5M/yTdn6XIEDwAJ]]
 
-[[Andy Matuschak's new notetaking app|https://groups.google.com/forum/#!topic/tiddlywiki/MXXCiHvv-U4]]</pre>
+[[Andy Matuschak's new notetaking app|https://groups.google.com/forum/#!topic/tiddlywiki/MXXCiHvv-U4]]
+
+# https://ibnishak.github.io/Tesseract/
+##https://ibnishak.github.io/Tesseract/UI/index.html#How%20to%20use%20google%20fonts%20in%20TW5
+## https://ibnishak.github.io/Tesseract/tweaks/alpha.html#Bookmark%20Button
+## https://ibnishak.github.io/Tesseract/tweaks/editorbuttons.html#Marker%20Button
+## https://ibnishak.github.io/Tesseract/incomplete/embedding.html
+## [[In the age of noise, silence becomes a political issue 24TH NOVEMBER 2016 AT 8:21PM     GILES FRASER   FEATURED The 20th century, declared Aldous Huxley in 1946, had been “the Age of Noise. Physical noise, mental noise, and noise of desire – we hold history’s record for them all.”|https://ibnishak.github.io/Tesseract/themes/moments.html#In%20the%20age%20of%20noise%2C%20silence%20becomes%20a%20political%20issue]]
+
+https://kookma.github.io/TW-Scripts/#Useful%20Little%20TiddlyWiki%20tips
+
+</pre>
 </div>
 <div created="20190527084325315" creator="GR6A" modified="20200301171503336" modifier="GR6A" tags="Overview en" title="Welcome!" type="text/vnd.tiddlywiki">
 <pre>2d0-01: explain (better) that this here is a [[TiddlyWiki|TiddlyWiki?]] where I have &quot;dumped&quot; a bunch of chain-of-thoughts and such, in order to experiment, but also where (once I get this act together) I'll be [[working with the garage door up|https://notes.andymatuschak.org/Work_with_the_garage_door_up]] + doing 2-3-4 things in parallel: building a zettlekasten of mine + S2N + ...
@@ -16301,7 +16320,7 @@ And here we go: look at this pretty little Venn diagram&lt;&lt;ref &quot;2d0-2&q
 &lt;&lt;footnotes &quot;2d0-3&quot; &quot;external links are bad for attention, turn this into a footnote OR leave it here as an explanation if why I avoid external linking&quot;&gt;&gt;
 ---</pre>
 </div>
-<div created="20200223174823478" creator="GR6A" modified="20200307163848477" modifier="GR6A" tags="2D0s s2nDig4People s2n zk" title="z: knowledge accretion">
+<div created="20200223174823478" creator="GR6A" modified="20200309175141635" modifier="GR6A" tags="2D0s s2nDig4People s2n zk" title="z: knowledge accretion">
 <pre>https://zettelkasten.de/posts/overview/
 
 &lt;!&gt; https://zettelkasten.de/posts/why-not-plain-text-wiki/
@@ -16311,6 +16330,10 @@ https://forum.zettelkasten.de/discussion/647/do-you-organize-your-personal-notes
 2d0-1 :: https://notes.andymatuschak.org/Knowledge_work_should_accrete?stackedNotes=Evergreen_notes&amp;stackedNotes=Evergreen_notes_should_be_atomic&amp;stackedNotes=Work_with_the_garage_door_up
 
 https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1
+
+https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125 
+&lt;br&gt;» connection notes ↹ outline notes » za: (for atomic) zc: zo: ... ??? tw: ??? //''(put these in tiddler FIELDS??? and NOT at beginning of tiddler titles???)''//
+&lt;br&gt; https://www.key-shortcut.com/en/writing-systems/35-symbols/arrows/
 
 https://beepb00p.xyz/tags.html#extendedmind
 +
