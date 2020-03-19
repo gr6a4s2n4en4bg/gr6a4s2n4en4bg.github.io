@@ -894,8 +894,6 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
-<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
-
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
@@ -932,6 +930,8 @@ Error message and password prompt
 
 <li>$:/core/ui/SideBar/Каталог</li>
 
+<li>$:/core/ui/SideBarSegments/search</li>
+
 <li>$:/core/ui/ViewTemplate/subtitle</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -947,6 +947,18 @@ Error message and password prompt
 <li>$:/macros/danielo/footNote</li>
 
 <li>$:/palette</li>
+
+<li>$:/palettes/Blanca</li>
+
+<li>$:/palettes/Blue</li>
+
+<li>$:/palettes/ContrastLight</li>
+
+<li>$:/palettes/DarkPhotos</li>
+
+<li>$:/palettes/Muted</li>
+
+<li>$:/palettes/Vanilla</li>
 
 <li>$:/plugins/sycom/g-analytics</li>
 
@@ -1008,11 +1020,27 @@ Error message and password prompt
 
 <li>$:/state/folded/$:/.gr6a/custom-styles</li>
 
+<li>$:/state/folded/$:/.gr6a/custom-tweaks</li>
+
+<li>$:/state/folded/$:/AdvancedSearch</li>
+
 <li>$:/state/folded/$:/ControlPanel</li>
 
 <li>$:/state/folded/$:/core/Filters/AllTiddlers</li>
 
 <li>$:/state/folded/$:/core/ui/SideBar/More</li>
+
+<li>$:/state/folded/$:/palettes/Blanca</li>
+
+<li>$:/state/folded/$:/palettes/Blue</li>
+
+<li>$:/state/folded/$:/palettes/ContrastLight</li>
+
+<li>$:/state/folded/$:/palettes/DarkPhotos</li>
+
+<li>$:/state/folded/$:/palettes/Muted</li>
+
+<li>$:/state/folded/$:/palettes/Vanilla</li>
 
 <li>$:/state/folded/1Search</li>
 
@@ -1066,9 +1094,15 @@ Error message and password prompt
 
 <li>$:/state/folded/This wiki uses Google Analytics</li>
 
+<li>$:/state/folded/TiddlyWiki?</li>
+
 <li>$:/state/folded/Welcome</li>
 
 <li>$:/state/folded/Welcome!</li>
+
+<li>$:/state/folded/z: knowledge accretion</li>
+
+<li>$:/state/folded/zk</li>
 
 <li>$:/state/folded/бг</li>
 
@@ -1097,6 +1131,8 @@ Error message and password prompt
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/googleanalytics--1678223282</li>
 
 <li>$:/state/showeditpreview</li>
+
+<li>$:/state/ShowPaletteEditor</li>
 
 <li>$:/state/sidebar</li>
 
@@ -1159,6 +1195,8 @@ Error message and password prompt
 <li>$:/status/UserName</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/tags/PaletteDEACTIVATED</li>
 
 <li>$:/temp/advancedsearch</li>
 
@@ -1606,7 +1644,7 @@ tc-drop-down a {display: inline; padding: 0}
 
 </pre>
 </div>
-<div caption="{{$:/core/ui/Buttons/palette}} {{$:/core/ui/Buttons/more-page-actions}} {{$:/core/ui/Buttons/full-screen}}" created="20200304193006577" creator="GR6A" modified="20200318201023669" modifier="GR6A" tags="$:/core/ui/SideBar/More" title="$:/.gr6a/custom-tweaks" toc-link="no">
+<div caption="{{$:/core/ui/Buttons/palette}} {{$:/core/ui/Buttons/more-page-actions}} {{$:/core/ui/Buttons/full-screen}}" created="20200304193006577" creator="GR6A" modified="20200319174017582" modifier="GR6A" tags="$:/core/ui/SideBar/More" title="$:/.gr6a/custom-tweaks" toc-link="no">
 <pre># ''AFTER AN UPGRADE:''&lt;br&gt;To &quot;disable&quot; (hide) the 'Edit this tiddler' icon that pops up in the g-analytics plugin related content:
 
 ## ''DO THIS:''&lt;br&gt;.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} ''/*****GR6A:: div:hover ::GR6A*****/'' &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}
@@ -1614,6 +1652,10 @@ tc-drop-down a {display: inline; padding: 0}
 ## ''HERE:''&lt;br&gt;$:/temp/ext/modules/macros/i18n-style&lt;br&gt;&lt;br&gt;
 
 # $:/core/ui/ViewTemplate/subtitle&lt;br&gt;&lt;br&gt;
+
+# $:/core/ui/SideBarSegments/search&lt;br&gt;&lt;br&gt;
+
+# $:/tags/PaletteDEACTIVATED&lt;br&gt;&lt;br&gt;
 
 # $:/.gr6a/custom-styles&lt;br&gt;&lt;br&gt;
 
@@ -1705,25 +1747,22 @@ limit:3&gt;&gt;</pre>
 <div created="20190820090245745" creator="GR6A" modified="20190820090245745" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
 </div>
-<div created="20190903095053374" creator="GR6A" modified="20200318201246877" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<div created="20190903095053374" creator="GR6A" modified="20200319180218125" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>hide</pre>
 </div>
-<div created="20190820090249113" creator="GR6A" modified="20200318201251991" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
+<div created="20190820090249113" creator="GR6A" modified="20200319180223020" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>hide</pre>
 </div>
-<div created="20200318201247885" creator="GR6A" modified="20200318201248927" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<div created="20200319180219037" creator="GR6A" modified="20200319180219037" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
 </div>
-<div created="20200318201248558" creator="GR6A" modified="20200318201248558" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
+<div created="20190903095941299" creator="GR6A" modified="20200319180218644" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
 <pre>hide</pre>
 </div>
-<div created="20190903095941299" creator="GR6A" modified="20200318201247684" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
+<div created="20190903095109014" creator="GR6A" modified="20200319180222041" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
 <pre>hide</pre>
 </div>
-<div created="20190903095109014" creator="GR6A" modified="20200318201251761" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
-<pre>hide</pre>
-</div>
-<div created="20200318201251339" creator="GR6A" modified="20200318201251339" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
+<div created="20200319180221148" creator="GR6A" modified="20200319180221148" modifier="GR6A" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
 <pre>hide</pre>
 </div>
 <div created="20190829123903934" creator="GR6A" modified="20190829123903934" modifier="GR6A" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/googleanalytics">
@@ -1732,22 +1771,22 @@ limit:3&gt;&gt;</pre>
 <div created="20190729065654666" creator="GR6A" modified="20190729065654666" modifier="GR6A" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
-<div created="20200318201233432" creator="GR6A" modified="20200318201233828" modifier="GR6A" title="$:/config/SaverFilter">
+<div created="20200319180205074" creator="GR6A" modified="20200319180205575" modifier="GR6A" title="$:/config/SaverFilter">
 <pre>-[all[]] -[[$:/HistoryList]] -[[$:/StoryList]] -[[$:/Import]] -[[$:/isEncrypted]] -[[$:/UploadName]] -[prefix[$:/state/]] -[prefix[$:/temp/]]</pre>
 </div>
 <div created="20190901173623904" creator="GR6A" modified="20190901173623904" modifier="GR6A" title="$:/config/Tiddlers/TitleLinks">
 <pre>yes</pre>
 </div>
-<div created="20200318201257001" creator="GR6A" modified="20200318201257001" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close">
+<div created="20200319180231242" creator="GR6A" modified="20200319180231242" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close">
 <pre>hide</pre>
 </div>
-<div created="20200318201256277" creator="GR6A" modified="20200318201256277" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
+<div created="20200319180230239" creator="GR6A" modified="20200319180230239" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
 <pre>hide</pre>
 </div>
-<div created="20200208132325353" creator="GR6A" modified="20200318201257621" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold">
+<div created="20200208132325353" creator="GR6A" modified="20200319180231932" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold">
 <pre>hide</pre>
 </div>
-<div created="20200318201255466" creator="GR6A" modified="20200318201255466" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
+<div created="20200319180229455" creator="GR6A" modified="20200319180229455" modifier="GR6A" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
 <pre>hide</pre>
 </div>
 <div caption="Controls" color="#bbb" created="20200301121602114" creator="GR6A" icon="$:/core/images/options-button" modified="20200301121741531" modifier="GR6A" tags="Settings" title="$:/ControlPanel">
@@ -10672,14 +10711,67 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div caption="Каталог" created="20200224154030489" creator="GR6A" modified="20200224154115349" modifier="GR6A" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Каталог">
 <pre>To come</pre>
 </div>
-<div created="20200307130748967" creator="GR6A" modified="20200307130815368" modifier="GR6A" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/subtitle">
+<div created="20200319172736765" creator="GR6A" modified="20200319172744569" modifier="GR6A" tags="$:/tags/SideBarSegment" title="$:/core/ui/SideBarSegments/search">
+<pre>&lt;div class=&quot;tc-sidebar-lists&quot;&gt;
+
+&lt;$set name=&quot;searchTiddler&quot; value=&quot;$:/temp/search&quot;&gt;
+&lt;div class=&quot;tc-search&quot;&gt;
+&lt;$edit-text tiddler=&quot;$:/temp/search&quot; type=&quot;search&quot; tag=&quot;input&quot; focus={{$:/config/Search/AutoFocus}} focusPopup=&lt;&lt;qualify &quot;$:/state/popup/search-dropdown&quot;&gt;&gt; class=&quot;tc-popup-handle&quot;/&gt;
+&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
+&lt;$button tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/temp/advancedsearch&quot; text={{$:/temp/search}}/&gt;
+&lt;$action-setfield $tiddler=&quot;$:/temp/search&quot; text=&quot;&quot;/&gt;
+&lt;$action-navigate $to=&quot;$:/AdvancedSearch&quot;/&gt;
+{{$:/core/images/advanced-search-button}}
+&lt;/$button&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/temp/search&quot; text=&quot;&quot; /&gt;
+{{$:/core/images/close-button}}
+&lt;/$button&gt;
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/popup/search-dropdown&quot;&gt;&gt; class=&quot;tc-btn-invisible&quot;&gt;
+{{$:/core/images/down-arrow}}
+&lt;$list filter=&quot;[{$:/temp/search}minlength{$:/config/Search/MinLength}limit[1]]&quot; variable=&quot;listItem&quot;&gt;
+&lt;$set name=&quot;searchTerm&quot; value={{{ [&lt;searchTiddler&gt;get[text]] }}}&gt;
+&lt;$set name=&quot;resultCount&quot; value=&quot;&quot;&quot;&lt;$count filter=&quot;[!is[system]search&lt;searchTerm&gt;]&quot;/&gt;&quot;&quot;&quot;&gt;
+{{$:/language/Search/Matches}}
+&lt;/$set&gt;
+&lt;/$set&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;
+&lt;$button to=&quot;$:/AdvancedSearch&quot; tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class=&quot;tc-btn-invisible&quot;&gt;
+{{$:/core/images/advanced-search-button}}
+&lt;/$button&gt;
+&lt;/$reveal&gt;
+{{$:/core/ui/Buttons/full-screen}}{{$:/core/ui/Buttons/palette}}
+&lt;/div&gt;
+
+&lt;$reveal tag=&quot;div&quot; class=&quot;tc-block-dropdown-wrapper&quot; state=&quot;$:/temp/search&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
+
+&lt;$reveal tag=&quot;div&quot; class=&quot;tc-block-dropdown tc-search-drop-down tc-popup-handle&quot; state=&lt;&lt;qualify &quot;$:/state/popup/search-dropdown&quot;&gt;&gt; type=&quot;nomatch&quot; text=&quot;&quot; default=&quot;&quot;&gt;
+
+&lt;$list filter=&quot;[{$:/temp/search}minlength{$:/config/Search/MinLength}limit[1]]&quot; emptyMessage=&quot;&quot;&quot;&lt;div class=&quot;tc-search-results&quot;&gt;{{$:/language/Search/Search/TooShort}}&lt;/div&gt;&quot;&quot;&quot; variable=&quot;listItem&quot;&gt;
+
+{{$:/core/ui/SearchResults}}
+
+&lt;/$list&gt;
+
+&lt;/$reveal&gt;
+
+&lt;/$reveal&gt;
+
+&lt;/$set&gt;
+
+&lt;/div&gt;
+</pre>
+</div>
+<div created="20200307130748967" creator="GR6A" modified="20200319172352584" modifier="GR6A" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/subtitle">
 <pre>&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
 &lt;div class=&quot;tc-subtitle&quot;&gt;
 &lt;$link to={{!!modifier}}&gt;
 &lt;$view field=&quot;modifier&quot;/&gt;
-&lt;/$link&gt; &lt;$view field=&quot;modified&quot; format=&quot;date&quot; template={{$:/language/Tiddler/DateFormat}}/&gt;
-
- | BACKLINKS:&amp;nbsp;&lt;$list filter=&quot;[all[current]backlinks[]sort[title]]&quot; emptyMessage=&lt;&lt;lingo References/Empty&gt;&gt; &gt; ⇄&amp;nbsp;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&amp;nbsp; &lt;/$list&gt;
+&lt;/$link&gt; &lt;$view field=&quot;modified&quot; format=&quot;date&quot; template={{$:/language/Tiddler/DateFormat}}/&gt; &amp;nbsp; &lt;span class=&quot;tc-sidebar-header&quot;&gt;{{$:/core/ui/Buttons/info}}&lt;/span&gt;&amp;nbsp; BACKLINKS:&amp;nbsp;&lt;$list filter=&quot;[all[current]backlinks[]sort[title]]&quot; emptyMessage=&lt;&lt;lingo References/Empty&gt;&gt; &gt; ⇄&amp;nbsp;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&amp;nbsp; &lt;/$list&gt;
 
 &lt;/div&gt;
 &lt;/$reveal&gt;
@@ -10730,8 +10822,664 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 \end
 </pre>
 </div>
-<div created="20190527084632159" creator="GR6A" modified="20200304203822475" modifier="GR6A" title="$:/palette">
+<div created="20190527084632159" creator="GR6A" modified="20200319173945033" modifier="GR6A" title="$:/palette">
 <pre>$:/palettes/Rocker</pre>
+</div>
+<div created="20200319173924198" creator="GR6A" description="A clean white palette to let you focus" modified="20200319173924198" modifier="GR6A" name="Blanca" tags="$:/tags/PaletteDEACTIVATED" title="$:/palettes/Blanca" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #ffffff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background:
+button-foreground:
+button-border:
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #66cccc
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333333
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #999999
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #ffffff
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #7897f3
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #ccc
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+sidebar-foreground: #acacac
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: #ffffff
+sidebar-tab-background: &lt;&lt;colour tab-background&gt;&gt;
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: &lt;&lt;colour tab-divider&gt;&gt;
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #7897f3
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #eeeeee
+tab-border-selected: #cccccc
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #ffeedd
+tag-foreground: #000
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: #eee
+tiddler-controls-foreground-hover: #888888
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f8f8f8
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #f8f8f8
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #ff9900
+toolbar-new-button:
+toolbar-options-button:
+toolbar-save-button:
+toolbar-info-button:
+toolbar-edit-button:
+toolbar-close-button:
+toolbar-delete-button:
+toolbar-cancel-button:
+toolbar-done-button:
+untagged-background: #999999
+very-muted-foreground: #888888
+</pre>
+</div>
+<div created="20200319173933966" creator="GR6A" description="A blue theme" modified="20200319173933966" modifier="GR6A" name="Blue" tags="$:/tags/PaletteDEACTIVATED" title="$:/palettes/Blue" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #fff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background:
+button-foreground:
+button-border:
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #34c734
+download-foreground: &lt;&lt;colour foreground&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333353
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #999999
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #ddddff
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #5778d8
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #ffffff
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+sidebar-foreground: #acacac
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: &lt;&lt;colour page-background&gt;&gt;
+sidebar-tab-background: &lt;&lt;colour tab-background&gt;&gt;
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: &lt;&lt;colour tab-divider&gt;&gt;
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #5959c0
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: &lt;&lt;colour background&gt;&gt;
+tab-background: #ccccdd
+tab-border-selected: #ccccdd
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #eeeeff
+tag-foreground: #000
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour background&gt;&gt;
+tiddler-controls-foreground-hover: #666666
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #ffffff
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #ffffff
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #5959c0
+toolbar-new-button: #5eb95e
+toolbar-options-button: rgb(128, 88, 165)
+toolbar-save-button: #0e90d2
+toolbar-info-button: #0e90d2
+toolbar-edit-button: rgb(243, 123, 29)
+toolbar-close-button: #dd514c
+toolbar-delete-button: #dd514c
+toolbar-cancel-button: rgb(243, 123, 29)
+toolbar-done-button: #5eb95e
+untagged-background: #999999
+very-muted-foreground: #888888
+</pre>
+</div>
+<div created="20200319173849285" creator="GR6A" description="High contrast and unambiguous (light version)" modified="20200319173849285" modifier="GR6A" name="Contrast (Light)" tags="$:/tags/PaletteDEACTIVATED" title="$:/palettes/ContrastLight" type="application/x-tiddler-dictionary">
+<pre>alert-background: #f00
+alert-border: &lt;&lt;colour background&gt;&gt;
+alert-highlight: &lt;&lt;colour foreground&gt;&gt;
+alert-muted-foreground: #800
+background: #fff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background: &lt;&lt;colour background&gt;&gt;
+button-foreground: &lt;&lt;colour foreground&gt;&gt;
+button-border: &lt;&lt;colour foreground&gt;&gt;
+code-background: &lt;&lt;colour background&gt;&gt;
+code-border: &lt;&lt;colour foreground&gt;&gt;
+code-foreground: &lt;&lt;colour foreground&gt;&gt;
+dirty-indicator: #f00
+download-background: #080
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: &lt;&lt;colour foreground&gt;&gt;
+dropdown-tab-background: &lt;&lt;colour foreground&gt;&gt;
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #00a
+external-link-foreground: #00e
+foreground: #000
+message-background: &lt;&lt;colour foreground&gt;&gt;
+message-border: &lt;&lt;colour background&gt;&gt;
+message-foreground: &lt;&lt;colour background&gt;&gt;
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: &lt;&lt;colour foreground&gt;&gt;
+modal-footer-background: &lt;&lt;colour background&gt;&gt;
+modal-footer-border: &lt;&lt;colour foreground&gt;&gt;
+modal-header-border: &lt;&lt;colour foreground&gt;&gt;
+muted-foreground: &lt;&lt;colour foreground&gt;&gt;
+notification-background: &lt;&lt;colour background&gt;&gt;
+notification-border: &lt;&lt;colour foreground&gt;&gt;
+page-background: &lt;&lt;colour background&gt;&gt;
+pre-background: &lt;&lt;colour background&gt;&gt;
+pre-border: &lt;&lt;colour foreground&gt;&gt;
+primary: #00f
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: &lt;&lt;colour background&gt;&gt;
+sidebar-controls-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-foreground-shadow: rgba(0,0,0, 0)
+sidebar-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-tab-background-selected: &lt;&lt;colour background&gt;&gt;
+sidebar-tab-background: &lt;&lt;colour tab-background&gt;&gt;
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: &lt;&lt;colour tab-divider&gt;&gt;
+sidebar-tab-foreground-selected: &lt;&lt;colour foreground&gt;&gt;
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: &lt;&lt;colour foreground&gt;&gt;
+sidebar-tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: &lt;&lt;colour background&gt;&gt;
+tab-background: &lt;&lt;colour foreground&gt;&gt;
+tab-border-selected: &lt;&lt;colour foreground&gt;&gt;
+tab-border: &lt;&lt;colour foreground&gt;&gt;
+tab-divider: &lt;&lt;colour foreground&gt;&gt;
+tab-foreground-selected: &lt;&lt;colour foreground&gt;&gt;
+tab-foreground: &lt;&lt;colour background&gt;&gt;
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #000
+tag-foreground: #fff
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour foreground&gt;&gt;
+tiddler-controls-foreground-hover: #ddd
+tiddler-controls-foreground-selected: #fdd
+tiddler-controls-foreground: &lt;&lt;colour foreground&gt;&gt;
+tiddler-editor-background: &lt;&lt;colour background&gt;&gt;
+tiddler-editor-border-image: &lt;&lt;colour foreground&gt;&gt;
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: &lt;&lt;colour background&gt;&gt;
+tiddler-editor-fields-odd: &lt;&lt;colour background&gt;&gt;
+tiddler-info-background: &lt;&lt;colour background&gt;&gt;
+tiddler-info-border: &lt;&lt;colour foreground&gt;&gt;
+tiddler-info-tab-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: &lt;&lt;colour foreground&gt;&gt;
+tiddler-title-foreground: &lt;&lt;colour foreground&gt;&gt;
+toolbar-new-button: 
+toolbar-options-button: 
+toolbar-save-button: 
+toolbar-info-button: 
+toolbar-edit-button: 
+toolbar-close-button: 
+toolbar-delete-button: 
+toolbar-cancel-button: 
+toolbar-done-button: 
+untagged-background: &lt;&lt;colour foreground&gt;&gt;
+very-muted-foreground: #888888
+</pre>
+</div>
+<div created="20150402111612188" creator="GR6A" description="Good with dark photo backgrounds" modified="20200319173902798" modifier="GR6A" name="DarkPhotos" tags="$:/tags/PaletteDEACTIVATED" title="$:/palettes/DarkPhotos" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #ffffff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background: 
+button-foreground: 
+button-border: 
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #34c734
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333333
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #ddd
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #336438
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #5778d8
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #ccf
+sidebar-controls-foreground: #fff
+sidebar-foreground-shadow: rgba(0,0,0, 0.5)
+sidebar-foreground: #fff
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #eee
+sidebar-tab-background-selected: rgba(255,255,255, 0.8)
+sidebar-tab-background: rgba(255,255,255, 0.4)
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: rgba(255,255,255, 0.2)
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #aaf
+sidebar-tiddler-link-foreground: #ddf
+site-title-foreground: #fff
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #d8d8d8
+tab-border-selected: #d8d8d8
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #ec6
+tag-foreground: #ffffff
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour background&gt;&gt;
+tiddler-controls-foreground-hover: #888888
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f8f8f8
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #f8f8f8
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #182955
+toolbar-new-button: 
+toolbar-options-button: 
+toolbar-save-button: 
+toolbar-info-button: 
+toolbar-edit-button: 
+toolbar-close-button: 
+toolbar-delete-button: 
+toolbar-cancel-button: 
+toolbar-done-button: 
+untagged-background: #999999
+very-muted-foreground: #888888
+</pre>
+</div>
+<div created="20200319173914751" creator="GR6A" description="Bright tiddlers on a muted background" modified="20200319173914751" modifier="GR6A" name="Muted" tags="$:/tags/PaletteDEACTIVATED" title="$:/palettes/Muted" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #ffffff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background:
+button-foreground:
+button-border:
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #34c734
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333333
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #bbb
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #6f6f70
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #29a6ee
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #c2c1c2
+sidebar-foreground-shadow: rgba(255,255,255,0)
+sidebar-foreground: #d3d2d4
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: #6f6f70
+sidebar-tab-background: #666667
+sidebar-tab-border-selected: #999
+sidebar-tab-border: #515151
+sidebar-tab-divider: #999
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: #999
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #d1d0d2
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #d8d8d8
+tab-border-selected: #d8d8d8
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #d5ad34
+tag-foreground: #ffffff
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour background&gt;&gt;
+tiddler-controls-foreground-hover: #888888
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f8f8f8
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #f8f8f8
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #182955
+toolbar-new-button: 
+toolbar-options-button: 
+toolbar-save-button: 
+toolbar-info-button: 
+toolbar-edit-button: 
+toolbar-close-button: 
+toolbar-delete-button: 
+toolbar-cancel-button: 
+toolbar-done-button: 
+untagged-background: #999999
+very-muted-foreground: #888888
+</pre>
+</div>
+<div created="20200319173827294" creator="GR6A" description="Pale and unobtrusive" modified="20200319173830678" modifier="GR6A" name="Vanilla" tags="$:/tags/PaletteDEACTIVATED" title="$:/palettes/Vanilla" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #ffffff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background:
+button-foreground:
+button-border:
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+diff-delete-background: #ffc9c9
+diff-delete-foreground: &lt;&lt;colour foreground&gt;&gt;
+diff-equal-background: 
+diff-equal-foreground: &lt;&lt;colour foreground&gt;&gt;
+diff-insert-background: #aaefad
+diff-insert-foreground: &lt;&lt;colour foreground&gt;&gt;
+diff-invisible-background: 
+diff-invisible-foreground: &lt;&lt;colour muted-foreground&gt;&gt;
+dirty-indicator: #ff0000
+download-background: #34c734
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333333
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #bbb
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #f4f4f4
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #5778d8
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #aaaaaa
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+sidebar-foreground: #acacac
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: #f4f4f4
+sidebar-tab-background: #e0e0e0
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: #e4e4e4
+sidebar-tab-foreground-selected:
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #999999
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #d8d8d8
+tab-border-selected: #d8d8d8
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #ec6
+tag-foreground: #ffffff
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour background&gt;&gt;
+tiddler-controls-foreground-hover: #888888
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f8f8f8
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #f8f8f8
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #182955
+toolbar-new-button:
+toolbar-options-button:
+toolbar-save-button:
+toolbar-info-button:
+toolbar-edit-button:
+toolbar-close-button:
+toolbar-delete-button:
+toolbar-cancel-button:
+toolbar-done-button:
+untagged-background: #999999
+very-muted-foreground: #888888
+</pre>
 </div>
 <div author="JeremyRuston" bag="default" contributor="Sylvain Comte" core-version="&gt;=5.0.0" dependents="" description="G-Analytics: website statistics" list="readme settings usage" plugin-type="plugin" revision="0" title="$:/plugins/sycom/g-analytics" type="application/json" version="1.3.1">
 <pre>{
@@ -11125,7 +11873,13 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20200301125028183" creator="GR6A" modified="20200310174240264" modifier="GR6A" title="$:/state/folded/$:/.gr6a/custom-styles">
 <pre>hide</pre>
 </div>
-<div created="20200209072142777" creator="GR6A" modified="20200213180148111" modifier="GR6A" title="$:/state/folded/$:/ControlPanel">
+<div created="20200319175432832" creator="GR6A" modified="20200319175432832" modifier="GR6A" title="$:/state/folded/$:/.gr6a/custom-tweaks">
+<pre>hide</pre>
+</div>
+<div created="20200319174047340" creator="GR6A" modified="20200319180149963" modifier="GR6A" title="$:/state/folded/$:/AdvancedSearch">
+<pre>hide</pre>
+</div>
+<div created="20200209072142777" creator="GR6A" modified="20200319180213728" modifier="GR6A" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
 </div>
 <div created="20200223170253190" creator="GR6A" modified="20200223170254210" modifier="GR6A" title="$:/state/folded/$:/core/Filters/AllTiddlers">
@@ -11133,6 +11887,24 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 </div>
 <div created="20200301121821593" creator="GR6A" modified="20200301121916914" modifier="GR6A" title="$:/state/folded/$:/core/ui/SideBar/More">
 <pre>show</pre>
+</div>
+<div created="20200319173711398" creator="GR6A" modified="20200319175339989" modifier="GR6A" title="$:/state/folded/$:/palettes/Blanca">
+<pre>hide</pre>
+</div>
+<div created="20200319173712551" creator="GR6A" modified="20200319173712551" modifier="GR6A" title="$:/state/folded/$:/palettes/Blue">
+<pre>hide</pre>
+</div>
+<div created="20200319173739074" creator="GR6A" modified="20200319173739074" modifier="GR6A" title="$:/state/folded/$:/palettes/ContrastLight">
+<pre>hide</pre>
+</div>
+<div created="20200319173708225" creator="GR6A" modified="20200319173708225" modifier="GR6A" title="$:/state/folded/$:/palettes/DarkPhotos">
+<pre>hide</pre>
+</div>
+<div created="20200319173710176" creator="GR6A" modified="20200319173710176" modifier="GR6A" title="$:/state/folded/$:/palettes/Muted">
+<pre>hide</pre>
+</div>
+<div created="20200319173757606" creator="GR6A" modified="20200319173757606" modifier="GR6A" title="$:/state/folded/$:/palettes/Vanilla">
+<pre>hide</pre>
 </div>
 <div created="20200208140402949" creator="GR6A" modified="20200208140610650" modifier="GR6A" title="$:/state/folded/1Search">
 <pre>show</pre>
@@ -11212,10 +11984,19 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190901173821977" creator="GR6A" modified="20200211163605979" modifier="GR6A" title="$:/state/folded/This wiki uses Google Analytics">
 <pre>show</pre>
 </div>
+<div created="20200319175726890" creator="GR6A" modified="20200319175726890" modifier="GR6A" title="$:/state/folded/TiddlyWiki?">
+<pre>hide</pre>
+</div>
 <div created="20190820081852181" creator="GR6A" modified="20200229142405314" modifier="GR6A" title="$:/state/folded/Welcome">
 <pre>show</pre>
 </div>
 <div created="20200301104421733" creator="GR6A" modified="20200307173133734" modifier="GR6A" title="$:/state/folded/Welcome!">
+<pre>hide</pre>
+</div>
+<div created="20200319175532019" creator="GR6A" modified="20200319175532019" modifier="GR6A" title="$:/state/folded/z: knowledge accretion">
+<pre>hide</pre>
+</div>
+<div created="20200319175537914" creator="GR6A" modified="20200319175537914" modifier="GR6A" title="$:/state/folded/zk">
 <pre>hide</pre>
 </div>
 <div created="20200218170109275" creator="GR6A" modified="20200218172112391" modifier="GR6A" title="$:/state/folded/бг">
@@ -11260,13 +12041,16 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190527093309051" creator="GR6A" modified="20190824110621820" modifier="GR6A" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
+<div created="20200319173617347" creator="GR6A" modified="20200319173617347" modifier="GR6A" title="$:/state/ShowPaletteEditor">
+<pre>yes</pre>
+</div>
 <div created="20190527094920061" creator="GR6A" modified="20200210090533197" modifier="GR6A" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20190728052952703" creator="GR6A" modified="20200318172000549" modifier="GR6A" title="$:/state/tab--1498284803">
+<div created="20190728052952703" creator="GR6A" modified="20200319174634209" modifier="GR6A" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
-<div created="20190527084631111" creator="GR6A" modified="20200318201245221" modifier="GR6A" title="$:/state/tab--1963855381">
+<div created="20190527084631111" creator="GR6A" modified="20200319180215793" modifier="GR6A" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20190820090054266" creator="GR6A" modified="20190820090101867" modifier="GR6A" title="$:/state/tab--2112689675">
@@ -11275,8 +12059,8 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20200310080619107" creator="GR6A" modified="20200316175457116" modifier="GR6A" title="$:/state/tab--841024321">
 <pre>$:/.gr6a/list-all</pre>
 </div>
-<div created="20200316155525685" creator="GR6A" modified="20200316155527206" modifier="GR6A" title="$:/state/tab-1094427345">
-<pre>Outlines</pre>
+<div created="20200316155525685" creator="GR6A" modified="20200319175713792" modifier="GR6A" title="$:/state/tab-1094427345">
+<pre>$:/.gr6a/list-tags</pre>
 </div>
 <div created="20190727122118330" creator="GR6A" modified="20190824141524597" modifier="GR6A" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
@@ -11293,10 +12077,10 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190527084749631" creator="GR6A" modified="20200224154439299" modifier="GR6A" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20190527084743950" creator="GR6A" modified="20200318200403607" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
+<div created="20190527084743950" creator="GR6A" modified="20200319180133416" modifier="GR6A" title="$:/state/tab/sidebar--595412856">
 <pre>Catalog</pre>
 </div>
-<div created="20200213180310411" creator="GR6A" modified="20200318201254745" modifier="GR6A" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<div created="20200213180310411" creator="GR6A" modified="20200319180226106" modifier="GR6A" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
 <div created="20190527094536831" modified="20190527094542047" title="$:/state/tag-manager/2D0s">
@@ -11329,7 +12113,7 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20200224174504078" creator="GR6A" modified="20200226184629158" modifier="GR6A" title="$:/state/toc/Catalog-Settings--1461618494">
 <pre>open</pre>
 </div>
-<div created="20200226192542030" creator="GR6A" modified="20200318201304328" modifier="GR6A" title="$:/state/toc/Catalog-Settings--1877670771">
+<div created="20200226192542030" creator="GR6A" modified="20200319180138646" modifier="GR6A" title="$:/state/toc/Catalog-Settings--1877670771">
 <pre>close</pre>
 </div>
 <div created="20200310085154847" creator="GR6A" modified="20200310085155744" modifier="GR6A" title="$:/state/toc/Catalog-Settings-1639605777">
@@ -11350,11 +12134,14 @@ Please wait while&lt;br&gt;{{$:/SiteTitle}}&lt;br&gt;is loading ...
 <div created="20190728053022426" modified="20190728053022426" title="$:/status/UserName">
 <pre>GR6A</pre>
 </div>
-<div created="20200318201216332" creator="GR6A" list="[[how to: save in a (pseudo) read-only state]] $:/core/ui/Buttons/save-wiki $:/ControlPanel AXES" modified="20200318201309477" modifier="GR6A" title="$:/StoryList">
+<div created="20200319180137866" creator="GR6A" list="[[how to: save in a (pseudo) read-only state]] $:/core/ui/Buttons/save-wiki $:/ControlPanel $:/config/SaverFilter" modified="20200319180247841" modifier="GR6A" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20190728052952703" creator="GR6A" modified="20200318201220717" modifier="GR6A" title="$:/temp/advancedsearch">
-<pre></pre>
+<div created="20200319174911694" creator="GR6A" modified="20200319175326462" modifier="GR6A" title="$:/tags/PaletteDEACTIVATED">
+<pre>&lt;&lt;list-links &quot;[tag[$:/tags/PaletteDEACTIVATED]]&quot;&gt;&gt;</pre>
+</div>
+<div created="20190728052952703" creator="GR6A" modified="20200319174636312" modifier="GR6A" title="$:/temp/advancedsearch">
+<pre>.gr</pre>
 </div>
 <div created="20190829105730753" creator="GR6A" modified="20200304193124380" modifier="GR6A" tags="$:/tags/Stylesheet" title="$:/temp/ext/modules/macros/i18n-style">
 <pre>.i18n-edit{float:right;display:none;opacity:0.5} .i18n-edit svg {width:16px} /*****GR6A:: div:hover ::GR6A*****/ &gt; p &gt; .i18n-edit, div:hover &gt; .i18n-edit, h1:hover &gt; .i18n-edit, h2:hover &gt; .i18n-edit, h3:hover &gt; .i18n-edit{display:block} .i18n-edit.alert{color:red;margin:0 4px}</pre>
@@ -12106,7 +12893,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190824135859870" creator="GR6A" modified="20190824135900119" modifier="GR6A" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>anal</pre>
 </div>
-<div created="20190527084716437" creator="GR6A" modified="20200310081423240" modifier="GR6A" title="$:/temp/search">
+<div created="20190527084716437" creator="GR6A" modified="20200319172755004" modifier="GR6A" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20190824135856709" creator="GR6A" modified="20190824135856709" modifier="GR6A" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.19/index.html" url="https://tiddlywiki.com/library/v5.1.19/index.html">
@@ -16307,7 +17094,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language#Example
 <div created="20200224174310943" creator="GR6A" list="$:/ControlPanel [[how to: save in a (pseudo) read-only state]] $:/core/ui/SideBar/More" modified="20200301130649917" modifier="GR6A" tags="Catalog" title="Settings" toc-link="no">
 <pre></pre>
 </div>
-<div created="20190829105730758" creator="GR6A" modified="20200318201209454" modifier="GR6A" title="This wiki uses Google Analytics">
+<div created="20190829105730758" creator="GR6A" modified="20200319180101037" modifier="GR6A" title="This wiki uses Google Analytics">
 <pre>&lt;&lt;i18n disclaimer_common $:/plugins/sycom/g-analytics&gt;&gt;
 
 &lt;$reveal type=&quot;match&quot; stateTitle=&quot;$:/temp/GoogleAnalyticsDNT&quot; text=&quot;yes&quot;&gt;
